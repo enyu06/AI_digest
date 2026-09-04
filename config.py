@@ -4,6 +4,8 @@
 自分の研究テーマや追いたい分野を自由な日本語で書けばよい。
 """
 
+import os
+
 # あなたが追いたいトピック・研究テーマを自由に記述する。
 # 具体的に書くほど関連度スコアの精度が上がる。
 INTERESTS = """\
@@ -15,14 +17,14 @@ INTERESTS = """\
 - 実務に応用できる手法（プロダクション運用、コスト削減）
 """
 
-# 使用する LLM プロバイダ。"openai" か "anthropic" を選ぶ。
-PROVIDER = "openai"
+# ASEL2 上で稼働しているモデル。
+MODEL = os.environ.get("OLLAMA_MODEL") or "qwen3.8:27B"
 
-# 使用するモデル。要約・分類のような軽量タスクには安価なモデルで十分。
-#   OpenAI    : "gpt-5.4-mini"（安価・高性能）/ "gpt-4.1-nano"（最安）
-#   Anthropic : "claude-haiku-4-5"（安価・高速）/ "claude-sonnet-4-6"（高品質）
-# PROVIDER に合わせて選ぶこと。
-MODEL = "gpt-5.4-mini"
+# 研究室 LAN 上の Ollama API。IP は変わり得るためホスト名で接続する。
+OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL") or "http://ASEL2:11434"
+
+# 27B モデルの初回ロードを考慮したタイムアウト（秒）。
+OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT") or "600")
 
 # 関連度スコアがこの値未満の論文はレポートで「低関連」に折りたたむ
 # （0〜100 のうち、表示の足切りではなく並べ替え・グルーピングに使う）

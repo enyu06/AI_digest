@@ -105,6 +105,9 @@ def main() -> None:
     os.makedirs(REPORT_DIR, exist_ok=True)
     today = dt.date.today().isoformat()
 
+    print("Checking remote Ollama on ASEL2...")
+    enrich.check_ollama()
+
     seen = dedupe.load_seen()
 
     print("Collecting arXiv papers...")
@@ -115,7 +118,7 @@ def main() -> None:
 
     dedupe.save_seen(seen)
 
-    print("Enriching papers via Claude API...")
+    print("Enriching papers via Ollama on ASEL2...")
     papers = enrich.enrich_all(papers)
 
     md = build_markdown(papers, news, today)

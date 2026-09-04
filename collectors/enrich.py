@@ -1,4 +1,4 @@
-"""LLM API で論文を日本語化・要約・関連度スコアリングする。
+"""ローカル LLM で論文を日本語化・要約・関連度スコアリングする。
 
 各論文について以下を 1 回の API 呼び出しで生成する:
   - title_ja      : タイトルの日本語訳
@@ -6,18 +6,16 @@
   - relevance     : ユーザーの関心への関連度スコア（0〜100）
   - relevance_reason : スコアの理由（短く）
 
-プロバイダは config.py の PROVIDER で切り替える（"openai" / "anthropic"）。
-API キーは環境変数から読む:
-  - OpenAI    : OPENAI_API_KEY
-  - Anthropic : ANTHROPIC_API_KEY
+LLM は Ollama のローカル API を利用する。API キーは不要。
 """
 
 from __future__ import annotations
 
 import json
-import os
+import urllib.error
+import urllib.request
 
-from config import INTERESTS, MODEL, PROVIDER
+from config import INTERESTS, MODEL, OLLAMA_BASE_URL, OLLAMA_TIMEOUT
 
 # 要約の出力を JSON に固定するためのシステムプロンプト
 SYSTEM_PROMPT = f"""\
@@ -38,75 +36,93 @@ SYSTEM_PROMPT = f"""\
 }}
 """
 
+OUTPUT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "title_ja": {"type": "string"},
+        "summary_ja": {"type": "string"},
+        "relevance": {"type": "integer", "minimum": 0, "maximum": 100},
+        "relevance_reason": {"type": "string"},
+    },
+    "required": ["title_ja", "summary_ja", "relevance", "relevance_reason"],
+}
 
-# ---- プロバイダごとの呼び出しを抽象化する -------------------------------
 
-class _Backend:
-    """LLM プロバイダの共通インターフェース。"""
+class _OllamaBackend:
+    """Ollama の /api/chat を呼び出すバックエンド。"""
 
-    def complete(self, system: str, user: str) -> str:
-        raise NotImplementedError
+    def __init__(self, base_url: str = OLLAMA_BASE_URL) -> None:
+        self.base_url = base_url.rstrip("/")
+        self.url = f"{self.base_url}/api/chat"
 
-
-class _OpenAIBackend(_Backend):
-    def __init__(self) -> None:
-        from openai import OpenAI
-
-        key = os.environ.get("OPENAI_API_KEY")
-        if not key:
+    def check_model(self) -> None:
+        """Ollama サーバへの疎通とモデルの存在を確認する。"""
+        tags_url = f"{self.base_url}/api/tags"
+        try:
+            with urllib.request.urlopen(tags_url, timeout=15) as response:
+                result = json.loads(response.read().decode("utf-8"))
+        except (urllib.error.URLError, TimeoutError) as exc:
             raise RuntimeError(
-                "OPENAI_API_KEY が設定されていません。"
-                "GitHub Actions では Secrets に登録してください。"
-            )
-        self.client = OpenAI(api_key=key)
+                f"Ollama サーバに接続できません ({tags_url})。"
+                "研究室 LAN への接続と ASEL2 の稼働状態を確認してください。"
+            ) from exc
 
-    def complete(self, system: str, user: str) -> str:
-        resp = self.client.chat.completions.create(
-            model=MODEL,
-            max_completion_tokens=600,
-            # 出力を JSON に強制する（対応モデルで有効）
-            response_format={"type": "json_object"},
-            messages=[
-                {"role": "system", "content": system},
-                {"role": "user", "content": user},
-            ],
-        )
-        return resp.choices[0].message.content or ""
-
-
-class _AnthropicBackend(_Backend):
-    def __init__(self) -> None:
-        from anthropic import Anthropic
-
-        key = os.environ.get("ANTHROPIC_API_KEY")
-        if not key:
+        models = {
+            item.get("name", "").lower()
+            for item in result.get("models", [])
+            if item.get("name")
+        }
+        if MODEL.lower() not in models:
+            available = ", ".join(sorted(models)) or "なし"
             raise RuntimeError(
-                "ANTHROPIC_API_KEY が設定されていません。"
-                "GitHub Actions では Secrets に登録してください。"
+                f"モデル {MODEL!r} が ASEL2 にありません。利用可能: {available}"
             )
-        self.client = Anthropic(api_key=key)
 
     def complete(self, system: str, user: str) -> str:
-        resp = self.client.messages.create(
-            model=MODEL,
-            max_tokens=600,
-            system=system,
-            messages=[{"role": "user", "content": user}],
+        payload = json.dumps(
+            {
+                "model": MODEL,
+                "stream": False,
+                "format": OUTPUT_SCHEMA,
+                "think": False,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                "options": {"temperature": 0, "num_predict": 600},
+            }
+        ).encode("utf-8")
+        request = urllib.request.Request(
+            self.url,
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST",
         )
-        return "".join(b.text for b in resp.content if b.type == "text")
+        try:
+            with urllib.request.urlopen(request, timeout=OLLAMA_TIMEOUT) as response:
+                result = json.loads(response.read().decode("utf-8"))
+        except (urllib.error.URLError, TimeoutError) as exc:
+            raise RuntimeError(
+                f"Ollama に接続できません ({self.url})。"
+                "Ollama が起動しているか確認してください。"
+            ) from exc
+
+        content = result.get("message", {}).get("content", "")
+        if not content:
+            raise RuntimeError(f"Ollama から空の応答が返りました: {result}")
+        return content
 
 
-def _make_backend() -> _Backend:
-    if PROVIDER == "openai":
-        return _OpenAIBackend()
-    if PROVIDER == "anthropic":
-        return _AnthropicBackend()
-    raise ValueError(f"未知のプロバイダ: {PROVIDER!r}（'openai' か 'anthropic'）")
+def check_ollama() -> None:
+    """設定済みの Ollama サーバとモデルが利用可能ならその旨を表示する。"""
+    backend = _OllamaBackend()
+    backend.check_model()
+    print(f"Ollama ready: {MODEL} at {OLLAMA_BASE_URL}")
 
 
 # ---- エンリッチ本体 ------------------------------------------------------
 
-def enrich_paper(backend: _Backend, paper: dict) -> dict:
+def enrich_paper(backend: _OllamaBackend, paper: dict) -> dict:
     """1 件の論文にエンリッチ情報を付与して返す。失敗時は素通し。"""
     user_content = (
         f"タイトル: {paper['title']}\n\n"
@@ -139,7 +155,7 @@ def enrich_all(papers: list[dict]) -> list[dict]:
     if not papers:
         return papers
 
-    backend = _make_backend()
+    backend = _OllamaBackend()
     enriched = [enrich_paper(backend, p) for p in papers]
     enriched.sort(key=lambda p: p.get("relevance", 0), reverse=True)
     return enriched
