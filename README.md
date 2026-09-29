@@ -2,8 +2,12 @@
 
 LLM・機械学習・軌道（宇宙力学）・サロゲートモデルに関する論文（arXiv）とニュース（RSS）を毎日自動で収集し、
 日次の Markdown レポートを `reports/YYYY-MM-DD.md` に出力するツール。
-ニュースの定期版は GitHub 管理ランナーで毎朝実行されるため、研究室の PC が停止していても配信が止まらない。
-研究室 LAN 内から実行した場合は、各論文を ASEL2 の Ollama で日本語要約・日本語訳・関連度スコア付けする。
+配信は 2 段構えになっている。
+
+- **GitHub Actions（未採点版）**: GitHub 管理ランナーで毎日実行され、論文は原題とアブストラクトのまま載せる。
+  研究室の PC が停止していても配信が止まらない。
+- **研究室 PC のタスク（採点版）**: 研究室 LAN 内の PC のタスク スケジューラで毎日 10:00 に実行され、
+  各論文を ASEL2 の Ollama で日本語要約・日本語訳・関連度スコア付けしたレポートに差し替えて push する。
 
 ## 構成
 
@@ -19,6 +23,10 @@ ai-digest/
 │   ├── dedupe.py                # URL ベースの重複排除
 │   └── seen.json                # 収集済み履歴（自動生成）
 ├── reports/                     # 生成された日次レポート
+│   └── data/                    # 当日の収集結果（採点版への差し替えに使う）
+├── scripts/
+│   ├── run_enriched.ps1         # 研究室 PC で採点版を作って push する
+│   └── register_task.ps1        # run_enriched.ps1 をタスク スケジューラに登録する
 ├── requirements.txt
 └── .github/workflows/daily.yml  # 毎日実行する CI 設定
 ```
@@ -41,6 +49,16 @@ ai-digest/
 
    `TcpTestSucceeded : True` となり、応答に `qwen3.8:27B` が含まれればよい。
    クライアント側に Ollama やモデルをインストールする必要はない。
+
+採点版を毎日自動で作るには、研究室 LAN 内の PC（このリポジトリを clone し、
+`git push` できる状態にしておく）で次を 1 回実行してタスクを登録する。
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scriptsegister_task.ps1
+```
+
+毎日 10:00 に `scripts/run_enriched.ps1` が実行される（PC が停止していた場合は次の起動時）。
+初回は `.venv` を作って依存パッケージを入れる。実行ログは `logs/` に残る。
 LLM 本体と推論処理は ASEL2（RTX 6000 Pro）側で実行される。
 
 ## モデルの切り替え
@@ -111,7 +129,10 @@ arXiv は土日に新着を公開しないため、月曜・日曜のレポー�
 
 GitHub Actions の定期版は ASEL2 に接続せず、RSS に含まれるニュース要約と
 論文の原文アブストラクトを掲載する。`python main.py` を研究室 LAN 内で実行した場合だけ
-Ollama による論文の日本語要約・採点を行う。TCP 11434 はインターネットへ公開せず、
+Ollama による論文の日本語要約・採点を行う。収集結果は `reports/data/<日付>.json` に
+保存され、同じ日に `python main.py` を実行すると再収集せずにそれを採点してレポートを
+差し替える。採点済みの日に再実行しても何もしない（先に研究室 PC が採点版を作った日は、
+GitHub Actions は何もせず終了する）。TCP 11434 はインターネットへ公開せず、
 研究室 LAN 内だけで利用する。
 
 ## 発展のアイデア

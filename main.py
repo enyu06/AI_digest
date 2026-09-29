@@ -4,19 +4,24 @@ config.TOPICS（LLM・機械学習・軌道・サロゲートモデルなど）�
 論文(arXiv)とニュース(RSS)を収集し、重複を除いたうえで
 日次の Markdown レポートを reports/ に出力する。
 
-GitHub Actions から毎日実行されることを想定。
+GitHub Actions（未採点版）と研究室 PC のタスク（ASEL2 で採点）から
+毎日実行されることを想定。
 """
 
 from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import os
 
 from collectors import arxiv_collector, dedupe, enrich, news_collector, topics
 from config import RELEVANCE_THRESHOLD, TOPICS
 
 REPORT_DIR = os.path.join(os.path.dirname(__file__), "reports")
+# 当日の収集結果（採点前後）を保存する場所
+DATA_DIR = os.path.join(REPORT_DIR, "data")
+JST = dt.timezone(dt.timedelta(hours=9))
 # ニュースを直近何時間ぶん集めるか。収集済みの URL は seen.json で除外されるため、
 # 実行の遅延を吸収できるよう広めに取る。論文は arXiv の最新公開分を使う。
 WINDOW_HOURS = 48
@@ -140,14 +145,26 @@ def build_markdown(
     return "\n".join(lines)
 
 
-def main(*, skip_enrichment: bool = False) -> None:
-    os.makedirs(REPORT_DIR, exist_ok=True)
-    today = dt.date.today().isoformat()
+def _today() -> str:
+    """JST の日付。GitHub Actions（UTC）と研究室 PC で同じ日付のレポートを扱う。"""
+    return dt.datetime.now(JST).date().isoformat()
 
-    if not skip_enrichment:
-        print("Checking remote Ollama on ASEL2...")
-        enrich.check_ollama()
 
+def _load_data(path: str) -> dict | None:
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _save_data(path: str, data: dict) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+
+
+def _collect() -> tuple[list[dict], list[dict]]:
+    """論文とニュースを収集し、未収集のものだけを返す（seen.json を更新する）。"""
     seen = dedupe.load_seen()
 
     print("Collecting arXiv papers...")
@@ -161,12 +178,47 @@ def main(*, skip_enrichment: bool = False) -> None:
     news = dedupe.filter_new(news_collector.fetch_recent(hours=WINDOW_HOURS), seen)
 
     dedupe.save_seen(seen)
+    return papers, news
+
+
+def main(*, skip_enrichment: bool = False) -> None:
+    """当日のレポートを作る。
+
+    収集結果は reports/data/<日付>.json に保存し、同じ日に再実行したときは
+    収集をやり直さずに再利用する。これにより、GitHub Actions が作った未採点の
+    レポートを、研究室 PC から `python main.py` で採点済みに差し替えられる。
+    """
+    today = _today()
+    data_path = os.path.join(DATA_DIR, f"{today}.json")
+    data = _load_data(data_path)
+
+    out_path = os.path.join(REPORT_DIR, f"{today}.md")
+    if data and (data["enriched"] or skip_enrichment):
+        print(f"Report for {today} already exists; nothing to do.")
+        return
+    if not data and os.path.exists(out_path):
+        # 収集結果が残っていないレポートを再収集すると、既読扱いで空になってしまう
+        print(f"{out_path} exists but {data_path} does not; nothing to do.")
+        return
+
+    if not skip_enrichment:
+        print("Checking remote Ollama on ASEL2...")
+        enrich.check_ollama()
+
+    if data:
+        print(f"Reusing collected items from {data_path}")
+        papers, news = data["papers"], data["news"]
+    else:
+        papers, news = _collect()
+        # 採点前に保存しておき、採点が途中で失敗しても収集結果を失わないようにする
+        _save_data(data_path, {"enriched": False, "papers": papers, "news": news})
 
     if skip_enrichment:
         print("Skipping Ollama enrichment; keeping original paper abstracts.")
     else:
-        print("Enriching papers via Ollama on ASEL2...")
+        print(f"Enriching {len(papers)} papers via Ollama on ASEL2...")
         papers = enrich.enrich_all(papers)
+        _save_data(data_path, {"enriched": True, "papers": papers, "news": news})
 
     md = build_markdown(
         papers,
@@ -174,7 +226,6 @@ def main(*, skip_enrichment: bool = False) -> None:
         today,
         papers_enriched=not skip_enrichment,
     )
-    out_path = os.path.join(REPORT_DIR, f"{today}.md")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(md)
 
