@@ -3,6 +3,8 @@
 # 登録: powershell -ExecutionPolicy Bypass -File scripts\register_task.ps1
 
 $ErrorActionPreference = "Stop"
+# Python の出力をバッファせず、すぐログに残す
+$env:PYTHONUNBUFFERED = "1"
 $repo = Split-Path -Parent $PSScriptRoot
 Set-Location $repo
 
@@ -32,7 +34,7 @@ try {
     if ($LASTEXITCODE -ne 0) {
         Invoke-Native "git" @("commit", "-m", "digest: $date (enriched)")
         # 採点中に GitHub Actions が push していた場合に備えて取り込み直す
-        & git pull --rebase
+        & git pull --rebase --autostash
         if ($LASTEXITCODE -ne 0) {
             & git rebase --abort
             throw "git pull --rebase failed; resolve manually and push."
