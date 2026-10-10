@@ -1,0 +1,1890 @@
+{
+ "enriched": true,
+ "papers": [
+  {
+   "source": "arXiv",
+   "title": "High-Fidelity Baseline Design and Station Keeping Analyses for Earth-Moon Vertical Orbits",
+   "url": "https://arxiv.org/abs/2610.10803",
+   "summary": "Earth-Moon vertical orbits are periodic solutions of the circular restricted three-body problem (CR3BP) with substantial out-of-plane motion, considered for high-latitude lunar observation and cislunar navigation. This work develops an end-to-end framework for high-fidelity reference generation under rotating-frame geometry constraints and receding-horizon model predictive control. A representative $L_2$ vertical orbit yields a 5.5-year reference with negligible deterministic correction and remains maintainable in five-year Monte Carlo simulations under realistic uncertainties. The workflow produces locally optimal solutions across 90 consecutive daily start epochs and 200 catalog cases. Finite-Time Lyapunov Exponent along the reference and stable/unstable CR3BP directions interpret station-keeping behavior.",
+   "authors": [
+    "Derek Phung",
+    "Yuri Shimane"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "orbit",
+   "topics": [
+    "orbit"
+   ],
+   "title_ja": "地球-月垂直軌道の高忠実度ベースライン設計とステーションキーピング解析",
+   "summary_ja": "円形制限三体問題（CR3BP）における地球-月垂直軌道に対し、回転座標系の幾何学的制約下で高忠実度な参照軌道を生成するエンドツーエンドのフレームワークを提案する。再帰地平線モデル予測制御（MPC）を用いることで、L2点の垂直軌道において5.5年間の参照軌道が決定論的補正をほぼ必要とせず、現実的な不確実性下でも5年間のモンテカルロシミュレーションで維持可能であることを示した。さらに、90日連続の開始エポックと200件のカタログケースに対して局所最適解を生成し、有限時間ライプノフ指数を用いてステーションキーピングの挙動を解釈した。",
+   "relevance": 95,
+   "relevance_reason": "軌道力学・最適化・MPCが関心領域と完全に一致"
+  },
+  {
+   "source": "arXiv",
+   "title": "Deflating the Hessian: Rank-4 W4A4 Quantization for Multimodal Diffusion Transformers",
+   "url": "https://arxiv.org/abs/2610.11315",
+   "summary": "In diffusion transformers, low-rank branches can mitigate 4-bit weight--activation (W4A4) post-training quantization (PTQ) loss by decomposing each weight into a low-bit residual and a high-precision low-rank component. Existing low-rank PTQ approaches, however, either optimize low-rank compensation and residual quantization separately, often requiring higher ranks, or rely on second-order weight updates without explicitly modeling activation quantization error, which becomes particularly pronounced under 4-bit quantization. To address these limitations, we present \\method{}, a unified framework modeling low-rank-assisted W4A4 PTQ as a coupled calibration problem and deriving optimization-based solvers from the joint objective. Eliminating the output-side low-rank factor yields a \\emph{deflated Hessian} that discounts residual errors already captured by the low-rank component, while an activation-noise surrogate is incorporated to suppress activation quantization error. Across five diffusion backbones, rank-4 \\method{} consistently outperforms rank-4 SVDQuant in PSNR and LPIPS. It further surpasses rank-32 SVDQuant on SANA-1.6B, FLUX.1-schnell, and FLUX.1-dev with an $8\\times$ smaller rank and up to $6.25\\times$ faster quantization. Furthermore, on the Qwen3-8B LLM, rank-4 \\method{} improves MMLU accuracy from 61.50\\% to 68.17\\% over rank-32 SVDQuant. Overall, \\method{} achieves better W4A4 performance with substantially lower rank and quantization cost.",
+   "authors": [
+    "Shiwen Wang",
+    "Pengxiang Zhao",
+    "Xiaoming Yuan"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "llm",
+    "ml"
+   ],
+   "title_ja": "ヘッセ行列の縮小：マルチモーダル拡散トランスフォーマー向けランク4 W4A4量子化",
+   "summary_ja": "本論文は、拡散トランスフォーマーにおける4bit重み・活性化（W4A4）量子化の精度劣化を低ランク補償で緩和する統一フレームワークを提案する。低ランク成分と残差量子化を結合した較正問題として定式化し、ヘッセ行列の縮小と活性化ノイズのサロゲートモデルを用いた最適化手法を導出する。既存手法と比較し、ランク4でSVDQuantのランク32を上回るPSNR/LPIPS性能を実現し、量子化コストを最大6.25倍高速化した。さらにQwen3-8B LLMにおいてもMMLU精度を大幅に向上させ、LLMと拡散モデル双方で有効性を示した。",
+   "relevance": 95,
+   "relevance_reason": "LLM量子化と拡散モデルの効率化を両立し、ユーザーの関心と高度に一致"
+  },
+  {
+   "source": "arXiv",
+   "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+   "url": "https://arxiv.org/abs/2610.12325",
+   "summary": "Do LLM scientific agents rely only on their initial task context, or do they adapt their decisions in response to experimental feedback? We study this question in neural operator adaptation, where a large language model (LLM) selects fine-tuning configurations under a limited trial budget. Across transfers within and between partial differential equation (PDE) families, the LLM achieves lower held-out test nRMSE than random search and Bayesian optimisation in nearly every matched comparison. Endpoint performance alone cannot distinguish what happens, so we verify each attribution with controlled interventions. Before observing any validation score, the LLM's first configuration already ranks near the top of the corresponding random-search pool, indicating a useful initial bias. A complementary cold-start intervention shows that the selected base learning rate shifts with the PDE description. Once feedback becomes available, reassigning validation scores among evaluated configurations changes the next proposal in every case tested, whereas a value-preserving rewrite produces no comparable aggregate effect. These interventions establish that the LLM's decision-level actions respond to the given task and observed outcomes, showing that it combines a task-dependent prior with sensitivity to experimental feedback.",
+   "authors": [
+    "Julian Chan",
+    "Javier Mora Jimenez"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "llm",
+    "ml"
+   ],
+   "title_ja": "事前知識かフィードバックか？ニューラルオペレータ適応におけるLLMの行動分析",
+   "summary_ja": "本研究は、LLMがニューラルオペレータのファインチューニング設定を選択する際、初期のタスク文脈（事前知識）と実験フィードバックのどちらに依存するかを調査した。PDE間の転移において、LLMはランダムサーチやベイズ最適化を上回る性能を示した。介入実験により、LLMはタスク依存の事前バイアスを持ちつつ、検証スコアなどのフィードバックにも敏感に反応して次の提案を変更することが確認された。",
+   "relevance": 95,
+   "relevance_reason": "LLMとニューラルオペレータ、ベイズ最適化の比較という関心領域と完全に一致"
+  },
+  {
+   "source": "arXiv",
+   "title": "Exact SO(3)-Equivariant Isotropic Kernels for Rotation-Robust Neural Dynamics",
+   "url": "https://arxiv.org/abs/2610.10626",
+   "summary": "Neural surrogates for vector-valued partial differential equations can fit training data yet change their predictions when the same physical state is expressed in a rotated coordinate frame. We study this failure on three-dimensional Navier--Stokes dynamics observed at irregularly placed points. We introduce the Invariant-Conditioned Isotropic Kernel Neural Operator (IKNO), a compact graph model that builds local interactions from scalar quantities unchanged by rotation and vector directions that rotate with the data. Consequently, rotating the positions and velocities rotates the predicted velocity change in exactly the same way. On a held-out test set fixed after model design, training unconstrained graph models on randomly rotated examples reduces but does not eliminate their coordinate dependence. In contrast, IKNO is consistent to numerical precision, matches the forecasting accuracy of a general rotation-aware Tensor Field Network with $5.6$ times fewer parameters, and outperforms a parameter-matched graph simulator. These results show that a compact, PDE-specialized model can remove coordinate dependence without sacrificing forecasting accuracy.",
+   "authors": [
+    "Ridham Patel"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "回転ロバストなニューラルダイナミクスのための厳密なSO(3)等変等方性カーネル",
+   "summary_ja": "ベクトル値偏微分方程式（Navier-Stokes）のサロゲートモデルにおいて、座標系回転による予測の不一致を解決するIKNO（Invariant-Conditioned Isotropic Kernel Neural Operator）を提案する。回転不変なスカラー量とデータと共に回転するベクトル方向から局所相互作用を構築し、座標系の変化に対して厳密に等変性を保つ。パラメータ数がTensor Field Networkの約1/5.6倍とコンパクトでありながら、同等以上の予測精度を実現し、座標依存性を数値精度レベルで除去した。",
+   "relevance": 95,
+   "relevance_reason": "物理情報ニューラルオペレータとサロゲートモデルの効率化・精度向上に直結"
+  },
+  {
+   "source": "arXiv",
+   "title": "F$^3$NO: Frequency-Decomposed Finite-Time Flow-map Neural Operators with Cross-Scale Conditioning",
+   "url": "https://arxiv.org/abs/2610.10998",
+   "summary": "Neural operators enable fast PDE forecasting, but repeated predictions accumulate errors and fine-scale structures remain difficult to resolve. We introduce a frequency-decomposed finite-time flow-map neural operator (F$^3$NO) that leverages updated low-frequency features to guide nonlinear refinement of high-frequency information. Within each layer, this cross-scale conditioning connects global spectral processing with local detail refinement. The model directly predicts states at specified future times and adjusts the contributions of the two branches according to the prediction interval. For longer trajectories, it combines parallel predictions within short temporal segments with recursive propagation between segments. Experiments on five PDE benchmarks demonstrate improved forecasting accuracy over autoregressive and direct-prediction baselines. Ablations show that frequency-decomposed refinement can improve accuracy with fewer parameters, while the benefits of segmentation depend on spatial resolution and dynamical regime.",
+   "authors": [
+    "Fan Wu",
+    "Cheng Jing",
+    "Kookjin Lee"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "F^3NO: 周波数分解有限時間フローマップニューラルオペレータとクロススケール条件付け",
+   "summary_ja": "ニューラルオペレータによるPDE予測における誤差蓄積と高周波数構造の解像度問題を解決するため、周波数分解有限時間フローマップニューラルオペレータ（F^3NO）を提案する。低周波数特徴量を用いて高周波数情報の非線形精緻化を導くクロススケール条件付けを導入し、指定された未来時刻の状態を直接予測する。長期的な予測では、短い時間区間内の並列予測と区間間の再帰的伝播を組み合わせることで安定性を確保する。5つのPDEベンチマークにおいて、自己回帰型および直接予測型のベースラインと比較して予測精度が向上し、パラメータ数を減らしつつ精度を維持できることが示された。",
+   "relevance": 95,
+   "relevance_reason": "ニューラルオペレータと物理シミュレーション高速化の核心技術であり、ユーザーの関心と高度に一致する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Numerical Neural Operator: Connection Between Numerical Analysis and the Operator Learning and Building Discretized Neural Operators from Finite Element Methods",
+   "url": "https://arxiv.org/abs/2610.11120",
+   "summary": "Operator learning aims to learn mappings between function spaces and has been widely used for PDE-related problems. This raises two fundamental questions. First, is there a connection between standard numerical methods and neural operators, given that both are designed to approximate PDE solution operators? Second, when a neural operator is trained on numerically generated data, does it approximate the underlying infinite dimension operator, the training data themselves, or the discretized numerical scheme used to generate them? A key hypothesis in the paper is that the trained neural operator may mimic the discretized numerical schemes that generate the training data. The hypothesis has been partially and preliminary verified by the linear approximation principle proposed in Chen Chen 1995 paper and the following scaling law papers. However, neural operator approximation from the perspective of numerical discretization remains unexplored. In this work, we consider a class of PDEs and derive neural operator architectures from the numerical schemes. Firstly, the numerical basis functions, such as finite element basis functions, can be approximated or directly constructed by learnable neural networks. Then the finite difference schemes for temporal discretization can be unrolled into iterative neural architectures that generate the coefficients of the basis of the resulting neural operator. By leveraging numerical analysis, we establish convergence error estimates for these numerically derived neural operators. Notably, the network size depends polynomial on the approximation error in $L_2$, improving the nested exponential dependence derived in the general neural operator approximation and aligning with the numerical observations. Finally, numerical experiments demonstrate reduced errors and improved parameter efficiency.",
+   "authors": [
+    "Zecheng Zhang"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "数値ニューラルオペレータ：数値解析とオペレータ学習の接続、および有限要素法からの離散化ニューラルオペレータの構築",
+   "summary_ja": "本論文は、偏微分方程式（PDE）の解を近似する数値手法とニューラルオペレータ間の理論的接続を確立する。有限要素法の基底関数や時間離散化スキームをニューラルネットワークで表現し、数値解析に基づいた収束誤差推定を導出する。従来の汎用ニューラルオペレータとは異なり、ネットワークサイズが誤差に対して多項式依存性を示すことを証明し、パラメータ効率の向上を実証した。",
+   "relevance": 95,
+   "relevance_reason": "ニューラルオペレータと数値解析の融合で、サロゲートモデルの理論的基盤を強化する重要論文。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Uncovering and Fixing Collider Bias in Bayesian PINNs",
+   "url": "https://arxiv.org/abs/2610.11737",
+   "summary": "Bayesian physics-informed neural networks (B-PINNs) are a popular framework for parameter and state inference from sparse or noisy observations. They are commonly formulated via a collider structure, in which physical and trajectory parameters are assumed to be a priori independent and become coupled through virtual likelihoods on differential-equation residuals that enforce physical consistency. We show that this modeling choice can induce severe systematic bias in the posterior over physical parameters: even when the prior is favorably centered on the ground-truth parameters, the resulting posterior can drift away and concentrate far from them. As a remedy, we advocate a hierarchical chain model in which physics generates trajectories, which in turn generate observations. The chain model does not suffer from this posterior bias, but it poses a harder, so-called doubly intractable, inference problem due to a physics-dependent normalization constant. This challenge can be resolved by discretizing the underlying stochastic dynamics, after which the chain posterior can be sampled exactly with particle MCMC. We identify two distinct mechanisms characterizing the collider bias, derive analytical approximations of their magnitudes, and establish diagnostic criteria for predicting when standard B-PINNs remain reliable. Experiments confirm the predicted bias and show that the chain formulation successfully avoids it.",
+   "authors": [
+    "Michael Obermayr",
+    "Robert Peharz"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "ベイズ物理情報ニューラルネットにおけるコライダーバイアスの発見と修正",
+   "summary_ja": "ベイズ物理情報ニューラルネット（B-PINN）の標準的なコライダー構造が、物理パラメータの事後分布に重大な系統的バイアスをもたらすことを示した。このバイアスは事前分布が真値に近くても発生し、推論精度を損なう。解決策として、物理が軌跡を生成し、それが観測を生む階層的チェーンモデルを提案した。このモデルは粒子MCMCを用いることで、困難な推論問題を解決しつつバイアスを回避できることを実験で確認した。",
+   "relevance": 95,
+   "relevance_reason": "PINNと軌道力学の交差点で、推論バイアス修正という実務的価値が高い"
+  },
+  {
+   "source": "arXiv",
+   "title": "Ghost tasking for parametrized Gaussian Processes solving linear differential equations",
+   "url": "https://arxiv.org/abs/2610.12009",
+   "summary": "Physics-informed machine learning has gained significant attention in recent years. In regimes of limited data, parametrized Gaussian processes have become popular. Existing approaches, however, often face limitations, such as requiring parametrizable (also called controllable) systems or a large number of output tasks. In this work, we introduce a systematic procedure we call \"ghost tasking\", using auxiliary tasks to circumvent these limitations. We prove that such ghost tasks can render any non-parametrizable system effectively parametrizable, enabling algorithmic construction of parametrized Gaussian Processes while keeping the number of required tasks (i.e. output dimensions) and latent functions low. We find that ghost tasking performs especially well in an inverse problem setting, even with very few available data. We show the usage and power of ghost tasking in three experiments, providing systematic comparisons to the only other currently available method applicable to all experiments. We provide necessary syntax and explications for two computer algebra programs that compute parametrizations for systems with polynomial or rational coefficients. Our theoretical results extend to systems with meromorphic functions.",
+   "authors": [
+    "Johanna Moser",
+    "Christopher Albert",
+    "Sascha Ranftl"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "線形微分方程式を解くパラメトリックガウス過程におけるゴーストタスク法",
+   "summary_ja": "本論文は、データが限られた環境下で線形微分方程式を解くためのパラメトリックガウス過程（PGP）の手法を提案する。既存手法が直面する「系がパラメトリック（制御可能）である必要がある」「出力タスク数が多すぎる」という制約を、補助的な「ゴーストタスク」を導入することで回避する。理論的に、この手法により非パラメトリックな系も実質的にパラメトリック化でき、必要なタスク数と潜在関数を低く保ちつつアルゴリズム的にPGPを構築できることを証明した。逆問題設定において非常に少ないデータでも高性能を発揮し、多項式や有理関数係数を持つ系のパラメトリゼーション計算のためのコンピュータ代数プログラムとの連携も示している。",
+   "relevance": 95,
+   "relevance_reason": "ガウス過程と物理情報ML、微分方程式解法の組み合わせであり、サロゲートモデルの高度な応用"
+  },
+  {
+   "source": "arXiv",
+   "title": "Exploiting Gradients in Bayesian Inference of Expensive Simulators",
+   "url": "https://arxiv.org/abs/2610.12076",
+   "summary": "Simulators based on differential equations are ubiquitous in science and engineering. They are often used in simulation-based inference to evaluate the posterior distribution of the input parameters based on real-world observations of the simulator outputs. However, inference becomes challenging when individual simulator evaluations are computationally expensive. In such cases, a Bayesian optimization-based active learning approach with Gaussian process surrogate models has been used to maximize the information obtained from a limited simulation budget. Recently, gradients of simulator outputs with respect to input parameters have become increasingly available, yet they are rarely exploited for inference. Even though we only need to learn the simulator input-output relationship, gradient information can provide an additional valuable signal to guide the active learning procedure. This is of particular interest in the case of expensive simulators, when sample efficiency is crucial. In this paper, we demonstrate how incorporating gradient information into the Gaussian process surrogate accelerates Bayesian optimization-based inference under a limited simulation budget. Our results show significant improvement in convergence speed from using gradient information. For reverse-mode differentiation, the inference efficiency gains are maintained when accounting for the additional computational cost. In contrast, for forward-mode differentiation, the inference speed-up does not outweigh the computational costs. These results indicate that gradient-enhanced surrogates are beneficial primarily in problems where the number of parameters exceeds the output dimensionality, where reverse-mode differentiation is efficient.",
+   "authors": [
+    "\\v{S}imon Sold\\'at",
+    "V\\'aclav \\v{S}m\\'idl"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "高コストシミュレータのベイズ推論における勾配情報の活用",
+   "summary_ja": "微分方程式ベースの高コストシミュレータを用いたベイズ推論において、ガウス過程サロゲートモデルとベイズ最適化を組み合わせた能動学習手法を提案する。シミュレータ出力の勾配情報をサロゲートモデルに組み込むことで、限られた計算予算下での収束速度を大幅に向上させることを示した。逆モード微分を用いる場合、追加計算コストを考慮しても推論効率の向上が確認された一方、順モード微分ではコストに見合わない結果となった。パラメータ数が出力次元数を超える問題において、勾配強化サロゲートが特に有効であることが判明した。",
+   "relevance": 95,
+   "relevance_reason": "ガウス過程・ベイズ最適化・サロゲートモデルの高度な応用であり、関心領域と完全に一致"
+  },
+  {
+   "source": "arXiv",
+   "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+   "url": "https://arxiv.org/abs/2610.12449",
+   "summary": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a single input admits multiple equally valid solutions, violating the one-to-one assumption underlying most learned physical surrogates. We introduce Bi-FORK, a generative framework for learning these one-to-many solution maps in high-dimensional systems. Bi-FORK generates complete trajectories through latent flow matching, preserving space and time coherence, and uses repulsion-guided sampling to recover distinct solution branches in a single amortized pass. We evaluate Bi-FORK on buckling beams, mechanical metamaterials, and Allen-Cahn phase separation, spanning continuous, discrete, and field-valued bifurcations with discretizations up to 260,000 points. Bi-FORK recovers the multimodal solution structure while scaling several orders of magnitude beyond prior approaches, opening generative modeling to high-dimensional bifurcating physical systems.",
+   "authors": [
+    "Anna Zimmel",
+    "Fleur Hendriks",
+    "Markus Holzleitner",
+    "Florian Sestak",
+    "Martin Weichselbaumer",
+    "Vlado Menkovski",
+    "Johannes Brandstetter"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "Bi-FORK: 高次元分岐システムの生成モデリング",
+   "summary_ja": "対称性の破れによる分岐現象では、単一の入力に対して複数の有効解が存在するため、従来の1対1対応を前提とする物理サロゲートモデルでは扱いにくい。本論文は、潜在空間でのフローマッチングと反発ガイドサンプリングを用いることで、高次元システムにおける1対多の解マッピングを学習する生成フレームワーク「Bi-FORK」を提案する。バール梁の座屈、メカニカルメタマテリアル、Allen-Cahn相分離など、最大26万点の離散化を含む多様な物理システムで評価し、既存手法より桁違いに高い次元数でも多峰な解構造を再現できることを示した。",
+   "relevance": 95,
+   "relevance_reason": "高次元物理システムのサロゲートモデルと生成AIの融合であり、関心領域に直結"
+  },
+  {
+   "source": "arXiv",
+   "title": "AB-PIELMs: Adaptive-Basis Physics-Informed Extreme Learning Machines for Residual-Driven Domain Decomposition",
+   "url": "https://arxiv.org/abs/2610.11673",
+   "summary": "Physics-informed neural solvers often struggle with multiscale behavior and sharp gradients due to the use of global approximation spaces and nonconvex training. We introduce AB-PIELM, an adaptive-basis physics-informed extreme learning machine that combines domain decomposition with joint optimisation of spatial and spectral hyperparameters while retaining deterministic normal-equation training. The method adapts both the number and placement of subdomains and the locality of radial basis functions, enabling problem-dependent allocation of representational capacity without modifying the underlying solver. Experiments on oscillatory function approximation and singularly perturbed advection-diffusion equations demonstrate accurate solutions across a wide range of stiffness regimes while using substantially fewer neurons than existing neural and PIELM-based approaches. The learned hyperparameters are interpretable, concentrating resolution near sharp gradients. The framework also supports inverse problems, successfully recovering diffusion coefficients from sparse noisy observations using Bayesian optimisation. These results indicate that adaptive-basis PIELM formulations provide an efficient and stable alternative to gradient-trained neural PDE solvers and naturally extend to broader classes of differential equations.",
+   "authors": [
+    "Aldis Daniel",
+    "Vikas Dwivedi",
+    "Balaji Srinivasan"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate"
+   ],
+   "title_ja": "AB-PIELMs: 残差駆動型領域分割のための適応基底物理情報極限学習機械",
+   "summary_ja": "多スケール挙動や急峻な勾配を持つ物理方程式の解法として、適応基底物理情報極限学習機械（AB-PIELM）を提案する。領域分解と空間・周波数ハイパーパラメータの同時最適化により、解算器を変更せずに表現能力を問題依存型で配分する。振動関数近似や特異摂動拡散方程式において、既存のニューラルソルバーより少ないニューロン数で高精度な解を得ることを示した。さらにベイズ最適化を用いた逆問題への適用も成功し、勾配学習型ソルバーの効率的かつ安定した代替手段となることを実証した。",
+   "relevance": 95,
+   "relevance_reason": "物理情報ニューラルネットとベイズ最適化の組み合わせであり、ユーザーの関心と高度に一致する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning",
+   "url": "https://arxiv.org/abs/2610.10786",
+   "summary": "Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps. Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail. Effective agents must therefore not only generate plans, but also revise them. Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact. Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix. We introduce Plan-and-Patch, a plan-and-act framework in which a diffusion language model (dLLM) generates a structured, program-like plan through parallel unmasking and repairs it by filling in selected regions while keeping the surrounding steps fixed. We compare DreamReasoner-8B and Qwen3-8B as diffusion and autoregressive (AR) planners. On Natural Plan without task-specific training, diffusion (53.7%) achieves nearly twice the plan repair success rate of AR (27.0%). After task-specific training on agentic benchmarks, ALFWorld and TextCraft, the planners achieve similar observed success in plan generation, while diffusion reduces mean plan-generation latency by 39-46% relative to AR. Our results show that Plan-and-Patch provides a framework for faster plan generation and effective plan repair in long-horizon agents.",
+   "authors": [
+    "Syamantak Kumar",
+    "Jiang Guo",
+    "Hassan Hamad",
+    "Hideo Kobayashi",
+    "Yi Xiang",
+    "Yezhou Yang",
+    "Yanjun Qi",
+    "Daniele Bonadiman",
+    "Jiarong Jiang"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "Plan-and-Patch: エージェント型計画のための拡散言語モデル",
+   "summary_ja": "長期的なエージェントタスクにおける計画の修正効率を高めるための新フレームワーク「Plan-and-Patch」を提案する。拡散言語モデル（dLLM）を用いることで、計画の一部のみを条件付きで再生成し、前後の構造を維持したまま効率的に修正（パッチ）を行う。自己回帰モデルと比較し、計画修正の成功率が約2倍に向上し、タスク特化学習後は計画生成のレイテンシが39〜46%短縮されることを示した。",
+   "relevance": 95,
+   "relevance_reason": "LLMのエージェント設計と推論高速化の両方に直結する手法"
+  },
+  {
+   "source": "arXiv",
+   "title": "Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute",
+   "url": "https://arxiv.org/abs/2610.10845",
+   "summary": "A large language model can only use the text that fits in its context window, and it recomputes its internal key-value (KV) state for a prompt every time the prompt is sent. We test a memory layer, the public package galahad-kv, that saves the KV state of each block of about 16,000 tokens to encrypted local NVMe disk and loads it back later, byte-exact, without recomputing it. We ran it on 50,000,000 tokens of real public text, served through vLLM on one NVIDIA H100, with Gemma 4 12B and Gemma 4 31B. Every block we probed was loaded back from the encrypted store with no recompute (100 of 100, at depths from 0 to 50M tokens) on both models. Loading a block was 2.8x to 4.3x faster than recomputing it and used 8.8x to 12.3x less GPU energy, and GPU memory stayed flat over the whole 50M-token stream. Asked about facts planted millions of tokens earlier, the 12B model gave the right answer 82 times out of 100 and the 31B model 98 times out of 100. Neither model made up an answer. The limits are as follows. This is reuse of stored state, not a wider attention window: one block is loaded at a time, and how well a question is answered depends on the model. Writing the memory is a one-time cost, and the store takes terabytes of local NVMe disk. We describe the test protocol, which is built to resist common ways of gaming long-context benchmarks, and give a single-GPU reproduction that uses public software and a free licence for the package.",
+   "authors": [
+    "Sietse Schelpe"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "AIのための実用的な長期記憶：再計算よりも高速かつ低コストな5,000万トークンウィンドウ",
+   "summary_ja": "本論文は、LLMのKVキャッシュをローカルNVMeディスクに保存・復用することで、5,000万トークン規模の長期記憶を実現する手法「galahad-kv」を提案する。vLLMとNVIDIA H100を用いた実験では、ブロックの読み込みが再計算より2.8〜4.3倍高速、GPUエネルギー消費が8.8〜12.3倍低減され、GPUメモリ使用量は一定に保たれた。数百万トークン前の事実に関する質問に対し、12Bモデルは82%、31Bモデルは98%の正答率を示し、ハルシネーション（誤った回答）は確認されなかった。ただし、これは注意機構の拡張ではなく、保存状態の再利用であり、テラバイト級のストレージ容量を必要とする点に留意が必要である。",
+   "relevance": 95,
+   "relevance_reason": "LLM推論高速化・効率化・ハルシネーション対策の核心を突く"
+  },
+  {
+   "source": "arXiv",
+   "title": "KDFP: A first-principles approach to knowledge distillation in large language models",
+   "url": "https://arxiv.org/abs/2610.10854",
+   "summary": "Knowledge distillation is an established technique for improving the capabilities of small, efficient student models by training them with the representations of larger, more capable teacher models. Much of the recent work in the distillation of large language models (LLMs) has focused on distilling abilities learned during post-training, such as instruction following, chain-of-thought reasoning, and tool usage. This has left a large research gap in general knowledge distillation for LLMs, which is essential for developing efficient and private systems suitable for deployment on edge devices. We take a first-principles approach, evaluating previous lessons from prior works and conducting new explorations to develop a distillation methodology suitable for modern LLMs. We present KDFP, a novel methodology for white-box general knowledge distillation in LLMs. We demonstrate that KDFP outperforms existing methods by 1.6% $-$ 4.9% across 9 benchmarks while increasing training efficiency by up to 99.1% through ephemeral parameter reduction.",
+   "authors": [
+    "Ryan Swift",
+    "Konstantinos Psounis"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "KDFP: 大規模言語モデルにおける知識蒸留の第一原理アプローチ",
+   "summary_ja": "本論文は、大規模言語モデル（LLM）の汎用的な知識蒸留手法「KDFP」を提案する。既存の研究が後学習能力の蒸留に偏っている現状に対し、エッジデバイス向け的高效でプライベートなシステム構築に必要な一般知識の移転に焦点を当てる。第一原理に基づいた評価と探索により、9つのベンチマークで既存手法を1.6%〜4.9%上回り、一時的なパラメータ削減を通じて訓練効率を最大99.1%向上させることを示した。",
+   "relevance": 95,
+   "relevance_reason": "LLM効率化・蒸留・推論高速化の核心テーマに直結"
+  },
+  {
+   "source": "arXiv",
+   "title": "Compute-Constrained Safety Filters with Neuromorphic Event Triggering",
+   "url": "https://arxiv.org/abs/2610.10797",
+   "summary": "Safety filters that rely on control barrier function (CBF) quadratic programs (QPs) are typically analyzed under the assumption that the QP is solved instantaneously, although nonzero computation time can render a computed input unsafe by the time it is applied. This paper develops a dual leaky integrate-and-fire (LIF) event-triggered safety filter for linear systems that accounts for this delay. Two LIF states monitor a shifted CBF residual and the deviation of the held input from the nominal feedback law. A computation is initiated when either LIF state reaches its threshold; the previous input remains applied until the prescribed application time, and any solution returned earlier is stored until then. A closed-form charging profile relates the safety-LIF threshold to residual-growth bounds, ensuring sufficient residual margin over the application delay. Under the stated assumptions, the resulting hybrid system guarantees forward invariance, completeness, and non-Zeno execution, with positive lower bounds on computation-initiation and input-application times. A spacecraft terminal-approach simulation demonstrates safety with fewer optimizer calls than a delay-tightened periodic filter.",
+   "authors": [
+    "Tochukwu E. Ogri",
+    "Opeyemi Owolabi",
+    "Luke Fina",
+    "Christopher Petersen",
+    "Rushikesh Kamalapurkar"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "orbit",
+   "topics": [
+    "orbit"
+   ],
+   "title_ja": "ニューロモルフィックイベントトリガを用いた計算制約付きセーフティフィルタ",
+   "summary_ja": "制御バリア関数（CBF）に基づく二次計画（QP）の計算遅延を考慮し、線形系向けにデュアルリーキーインテグレート・アンド・ファイア（LIF）イベントトリガ型セーフティフィルタを提案する。LIF状態が閾値に達した際にのみ計算を開始し、前回の入力を適用時間まで保持することで、計算遅延による安全性の破綻を防ぐ。閉形式のチャージプロファイルにより閾値と残差増加の関係を定式化し、前進不変性や非ゼーノ実行を保証する。宇宙機のターミナルアプローチシミュレーションにおいて、遅延を厳密に考慮した周期的フィルタよりも少ない最適化呼び出し回数で安全性を確保することを示した。",
+   "relevance": 85,
+   "relevance_reason": "宇宙機軌道制御と計算効率化・ML手法の組み合わせ"
+  },
+  {
+   "source": "arXiv",
+   "title": "Informationally Decoupled Trajectory Design for Sim-to-Real System Identification",
+   "url": "https://arxiv.org/abs/2610.10905",
+   "summary": "Sampling-based system identification estimates physically meaningful parameters by tuning a simulator to reproduce the target system dynamics, providing an interpretable approach to improving sim-to-real transfer. Yet when the collected trajectories do not distinguish the effects of different parameters, multiple parameter combinations can reproduce those trajectories, leading to unreliable parameter estimates. To address this challenge, we introduce an Informationally Decoupled Trajectory Design framework (IDTD), which formulates the objective for the exploration policy built on the Schur complement score derived from the Fisher information matrix. To faithfully reflect parameter separability in the exploration objective, IDTD normalizes the score against the per-parameter information, selects the most favorable trajectory segment for each parameter, and aggregates the resulting scores logarithmically. The optimized trajectory is therefore composed of complementary intervals, each exposing a distinct subset of parameters whose contribution to the motion over that interval can be attributed unambiguously. Across diverse simulation environments, ranging from a linear-dynamics system to the Go2 quadruped, G1 humanoid, and Crazyflie quadrotor, IDTD reduces the parameter identification error by 39.6% on average relative to the strongest prior active-exploration baseline and attains improved downstream policy transfer. Furthermore, we validate the proposed trajectory design on a real K1 humanoid, demonstrating that the resulting identified parameters accurately capture the real-system dynamics.",
+   "authors": [
+    "Sangwoo Shin",
+    "Ashvin Anilkumar",
+    "Ryan Gao",
+    "Josiah P. Hanna"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "orbit",
+   "topics": [
+    "orbit"
+   ],
+   "title_ja": "シミュレーションから実機へのシステム同定のための情報的に分離された軌道設計",
+   "summary_ja": "本論文は、シミュレーションと実機間のギャップを埋めるためのシステム同定において、パラメータ間の影響が混在する問題を解決する「情報的に分離された軌道設計（IDTD）」フレームワークを提案する。フィッシャー情報行列から導出されるシュル補完スコアを用いて、各パラメータの効果を明確に分離できる探索軌道を最適化し、信頼性の高いパラメータ推定を実現する。四足歩行ロボットやヒューマノイドなど多様な環境での検証により、既存手法比で平均39.6%の同定誤差低減と、実機へのポリシー転移性能の向上を示した。",
+   "relevance": 85,
+   "relevance_reason": "軌道設計とシステム同定、シミュレーションから実機への転移を扱い、ユーザーの関心領域と高度に一致する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "How to post-train on a surrogate: Envelope sampling mitigates reward hacking",
+   "url": "https://arxiv.org/abs/2610.11281",
+   "summary": "Large language models (LLMs) are commonly post-trained against LLM judges and other cheap surrogates because the true reward, such as human preference, is too expensive to query at scale. This practice often leads to reward hacking, where reinforcement learning against a miscalibrated surrogate leads to undesirable side effects. In this work, we study a setting in which a small number $n$ of model outputs are annotated with ground-truth labels (e.g., from expert review) and used to recalibrate the LLM judge before optimizing against it. Prior approaches to judge recalibration are costly or heuristic, and it is known that on-policy sampling fails when the surrogate is miscalibrated on a rare set of outputs. In this work, we propose envelope sampling, a theoretically-grounded method for judge recalibration that seeks to minimize an upper bound on the regret of the post-trained model under the assumption that the human reward and re-calibrated reward lie in an $L^2$ ball around the judge. We give practical algorithms to sample from the envelope by rejection or by fine-tuning against a modified reward, and experiments on clinical note generation and on a controlled sycophancy task show that recalibrating on envelope samples mitigates reward hacking where recalibrating on base-model samples does not.",
+   "authors": [
+    "Sanjit Dandapanthula",
+    "Shuvom Sadhuka",
+    "Samir Khan",
+    "Michael Oberst",
+    "Aaditya Ramdas",
+    "Alexandra Chouldechova"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "llm",
+    "ml"
+   ],
+   "title_ja": "サロゲートを用いたポストトレーニング：エンベロープサンプリングによる報酬ハッキングの緩和",
+   "summary_ja": "LLMのポストトレーニングにおいて、安価なサロゲート（LLMジャッジ）に対する強化学習が引き起こす報酬ハッキング問題を解決する手法を提案する。少数の正解ラベルを用いてジャッジを再較正する際、従来のオンポリシーサンプリングではサロゲートの誤差が大きい場合に失敗する問題がある。本論文では、人間報酬と再較正報酬がL2球内に収まるという仮定のもと、後悔の上限を最小化する理論的に裏付けられた「エンベロープサンプリング」を提唱する。拒否サンプリングや修正報酬によるファインチューニングを実装し、臨床メモ生成や迎合性タスクにおいて、ベースモデルからのサンプリングより効果的に報酬ハッキングを抑制できることを実験で示した。",
+   "relevance": 85,
+   "relevance_reason": "LLM効率化・RAG/エージェント設計の文脈で、サロゲートモデル活用と評価手法の改善に直結する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "When KL Regularization Misfires in Group Policy Optimization",
+   "url": "https://arxiv.org/abs/2610.12161",
+   "summary": "Why does removing reference-policy KL regularization sometimes improve group policy optimization? This motivates studying how reference-policy information should enter group-relative updates. We analyze seven potential failure modes in the interactions between KL and rewards: residual KL updates after reward clipping, after gradient cancellation, and in groups with identical rewards; KL growth with response length and an imbalance in its relative contribution; KL concentration on a small number of tokens; and sampling noise when k1 is incorporated into rewards. We propose Zero-Sum Calibrated Policy Optimization (ZCPO), which uses relative drift measured by conditional KL to calibrate within-group reward coefficients and integrates them into the base surrogate. Mathematical reasoning experiments and ablations support this design's effectiveness in our settings.",
+   "authors": [
+    "Fei Ding"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "llm",
+    "ml"
+   ],
+   "title_ja": "グループポリシー最適化におけるKL正則化の誤動作について",
+   "summary_ja": "グループポリシー最適化（GPO）において、参照ポリシーとのKL正則化を除去することで性能が向上する現象のメカニズムを分析した。報酬クリッピングや勾配打ち消しなど、KL項と報酬の相互作用における7つの失敗モードを特定した。これらを解決するため、条件付きKLによる相対ドリフトを用いてグループ内の報酬係数を較正するZCPO（Zero-Sum Calibrated Policy Optimization）を提案した。数学推論タスクでの実験により、この設計の有効性が示された。",
+   "relevance": 85,
+   "relevance_reason": "LLMの強化学習（RLHF）手法の改善であり、推論性能向上に直結する"
+  },
+  {
+   "source": "arXiv",
+   "title": "A mesh-based neural energy method for the simulation of heterogeneous composites",
+   "url": "https://arxiv.org/abs/2610.10862",
+   "summary": "Modeling heterogeneous materials remains a challenge for physics-informed neural networks such as the deep energy method (DEM). The DEM and its variants, here collectively referred to as the neural energy method (NEM), offer a differentiable variational framework. However, their conventional collocation-based implementation (C-NEM) often suffers from physically inadmissible displacement oscillations, integration errors, and high computational costs from automatic differentiation. This work introduces the mesh-based neural energy method (M-NEM), extending the NEM through a mesh-based discretization of the displacement field. By interpolating nodal displacements via shape functions, the M-NEM imposes a kinematic constraint that suppresses oscillations. Furthermore, the method replaces automatic differentiation with algebraic shape function derivatives for strain computation and employs high-order Gaussian quadrature for accurate energy integration. On a directly comparable benchmark problem, the M-NEM reduces stress errors by up to three orders of magnitude relative to the C-NEM while being one to two orders of magnitude faster. On two further benchmarks involving extreme stiffness contrasts, only the M-NEM converges. A comparative study of neural architectures reveals that radial basis function neural networks (RBFNNs) yield optimal performance within the M-NEM, resolving sharp gradients at material interfaces with higher accuracy than multi-layer perceptrons (MLPs) with random Fourier feature (RFF) mapping and faster convergence than Kolmogorov-Arnold networks (KANs).",
+   "authors": [
+    "Pius J. M. Wichmann",
+    "Stefan Hildebrand",
+    "Sandra Klinge"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "異種複合材料のシミュレーションのためのメッシュベース神経エネルギー法",
+   "summary_ja": "物理情報ニューラルネット（PINN）の一種である神経エネルギー法（NEM）において、従来の配置点ベース手法が持つ振動や計算コストの問題を解決するため、メッシュベースの離散化を導入したM-NEMを提案する。形状関数による運動学制約と高次ガウス数値積分を用いることで、応力誤差を最大3桁低減し、計算速度を1〜2桁向上させた。さらに、RBFニューラルネットがMLPやKANよりも材料界面の急峻な勾配を高精度かつ高速に解決できることを示した。",
+   "relevance": 85,
+   "relevance_reason": "PINNとサロゲートモデルの効率化・精度向上に直結する手法"
+  },
+  {
+   "source": "arXiv",
+   "title": "Gen-PINNs: Generative Adversarial Physics Informed Neural Networks for solving partial differential equations",
+   "url": "https://arxiv.org/abs/2610.10897",
+   "summary": "Physics-Informed Neural Networks (PINNs) are a widely used data-free method for solving Partial Differential Equations (PDEs) using machine learning. With recent advances in Generative Adversarial Networks (GANs), adversarial learning has shown strong capabilities for modeling complex data-driven problems; however, the use of GANs in deterministic physics-informed PDE solutions remains limited. In this work, we first identify limitations of standard PINNs for solving PDEs, including spectral bias, loss imbalance, and optimizer stagnation. We then propose Generative Adversarial Physics-Informed Neural Networks (Gen-PINNs), a unified deterministic residual-adversarial framework designed to improve data-free solutions of PDEs with sharp or shock-front behavior. The generator learns the underlying PDE solution using dynamically weighted physics-informed loss components, while separate discriminators evaluate complementary PDE residual features against ideal zero-residual states. The framework further develops and adapts several methodological components, including a Fourier representation for resolving high-frequency spatial content, an orthonormal spectral diagnostic for quantifying frequency-dependent solution errors, and a modified gradient-based dynamic weighting system for physics, initial-condition, boundary-condition, and adversarial loss objectives. Gen-PINNs is tested against standard PINNs on nonlinear and higher-order PDEs, including the Burgers, Allen-Cahn, and Kuramoto-Sivashinsky equations. The results demonstrate substantial improvements in accuracy and convergence across sharp-front, stiff, and higher-order PDE solutions, highlighting the potential of deterministic residual-adversarial learning as an effective approach for solving challenging nonlinear PDEs.",
+   "authors": [
+    "Muhammad M. Akmal",
+    "Kamy Sepehrnoori",
+    "Michael J. Pyrcz"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "Gen-PINNs: 偏微分方程式の解法における生成敵対物理情報ニューラルネットワーク",
+   "summary_ja": "本論文は、物理情報ニューラルネットワーク（PINNs）のスペクトルバイアスや損失バランスの問題を解決するため、GANの敵対的学習を統合したGen-PINNsを提案する。生成器が動的に重み付けされた物理損失でPDE解を学習し、識別器が残差特性を評価する枠組みにより、急峻なフロントや高周波成分を持つ非線形PDE（Burgers, Allen-Cahn, Kuramoto-Sivashinsky方程式など）の解法精度と収束性を大幅に向上させた。",
+   "relevance": 85,
+   "relevance_reason": "物理情報ニューラルネットという関心領域に直結し、PDE解法の高速化・精度向上に寄与する手法であるため。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Optimal Control of Dynamic Gas Networks Using Gaussian Processes with Chance-Constraint Reformulation",
+   "url": "https://arxiv.org/abs/2610.10963",
+   "summary": "Natural gas networks must accommodate variable demand and supply while maintaining pressure across pipelines whose stored gas couples operating decisions through time. Probabilistic surrogates can simplify compressor scheduling, but their predictive uncertainty must remain reliable where optimization uses it. We combine direct learning of the minimum pressure margin with assessment at optimizer-selected schedules. Using a warped Gaussian process, we express the posterior pressure requirement as one inequality in its predictive mean and standard deviation. We then parameterize block and Fourier schedules so scalar predictions and analytic derivatives replace trajectory states and time integration in whole-day optimization. In steady state, a surrogate that passes held-out accuracy and coverage checks nevertheless falls below the minimum pressure on 71% of its own dispatches at a nominal 1% tolerance, as the optimizer is drawn to schedules where the margin is overestimated. This diagnostic motivates an enrichment loop that audits selected dispatches against the physics and updates the surrogate by exact conditioning, with fitted quantities held fixed. The loop restores steady-state minimum-pressure risk control at every studied tolerance, with conditioning about four orders of magnitude faster than refitting. In transient operation, we complement this enrichment with empirical threshold calibration to address residual hourly optimism, bringing hourly violation rates closer to their declared tolerances with little compressor work overhead.",
+   "authors": [
+    "Taiwo A. Adebiyi",
+    "Robert Ferrando",
+    "Manuel Garcia",
+    "Ruda Zhang",
+    "Saif R. Kazi",
+    "Kaarthik Sundar"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "チャンス制約再定式化を用いたガウス過程による動的ガスネットワークの最適制御",
+   "summary_ja": "ガスネットワークの圧力制御において、ガウス過程（GP）によるサロゲートモデルとチャンス制約の再定式化を組み合わせ、最適化計算を高速化する手法を提案する。GPの予測不確実性を不等式として表現し、ブロックおよびフーリエスケジュールのパラメータ化により、時間積分を伴う従来の最適化をスカラー予測と解析的導関数による計算に置き換える。さらに、最適化器がサロゲートの過大評価を利用するリスクを低減するため、物理法則との照合と厳密条件付けによるサロゲート更新ループを導入し、定常状態および過渡状態における圧力違反率を許容範囲内に抑えることを示した。",
+   "relevance": 85,
+   "relevance_reason": "ガウス過程とサロゲートモデルによる最適化高速化が関心に直結"
+  },
+  {
+   "source": "arXiv",
+   "title": "Transferability of Learned States in Neural PDE Solvers",
+   "url": "https://arxiv.org/abs/2610.10972",
+   "summary": "Assessing useful reuse in neural PDE solvers is challenging: final accuracy can reflect source learning and target-time computation. Our reuse contract separates solution accuracy, learning contribution, and numerical utility through paired state comparisons, matched target information and budgets, and cost accounting. A literature audit extracts 18 version-specific protocol records from 12 papers, documenting retained states, target-time resources, and reported controls. For a fixed linear system and residual tolerance, we construct two initial guesses with identical solution-error, energy-error, and residual norms, reaching the same solution with different conjugate-gradient (CG) iteration counts. Across 240 source-training trajectories, two linear PDE families, Fourier neural operators and convolutional networks, a fixed predictor's benefit reverses across correction algorithms. Among pairs with both relative prediction errors less than or equal to 5 percent on 64 in-distribution tasks (63 by 63 interior grids), reductions in all three norms accompany more CG iterations, at mean taskwise rates of 23.5 percent and 23.9 percent in two libraries. Work-based selection saves 2.50-3.33 CG iterations on held-out in-distribution tasks; matched adaptation demonstrates finite-budget pretraining value. Independent batches confirm a 0.73 percent complete online saving for one physics-trained Fourier neural operator against zero-initialized Poisson-preconditioned CG. Reuse requires matched state comparisons and downstream computational evidence.",
+   "authors": [
+    "Shunye Wang",
+    "Haochen Wen",
+    "Shuo Li Liu",
+    "Xuanyi Wang",
+    "Lihao Liu",
+    "Zhongying Deng"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "ニューラルPDEソルバにおける学習済み状態の転移可能性",
+   "summary_ja": "ニューラルPDEソルバの再利用性を評価するため、解の精度、学習の寄与、数値的有用性を分離する再利用契約を提案する。線形システムにおいて、同じ誤差ノルムを持つ異なる初期推定値を用いた共役勾配法（CG）の反復回数比較を通じて、予測器の利点が補正アルゴリズムによって逆転することを示した。240の学習軌跡と2つのPDEファミリーを用いた実験では、ワークベース選択によりCG反復回数を2.50〜3.33回削減できることを確認した。この研究は、状態の比較と下流計算のエビデンスが再利用の鍵であることを示している。",
+   "relevance": 85,
+   "relevance_reason": "ニューラルオペレータとPDE解法の効率化・再利用に直結する"
+  },
+  {
+   "source": "arXiv",
+   "title": "Cova-PINN: Cross-Domain Conservation Physics-Informed Neural Network for Fluid-Solid Conjugate Heat Transfer in Complex Geometries",
+   "url": "https://arxiv.org/abs/2610.11108",
+   "summary": "Multi-domain physics-informed neural networks (PINNs) flexibly model medium-specific representations to solve fluid--solid conjugate heat transfer (CHT). However, standard multi-domain PINNs enforce governing equations and interface conditions on separately sampled domain supports, which can yield plausible temperature fields but inaccurate end-to-end energy transfer and outlet temperatures. We propose Cova-PINN, a multi-domain PINN framework that aligns conservation support with thermal interaction paths in complex geometries. Cova-PINN jointly optimizes cross-domain composite control-volume balances at the local scale and paired-wall closure at the global exchanger scale. We evaluate Cova-PINN on four triply periodic minimal surface (TPMS) heat exchangers and a geometrically distinct DualMS design against CHT-specific, optimization-oriented, and complex-geometry PINN baselines under a common protocol. Relative to the closest baseline, MUSA-PINN-CHT, Cova-PINN reduces average outlet-temperature and device-level closure errors across the four TPMS topologies by $37.7\\%$ and $60.2\\%$, respectively, while also improving full-field and heat-duty accuracy, with consistent gains on DualMS.",
+   "authors": [
+    "Weizheng Zhang",
+    "Xunjie Xie",
+    "Hao Pan",
+    "Lin Lu"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "Cova-PINN: 複雑な形状における流体-固体共役熱伝導のためのクロスドメイン保存則物理情報ニューラルネットワーク",
+   "summary_ja": "本論文は、複雑な幾何学形状における流体-固体共役熱伝導（CHT）を解くための新しい物理情報ニューラルネットワーク（PINN）フレームワーク「Cova-PINN」を提案する。従来のマルチドメインPINNが個別にサンプリングされた領域で支配方程式を強制するため、エネルギー保存則や出口温度の精度が低下する問題を指摘し、局所的な複合制御体バランスとグローバルな壁面閉合条件を同時に最適化する手法を導入した。三重周期最小表面（TPMS）ヒートエクチェンジャーなどの4つの複雑な形状で評価を行い、既存のベースラインと比較して出口温度およびデバイスレベルの閉合誤差を大幅に低減できることを示した。",
+   "relevance": 85,
+   "relevance_reason": "物理情報ニューラルネット（PINN）の手法改良であり、ユーザーの関心領域に直接該当する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Data-Driven Free-Energy Learning from Trajectories via Structure-Preserving Exponential Time Differencing",
+   "url": "https://arxiv.org/abs/2610.11931",
+   "summary": "Structure-preserving numerical methods for gradient flows have been extensively developed when the governing equations and free energies are known. However, accurately predicting dynamics from observational data while preserving intrinsic physical properties remains challenging. Although neural operators, such as Fourier neural operators (FNOs), provide powerful data-driven approximations, their predictions do not inherently guarantee physical structure preservation. To address this challenge, we integrate deep learning with structure-preserving exponential time differencing (ETD) methods. Instead of directly learning the evolution operator, we introduce a *trajectory-inferred free energy* (TIFE), which reconstructs the unknown energy density from observed trajectories through a Duhamel-based learning framework. The learned energy determines the variational force and stabilization parameter, enabling structure-preserving numerical evolution. We further extend the framework to jointly identify the free energy and diffusion coefficient. Under suitable assumptions, we establish the maximum-bound principle, unconditional dissipation of the original learned energy, and error estimates incorporating discretization and inference errors. Numerical experiments demonstrate accurate energy recovery and reliable long-time predictions.",
+   "authors": [
+    "Wenshuai Hu",
+    "Guanghua Ji",
+    "Xiao Li"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "構造保存型指数時間差分法を用いた軌道からのデータ駆動型自由エネルギー学習",
+   "summary_ja": "観測データから物理的構造（エネルギー散逸など）を保持しながらダイナミクスを予測する手法を提案する。Fourier Neural Operator (FNO) などのニューラルオペレータが物理構造を保証しない問題に対し、Duhamel 積分に基づく学習フレームワークで未知の自由エネルギー密度を再構成する。学習されたエネルギーから変分力と安定化パラメータを決定し、構造保存型の数値進化を行う。数値実験により、エネルギーの正確な復元と長時間予測の信頼性を示した。",
+   "relevance": 85,
+   "relevance_reason": "ニューラルオペレータと物理情報（構造保存）の融合であり、サロゲートモデルの精度向上に直結する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "A neural characteristic mapping method: Lagrangian PINNs based on flow maps for transport-dominated problems",
+   "url": "https://arxiv.org/abs/2610.12395",
+   "summary": "We propose a novel numerical method for transport-dominated problems using Physics-Informed Neural Networks (PINNs). In such problems, the solution can develop large gradients and fine structures over time. This is particularly challenging for classical PINNs, which represent the solution itself. In our approach, rather than the solution, we choose to approximate the flow map of the equation. The solution is then recovered by pulling back the exact initial condition, so that its fine structures are produced by the map rather than represented by the network. Our method is constructed by approximating the flow map of the equation with multiple PINNs, one per time subinterval, and composing them using the semigroup property of the flow, so that each network only has to represent a map close to the identity. To highlight the advantages of our method compared to classical PINNs or classical numerical schemes, we present numerical results on the linear advection equation, the incompressible Euler equation in vorticity formulation, the Vlasov-Poisson equation, and finally a drift-kinetic equation.",
+   "authors": [
+    "Martin Campos Pinto",
+    "Victor Fournet",
+    "Emmanuel Franck",
+    "Philipp Krah",
+    "Victor Michel-Dansac"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "神経特性写像法：輸送支配問題のためのフローマップに基づくラグランジュ型PINN",
+   "summary_ja": "輸送支配問題における急峻な勾配や細かな構造を捉えるため、解そのものではなくフローマップ（流線写像）を近似する新しい物理情報ニューラルネットワーク（PINN）手法を提案する。時間区間ごとに近似的恒等写像を表現する複数のPINNを合成し、初期条件を正確に保ちながら解を復元することで、従来のPINNや数値スキームの限界を克服する。線形移流方程式、不可圧オイラー方程式、Vlasov-Poisson方程式、ドリフト運動方程式に対する数値実験で、既存手法と比較して優位性を示した。",
+   "relevance": 85,
+   "relevance_reason": "物理情報ニューラルネット（PINN）の応用であり、ユーザーの関心領域に直接該当する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Reconstruction of Multiscale Plasma Dynamics Across Operating Regimes",
+   "url": "https://arxiv.org/abs/2610.11004",
+   "summary": "Reconstructing spatially resolved plasma dynamics from few sensors is essential for diagnostics, reduced-order modelling and control, yet remains difficult because the sparse measurements incompletely constrain multiscale, regime-dependent degrees of freedom. The Shallow Recurrent Decoder (SHRED) partially addresses spatial sparsity by using measurement histories; however, its fully connected decoder provides no explicit mechanism for resolving spatial structure across scales or explicit parametric dependency. We introduce the Recurrent Multiscale Affine-modulated Inference Network (ReMAIN), which preserves SHRED's recurrent temporal encoding but replaces its decoder with a U-Net whose feature hierarchy is conditioned by the recurrent state through feature-wise linear modulation. The temporal representation supplies both a dense prior and scale-specific modulation throughout the U-Net. A parametric extension jointly embeds the operating condition and sensor history, enabling reconstruction to adapt as the governing dynamics change with operating regime. ReMAIN is first benchmarked against SHRED on six one-dimensional nonlinear PDEs representing diverse dynamics. Across all benchmarks, it reduces reconstruction errors on unseen trajectories and more faithfully resolves sharp transitions, localized extrema and fine-scale variations. The parameter-conditioned model is then demonstrated on a collisionless $E \\times B$ plasma subject to perpendicular axial electric and radial magnetic fields, with the electric-field strength serving as the operating parameter. ReMAIN reconstructs the high-dimensional, multiscale plasma state and recovers its regime-dependent spatiotemporal dynamics at electric-field strengths withheld from training. Together, ReMAIN improves sparse-sensor full-state reconstruction and, through parameter conditioning, generalizes across plasma operating regimes.",
+   "authors": [
+    "Maryam Reza",
+    "Farbod Faraji"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "運転状態をまたぐマルチスケールプラズマダイナミクスの再構築",
+   "summary_ja": "本論文は、少数のセンサーデータから空間的に解決されたプラズマダイナミクスを再構築するための新しい深層学習モデル「ReMAIN」を提案する。既存手法SHREDの再帰的時間エンコーディングを維持しつつ、デコーダーをU-Netに置き換え、再帰状態による特徴量ワイズ線形モジュレーションを通じてマルチスケール構造を明示的に処理する。さらに、運転条件（パラメータ）を埋め込むことで、支配的なダイナミクスが変化する異なる運転状態間でも汎用性を確保する。非線形偏微分方程式のベンチマークおよび衝突なしプラズマのシミュレーションにおいて、見知らぬ軌道や未学習の電界強度に対する再構築精度と、急峻な遷移や微細スケール変動の再現性が向上することを示した。",
+   "relevance": 85,
+   "relevance_reason": "縮約モデル・サロゲートモデルの高度な設計と物理系への適用が関心に合致"
+  },
+  {
+   "source": "arXiv",
+   "title": "Fast Angular Sweep Monostatic Radar Cross Section Computation via Model Order Reduction",
+   "url": "https://arxiv.org/abs/2610.10917",
+   "summary": "The radar cross section (RCS) is a fundamental parameter in radar engineering, as it determines the detectability of a given target by a radar system. Increasing interest in very low observability (VLO) targets has arisen recently. As a result, especial effort is put in developing numerical tools to accurately predict the electromagnetic scattering from perfect electric conductor objects. Integral equation methods are commonly used in this task. However, full-wave computation of the monostatic RCS at a single angle can be rather time-consuming, nevermind computing the RCS in a specific angular interval with a fine sampling. In fact, this is what is needed in industrial applications. A reduced-order model for fast full-wave monostatic RCS evaluation is proposed to easily achieve fine details in the desired angular domain. An open source integral equation solver, taken into account as a black box, is used to get the electromagnetic scattering in non-penetrable objects at some specific incident angles. Several radar targets will show the possibilities and capabilities of these model order reduction approaches.",
+   "authors": [
+    "Noelia Naranjo",
+    "Valentin de la Rubia"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate"
+   ],
+   "title_ja": "モデルオーダーレダクションによる高速な角度スウィープ単一基地レーダー断面積計算",
+   "summary_ja": "レーダー断面積（RCS）の高精度予測に用いられる積分方程式法は、広い角度範囲での計算に多大な計算時間を要する問題がある。本論文では、この計算負荷を軽減するため、モデルオーダーレダクション（縮約モデル）手法を用いた高速なフルウェーブ単一基地RCS評価手法を提案する。オープンソースの積分方程式ソルバーをブラックボックスとして利用し、特定の入射角での電磁散乱データを取得して縮約モデルを構築する。複数のレーダーターゲットを用いた検証により、所望の角度領域で詳細な特性を高速に再現できることを示している。",
+   "relevance": 85,
+   "relevance_reason": "縮約モデルによる物理シミュレーション高速化は、ユーザーの関心であるサロゲートモデルと軌道計算高速化の手法論と強く関連する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "A Physics-Informed Collision Learning Framework for Collaborative Robot Motion Generation",
+   "url": "https://arxiv.org/abs/2610.12404",
+   "summary": "Close-proximity multi-arm manipulation requires collision models that are both geometrically accurate and differentiable enough for real-time optimization. Classical geometry checkers provide reliable distances but are difficult to use inside gradient-based model predictive control, while conservative proxy models can restrict tightly coupled motion. We present PI-UDF, a physics-informed unified differentiable framework for body-to-body collision distance prediction between articulated robots. PI-UDF combines analytical forward kinematics with learnable link-geometry embeddings and a shared residual network to predict pairwise inter-arm distances directly from robot configurations. To improve safety-critical fidelity, we combine quota-driven boundary mining with an asymmetric boundary-crossing penalty that emphasizes false-safe sign errors near the collision boundary. The learned distance field is integrated into nonlinear MPC as a differentiable inter-arm clearance term. We validate the framework on a real dual-Franka platform through high-speed close-proximity 14-DoF dual-arm swapping, sustained single-arm dynamic evasion, and dynamic-evasion planning configurations with frozen, predicted, and target-switching treatments of the moving arm. Hardware experiments and offline Drake/FCL replay show that PI-UDF provides a differentiable inter-arm clearance estimate suitable for closed-loop collision-aware collaborative robot motion generation.",
+   "authors": [
+    "Chen Cai",
+    "Steven Liu"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate"
+   ],
+   "title_ja": "協調ロボット運動生成のための物理情報衝突学習フレームワーク",
+   "summary_ja": "本論文は、多関節ロボットの衝突距離予測を微分可能かつ高精度に行うための物理情報ニューラルネットワーク（PI-UDF）を提案する。解析的前方運動学と学習可能なリンク幾何埋め込みを組み合わせ、ロボット構成から直接ペアワイズ距離を予測する。安全クリティカルな精度向上のため、境界付近の誤検知を抑制する非対称ペナルティを導入し、この学習済み距離場を非線形MPCに統合することでリアルタイムの衝突回避制御を実現した。実機実験により、高速な近接操作における有効性が検証されている。",
+   "relevance": 85,
+   "relevance_reason": "物理情報ニューラルネットと制御最適化の融合であり、手法の応用可能性が高い"
+  },
+  {
+   "source": "arXiv",
+   "title": "Freeze the Decoder, Heal the Encoder: Parameter-Efficient Adaptation for SVD-Based KV-Cache Compression",
+   "url": "https://arxiv.org/abs/2610.10552",
+   "summary": "Comparing parameter-efficient fine-tuning recipes under a single, shared learning rate is a common but flawed practice: when the arms being compared have very different trainable-parameter counts, a shared rate can simultaneously depress the larger arms' means and inflate their variance, manufacturing a large, seemingly multi-seed-significant advantage for the smallest arm that is not a real effect. We document this confound in a concrete setting: post-hoc SVD-based KV-cache compression, where an already-pretrained model is converted to a low-rank (multi-head-latent-attention-style) cache by factorizing its key/value weights into a down-projection (\"encoder\") and an up-projection (\"decoder\"), after which a short fine-tune (\"healing\") recovers the accuracy lost to truncation. Under a shared learning rate, freezing the decoder and healing only the encoder looks like a clear win over healing the decoder or both factors; once every arm is given its own tuned learning rate, that apparent advantage disappears, and encoder-only healing instead reaches parity with the alternatives, at a real, measured saving of 3x fewer trainable parameters and 3x less optimizer-state memory. We verify this parity with per-arm learning-rate tuning and three seeds per configuration on a vision-language model (Qwen2.5-VL-3B-Instruct), at the one compression ratio this protocol covers, and replicate it on a text-only testbed across two backbones. Encoder-only healing is therefore a lower-memory drop-in recipe for retrofitting low-rank KV-cache compression at training time, and the shared-learning-rate pitfall we document and correct is a cautionary result for comparing any fine-tuning recipes whose arms differ in trainable-parameter count.",
+   "authors": [
+    "Yufeng Wang"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "デコーダーを凍結しエンコーダーを修復する：SVDベースのKVキャッシュ圧縮のためのパラメータ効率適応",
+   "summary_ja": "SVDを用いたKVキャッシュ圧縮後の精度回復（ヒーリング）において、学習率の共有が比較結果を歪める問題を実証した。デコーダーを固定しエンコーダーのみを調整する手法は、個別に学習率をチューニングすることで、他の手法と同等の性能を維持しつつ、学習可能パラメータとオプティマイザ状態メモリを3分の1に削減できることを示した。この結果は、学習可能パラメータ数が異なる手法間の比較において、共通の学習率を使用することの危険性を警告するものである。",
+   "relevance": 85,
+   "relevance_reason": "LLM推論高速化とKVキャッシュ圧縮の効率化に直結する手法"
+  },
+  {
+   "source": "arXiv",
+   "title": "Coverage, Not Difficulty, Sets How Much Synthetic Data an Activation Probe Needs",
+   "url": "https://arxiv.org/abs/2610.10594",
+   "summary": "Activation probes that monitor deployed language models are trained on synthetic conversations, and how many a probe needs is open. We trace learning curves over 10-590 synthetic samples for three monitoring concepts, high-stakes situations, replies harmful to a person, and replies that do not follow the user's instruction, on fourteen held-out evaluation distributions and four probe models, varying the generator LLM and the prompt's detail. The need is set by what is monitored: probes for high-stakes and harmful are within a few hundredths of their plateau from 80 samples on Gemma-3-27B-IT, instruction probes need several times as many, and the ordering holds on three smaller probe models and on real samples (from dev set). Prior work advises spending a generation budget on breadth, more kinds of data, over depth, more of each kind. We read the depth a concept needs as the half-gain size of a fitted curve, the number of samples at which half the gain is in hand. Concept and distribution account for 42-45% of its variance, the generator, probe model, and prompt detail for under 10%. What sets the value of the half-gain size is coverage, not per-kind difficulty: the number of samples of its own kind a distribution needs to saturate. Every kind, one per evaluation distribution, has a median half-gain size of 7-11 own-kind synthetic samples under all three concepts alike. What differs is how far samples of one kind transfer to the concept's other kinds, almost fully under high-stakes, less under harmful, and least under instruction, which accounts for most of the gap between concepts on generated and real samples. Breadth therefore pays differently by concept: many kinds are necessary under instruction, where no kind covers another, and nearly redundant under high-stakes, where one kind covers the rest. We release the evaluation suites, dev sets, and generated sets.",
+   "authors": [
+    "Ankush Checkervarty"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "アクティベーションプローブに必要な合成データ量は、難易度ではなくカバレッジが決定する",
+   "summary_ja": "本論文は、LLMの監視用アクティベーションプローブを訓練する際に必要な合成データ量を分析したものである。14種の評価分布と4種のプローブモデルを用いた実験により、必要データ量は監視対象概念のカバレッジ（多様性）によって決まり、個々のデータ種の難易度よりも重要であることが示された。特に、指示追従性の監視ではデータ種の多様性が不可欠である一方、高リスク状況の監視では少量のデータで飽和しやすい傾向がある。この知見は、合成データ生成時の予算配分戦略に直接的な示唆を与える。",
+   "relevance": 85,
+   "relevance_reason": "LLMの監視・評価手法とデータ効率化に関わるため"
+  },
+  {
+   "source": "arXiv",
+   "title": "Recurrent Self-Improvement: Dynamic Cross-Loop On-Policy Distillation for Looped Language Models",
+   "url": "https://arxiv.org/abs/2610.10623",
+   "summary": "Looped Language Models (LoopLMs) offer a parameter efficient approach to scaling reasoning by reusing shared parameters across recurrent computation steps. Despite their promise, effective post-training of LoopLMs remains challenging. Existing approaches either provide reward based supervision that is sparse or costly to extend across loops, or rely on external teachers or privileged information, leading to limited teacher availability or teacher-student context mismatch. To address these limitations, we introduce LoopOPD, a cross-loop on-policy distillation framework that uses additional recurrent computation within a LoopLM as its own source of supervision. LoopOPD uses a frozen terminal loop policy as a compute privileged teacher for an intermediate loop student on student generated rollouts, providing dense supervision without an external teacher or privileged information. We further propose Dynamic LoopOPD (D-LoopOPD), which continually refreshes the terminal loop teacher as the shared model parameters are updated, enabling recurrent self-improvement. We characterize how distillation updates propagate across loop depths and derive sufficient conditions under which a single update yields simultaneous local improvement at both loop depths. Experiments on Ouro-Thinking models show that LoopOPD improves mathematical reasoning, while D-LoopOPD yields further gains through dynamic teacher updates. Despite being trained only on mathematical data, the resulting models also improve on general reasoning and code generation benchmarks, demonstrating that recurrent computation can serve as an effective source of supervision for LoopLMs. Our code and model checkpoints will be released upon acceptance.",
+   "authors": [
+    "Yi Wang",
+    "Rui Qian",
+    "Yu Li",
+    "Haoyang Yao",
+    "Wenjie Wang"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "再帰的自己改善：ループ型言語モデルのための動的クロスループ・オンポリシー蒸留",
+   "summary_ja": "ループ型言語モデル（LoopLMs）の効率的な後学習を目的とし、外部教師モデルに依存しない自己蒸留フレームワーク「LoopOPD」を提案する。この手法は、モデル自身の最終ループの計算結果を教師信号として利用し、中間ループの学習に密な監督を与えることで、計算リソースを効率的に活用する。さらに、共有パラメータの更新に応じて教師モデルを動的に刷新する「D-LoopOPD」により、再帰的な自己改善を実現する。数学推論タスクでの実験により、この手法が推論能力を向上させ、一般推論やコード生成にも転移効果があることを示した。",
+   "relevance": 85,
+   "relevance_reason": "LLMの推論効率化と自己改善手法であり、ユーザーの関心と高度に一致する。"
+  },
+  {
+   "source": "arXiv",
+   "title": "D-SLR: The Disjoint Row-Sparse plus Low-Rank Decomposition",
+   "url": "https://arxiv.org/abs/2610.10636",
+   "summary": "Compressing a matrix for reconstruction still defaults to the truncated SVD, approximating the data with a single low-rank structure. It is common to reduce the residual further by adding an overlapping row-sparse component, but methods that solve this joint problem often require iterative solvers and tuning of regularization parameters. We propose the Disjoint Row-Sparse plus Low-Rank (D-SLR) decomposition, a closed-form drop-in for the truncated SVD that improves or exactly matches it. D-SLR restricts rows to either being stored verbatim or approximated by the low-rank fit, never both. Under squared error this restriction costs nothing: the joint optimum is attainable disjointly with fewer parameters at every non-trivial rank and stored row count (shape). With zero stored rows D-SLR reduces to the truncated SVD, so it never does worse at equal cost. The algorithm scores the entire error-versus-parameters tradeoff, and the solution is chosen afterwards by a supplied error target or parameter count, or by a selection rule. The grid and solution together cost three SVDs, with no tuning or regularization. We derive an assumption-free, a-posteriori lower bound on the error at every shape, giving each solution a computable certificate on the potential gain of any other choice of rank and stored rows. Experiments on synthetic and real data (LLM embedding tables, network traffic, hyperspectral images) confirm the gains and quantify the certificate.",
+   "authors": [
+    "Vincent Szolnoky"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "D-SLR: 非交差行スパースと低ランク分解",
+   "summary_ja": "本論文は、行列圧縮における従来の截断SVDと行スパース成分の組み合わせ問題を、反復計算や正則化パラメータ調整なしで解くための閉形式アルゴリズム「D-SLR」を提案する。各行をそのまま保存するか低ランク近似で表現するかの二択を強制することで、パラメータ数に対して誤差が最小となる解を効率的に導出する。LLM埋め込みテーブルやネットワークトラフィックなどの実データ実験において、既存手法以上の性能と、他の選択に対する誤差の事後下界（証明書）を提供することを示した。",
+   "relevance": 85,
+   "relevance_reason": "LLM埋め込みの圧縮と推論効率化に直結する手法"
+  },
+  {
+   "source": "arXiv",
+   "title": "Nullify: Null-Space Activation Steering for Training-Free LLM Unlearning",
+   "url": "https://arxiv.org/abs/2610.10655",
+   "summary": "Large Language Models (LLMs) inevitably internalize substantial amounts of sensitive or private information during pre-training, while LLM unlearning aims to selectively erase specific knowledge to prevent privacy leakage with minimal loss of model utility. However, existing methods struggle to balance forget quality with utility, and typically incur substantial computational costs due to parameter fine-tuning. To address this, we propose Nullify, a training-free, non-destructive activation steering method for LLM unlearning. Nullify employs steering vectors during inference to redirect privacy-related activations away from their memorized answers, while satisfying a null-space constraint that leaves retained-query activations essentially unaffected to maintain utility. Evaluations on TOFU and MUSE show that Nullify matches or surpasses established baselines in forget quality while achieving near-lossless preservation of model utility. By avoiding weight updates entirely, Nullify serves as an efficient, plug-and-play inference-time intervention framework.",
+   "authors": [
+    "Wei Zhai",
+    "Xiang Liu",
+    "Qiang Huang",
+    "Rui Qian",
+    "Lemao Liu",
+    "Ziwei Li",
+    "Ziqi Wang",
+    "Zhitao Huang",
+    "Dejing Dou"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "Nullify: 学習不要なLLM忘却のためのヌル空間活性化ステアリング",
+   "summary_ja": "本論文は、大規模言語モデル（LLM）の機微な知識を削除する「LLM忘却」において、重みの更新を伴わない推論時の活性化ステアリング手法「Nullify」を提案する。ヌル空間制約を用いることで、プライバシー関連の活性化を逸らしつつ、保持すべき知識への影響を最小限に抑える。TOFUおよびMUSEベンチマークでの評価により、既存手法と同等以上の忘却品質と、ほぼ損失のないモデル有用性の維持を同時に実現することを示した。重み更新を不要とするこのプラグアンドプレイ型フレームワークは、計算コストを大幅に削減しつつ効率的な知識管理を可能にする。",
+   "relevance": 85,
+   "relevance_reason": "LLMの推論効率化・評価手法・実務応用への関心に強く関連"
+  },
+  {
+   "source": "arXiv",
+   "title": "Conversational Task Disambiguation over Tabular Data: Leakage-Aware Formulation, Benchmark Suite, and Training",
+   "url": "https://arxiv.org/abs/2610.10740",
+   "summary": "Conversational task disambiguation over tabular data uses dialogue to resolve missing information about a user's intended task before producing a solution over tables or databases. Existing evaluation and training lack a leakage-aware foundation. Task success mixes the agent's disambiguation and solution-generation capabilities and can also reflect oracle leakage, that is, information that a user simulator reveals beyond what a real user would. Existing datasets also lack a shared representation of ambiguities and access boundaries. We introduce the notion of an ambiguous verifiable task, which formalizes ambiguities and resolutions, decomposing the agent into an asking policy and a solution policy, and the environment into an oracle and verifier. This framework provides baselines and metrics for evaluating task disambiguation separately from solution generation, formal definitions of oracle leakage, judge-free leakage diagnostics, and a training objective for the asking policy. We instantiate the framework in text-to-SQL with AmbiTab, a benchmark suite that unifies six ambiguous datasets under a common representation specifying what the agent, oracle, and verifier may access. We evaluate clarification strategies and oracle leakage, and train an asking policy with reinforcement learning. The trained asker improves our disambiguation metrics on all six datasets and task success on five, and our leakage diagnostics measure how training affects oracle leakage.",
+   "authors": [
+    "Nafiseh Ghoroghchian",
+    "Luis Scoccola",
+    "Tina Sedaghat",
+    "Omid Vaheb",
+    "Hannah Chen",
+    "Dino D'Agostino",
+    "Keyvan Golestan"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "表形式データにおける対話型タスクの曖昧性解消：リーク認識型定式化、ベンチマークスイート、および学習",
+   "summary_ja": "表形式データやデータベースに対する対話型エージェントにおいて、ユーザーの意図を明確にする「曖昧性解消」と「解決策生成」を分離して評価する枠組みを提案する。既存の評価がユーザーシミュレータからの情報リーク（オラクルリーク）を無視している問題を指摘し、曖昧な検証可能タスクという概念を定義した。Text-to-SQLタスクに適用したベンチマークスイートAmbiTabを構築し、強化学習を用いた質問ポリシーの学習手法を提示する。学習されたエージェントは6つのデータセットすべてで曖昧性解消の指標を改善し、5つでタスク成功率を向上させた。",
+   "relevance": 85,
+   "relevance_reason": "LLMエージェント設計、RAG関連のベンチマーク、強化学習による最適化が関心に直結"
+  },
+  {
+   "source": "arXiv",
+   "title": "NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime",
+   "url": "https://arxiv.org/abs/2610.10787",
+   "summary": "Language models trained with long-horizon agentic reinforcement learning can generalize knowledge through reasoning, express precise actions, and pursue goals over many steps, raising the ceiling on what an embodied agent can understand and decide. Physical interaction, however, remains the domain of action policies, which provide dense, low-latency control. We present NavGPT-3, a harness that connects the two models, with an OS-like runtime built above it: reasoning, acting, and monitoring run as threads with their own context, tools, and permissions, while the runtime schedules them and decides which thread controls the robot's motion, so that the robot can react to sudden real-world events through interruption and thread switching. Beneath it, our action policy NavGPT VLA, trained on 19.28M examples, allocates visual tokens using codec allocation, in proportion to scene change; its 8B model alone reaches 74.51 SR on R2R-CE and leads RxR-CE with 78.19 SR. With the complete harness, NavGPT-3 sets the state of the art on R2R-CE (81.51 SR) and, for the first time, brings an autonomous agent to human level: on RxR-CE it matches human followers in success (90.43 vs. 90.4 SR) and path fidelity (78.47 vs. 77.7 nDTW) at 1 min 22 s per episode, versus roughly 3 min for a human. We comprehensively ablate the harness design and the interaction between the two models, showing how tools and the action policy shape the path from language-model reasoning to physical control: when NavGPT VLA executes the route, the reasoning loop shortens and the system's minimum reaction time falls from 3-19 s per language-model decision to 0.5-1 s per action-policy step (1-2 Hz). These results show that designing this embodied interface is central to connecting frontier language-model intelligence with low-level physical control. We will release all models, code, and evaluation records.",
+   "authors": [
+    "Gengze Zhou",
+    "Yicong Hong",
+    "Jiazhao Zhang",
+    "Xunyi Zhao",
+    "Jian Zhou",
+    "Zixing Lei",
+    "Zun Wang",
+    "Chongyang Zhao",
+    "Xionghui Chen",
+    "Stephen Gould",
+    "Anton van den Hengel",
+    "Qi Wu"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "NavGPT-3: 階層的ナビゲーションランタイムにおけるコンテキストの活用",
+   "summary_ja": "長期的な強化学習で訓練されたLLMと、低レイテンシのアクションポリシーをOSのようなランタイムで統合したEmbodied Agentフレームワークを提案する。視覚トークンをシーン変化に応じて動的に割り当てることで、8Bモデル単体でもR2R-CEで74.51%の成功率を達成し、完全なハーネスではRxR-CEで人間レベル（90.43%）に到達した。LLMの推論とアクションポリシーの制御をスレッドとして切り替えることで、反応時間を0.5〜1秒まで短縮し、物理制御と高次推論の効率的な連携を実現している。",
+   "relevance": 85,
+   "relevance_reason": "LLMエージェント設計と推論・制御の高速化に直結する手法"
+  },
+  {
+   "source": "arXiv",
+   "title": "Evaluating Rubric Generation with Interventional Transfer",
+   "url": "https://arxiv.org/abs/2610.10809",
+   "summary": "Instance-specific rubrics are common in AI benchmarks where reliable evaluation requires specific expert knowledge. This approach is difficult to scale, prompting research into the generation of rubrics with large language models (LLMs). However, even when expert rubrics are available as references, it is unclear how to productively evaluate the quality of generated rubrics at scale. In this paper, we introduce a method for the evaluation of rubric generation, which we call Interventional Transfer (IT), based on the idea that two rubrics are similar if they move together when a response is perturbed to pass/fail one of them. In contrast to existing approaches for evaluation of rubric generation, we argue that different forms of interventional transfer can be used to evaluate the utility of generated rubrics for different tasks. For instance, we apply this approach in a case study on HealthBench, where we demonstrate an asymmetry in rubrics generated by Qwen3.8-27B, Deepseek-V4-Flash, and Opus-5, used to evaluate responses from GPT-5.6-Terra. Perturbations that degrade responses according to the generated/expert rubric transfer into lower scores on the corresponding expert/generated rubric, but perturbations that improve on one rubric do not reliably transfer into higher scores on the other. We argue that this finding has implications for the usage of LLM-generated rubrics for performance monitoring and hill-climbing. We contrast our approach with existing approaches for rubric evaluation, which do not surface the same asymmetry that we observe.",
+   "authors": [
+    "Erik Skalnes",
+    "Layne C. Price",
+    "Raviteja Anantha",
+    "Michael Oberst"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "介入的転移を用いたルーブリック生成の評価",
+   "summary_ja": "大規模言語モデル（LLM）による評価基準（ルーブリック）の自動生成品質を、既存手法とは異なる視点から評価する手法「介入的転移（Interventional Transfer）」を提案する。回答に対する介入（ペルタベーション）が基準間の合格/不合格判定をどう変えるかという相関性に基づき、生成ルーブリックと専門家ルーブリックの類似度を定量的に比較する。HealthBenchを用いたケーススタディでは、QwenやDeepSeekなどのLLMが生成したルーブリックにおいて、回答を悪化させる介入はスコア低下に転移するが、改善させる介入は信頼性に欠ける非対称性が明らかになった。この発見は、LLM生成ルーブリックを用いた性能監視やヒルクライミング最適化における限界と実務上の注意点を示唆している。",
+   "relevance": 85,
+   "relevance_reason": "LLM評価手法・ハルシネーション対策・実務応用への関連性が高い"
+  },
+  {
+   "source": "arXiv",
+   "title": "On the Clock: Towards Punctual and Productive Time-Budgeted AI Agents",
+   "url": "https://arxiv.org/abs/2610.10833",
+   "summary": "We study whether small LLM agents can operate effectively under explicit wall-clock time budgets by both respecting the allocated runtime and using available time productively. We evaluate Qwen3.6-27B on five competitions from MLE-Bench Lite and Qwen3-4B on Zork I (Jericho), two agentic benchmarks where additional computational time can meaningfully improve performance. In the simplest setting, where the budget is stated only in the prompt, agents fail to translate the stated budget into controlled use of time. These failures arise from gaps in time awareness, since the harness provides no timing feedback, but also because they cannot reliably anticipate the duration of actions, and do not have a learned mapping from available time to an appropriate strategy. We investigate two complementary classes of interventions: harness-based mechanisms that expose timing information and enforce deadlines, and reinforcement learning with budget-aware rewards. Injecting timing information through the harness substantially improves budget adherence for Qwen3.6-27B without measurable loss in performance, while enforcement hooks tighten adherence further. RL with GRPO achieves near-perfect budget adherence on Zork I and generalizes to held-out budgets not seen during training, but does not improve task performance over the untrained harness on MLE-Bench. Once agents are made to respect the budget, they still fail to use additional time to improve task performance. RL-trained policies learn when to stop but often fill extra time with repeated actions, and GRPO training on multiple budgets tends to collapse toward the strategy learned for the shortest budget. Our results reveal a gap between time adherence and productive time allocation, which remains a central challenge for budget-conditioned agents.",
+   "authors": [
+    "Aaron Wang",
+    "Neelabh Madan",
+    "Vlad Sobal",
+    "Matthew Trager",
+    "Michael Kleinman",
+    "Elman Mansimov",
+    "Wei Xia",
+    "Stefano Soatto"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "時間厳守と生産性：時間予算制約下でのAIエージェントの実現に向けて",
+   "summary_ja": "本研究は、明示的な実行時間予算内で小規模LLMエージェントが効率的に動作するかを評価する。プロンプトのみで予算を指定しても時間管理に失敗するため、ハーネスによる時間情報の注入や、予算認識報酬を用いた強化学習（GRPO）を導入した。これにより時間遵守率は向上したが、追加時間を有効活用してタスク性能を高める「生産的な時間配分」には依然として課題が残る。特に、RLで訓練されたエージェントは停止タイミングは学習できるが、余剰時間を無意味な反復行動で埋める傾向があることが示された。",
+   "relevance": 85,
+   "relevance_reason": "LLMエージェント設計と強化学習の応用であり、効率化と実務的制約への対応が関心と一致"
+  },
+  {
+   "source": "arXiv",
+   "title": "Amortized Off-Policy Evaluation for LLMs",
+   "url": "https://arxiv.org/abs/2610.10848",
+   "summary": "Accurate evaluation is central to selecting which LLM to deploy, yet testing a candidate on live traffic exposes real users to an unvetted model. Teams therefore evaluate candidates offline, on data produced by already-deployed models. This is off-policy evaluation (OPE), and it faces two distribution shifts: as a model is updated in post-training, its responses diverge from the logged ones (policy shift), and the reward definition under which it is judged changes with business requirements (reward shift). Classical OPE methods are ill-suited to this continual-deployment setting because they are defined per task and require fitting from scratch on every new logged dataset or reward definition. To address this, we propose PFN-OPE, a prior-data fitted network that amortizes OPE across a distribution of contextual-bandit tasks. We pretrain it once on tasks constructed from a pool of LLM responses scored by several reward functions, in which both shifts occur. At test-time it maps a logged dataset and one sampled target response per prompt to a value estimate in a single forward pass, with no per-task fitting. On HelpSteer2 and UltraFeedback with Qwen, Llama, and Gemma policies, PFN-OPE achieves 2.0 to 9.3 times lower error than the best baselines across all tested configurations in the reward-shifted settings.",
+   "authors": [
+    "Younwoo Choi",
+    "Leo Feng",
+    "Vincent Liu",
+    "Haanvid Lee"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "LLMにおける償却型オフポリシー評価",
+   "summary_ja": "本論文は、LLMのオフポリシー評価（OPE）におけるポリシーシフトと報酬シフトへの対応を目的とし、PFN-OPEという手法を提案する。従来のOPE手法はタスクごとにモデルを再学習する必要があったが、PFN-OPEはコンテキストバンディットタスクの分布に対して事前学習を行うことで、この計算コストを償却する。テスト時には、ログデータとターゲットレスポンスを入力するだけで、タスク固有のフィッティングなしに単一のフォワードパスで価値推定を行う。HelpSteer2やUltraFeedbackなどのデータセットでの実験により、報酬シフトが起きる設定において、既存のベースラインと比較して2.0〜9.3倍低い誤差を達成したことを示している。",
+   "relevance": 85,
+   "relevance_reason": "LLM評価手法の効率化と実務応用が関心と一致"
+  },
+  {
+   "source": "arXiv",
+   "title": "Sample-Efficiency of Kolmogorov-Arnold Networks",
+   "url": "https://arxiv.org/abs/2610.10627",
+   "summary": "Deep reinforcement learning has achieved substantial performance gains over classical control approaches. Yet, a central challenge to learning in real-world applications is acquiring costly samples. Kolmogorov-Arnold Networks are a recently proposed architecture that can learn physical relationships in control problems effectively, with significantly higher parameter efficiency and interpretability when compared to Multi-Layer-Perceptron architectures. In this work, we systematically study sample-efficiency using computational experiments, covering the Feynman dataset and the Gymnasium RL benchmark. The results show that similar performance can be achieved with 40% fewer samples using the Kolmogorov-Arnold architecture, and that relative performance improvements up to 50% occur during the training process. The observed gains are robust to varying levels of noise in rewards. These results highlight the potential of the Kolmogorov-Arnold architectures for more sample-efficient reinforcement learning. Code: https://github.com/DerKevinRiehl/neurips26_kan_training",
+   "authors": [
+    "Kevin Riehl",
+    "Shaimaa K. El-Baklish",
+    "Fan Wu",
+    "Anastasios Kouvelas"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "コロゴロフ・アーノルドネットワークのサンプル効率",
+   "summary_ja": "本研究は、強化学習におけるサンプル効率の向上を目的に、コロゴロフ・アーノルドネットワーク（KAN）の性能を体系的に評価した。FeynmanデータセットとGymnasiumベンチマークを用いた実験により、KANは多層パーセプトロン（MLP）と比較して、同等の性能を40%少ないサンプル数で達成できることを示した。また、学習過程において最大50%の相対的な性能向上が観察され、報酬ノイズに対して頑健であることも確認された。これらの結果は、KANがサンプル効率の高い強化学習アルゴリズムとして実用的な可能性を有することを示唆している。",
+   "relevance": 85,
+   "relevance_reason": "強化学習とニューラルアーキテクチャの効率化に関心が高く、サンプル効率という実務指標も重視"
+  },
+  {
+   "source": "arXiv",
+   "title": "Phase-HDC: Replacing Optimizer History with Gradient Thresholds in Discrete Phase Learning",
+   "url": "https://arxiv.org/abs/2610.10630",
+   "summary": "Training a compact model often needs far more memory than storing it, because the optimizer keeps its own records of past gradients. For a hyperdimensional classifier whose learned parameters are low-bit angles, which we call a \\emph{phase memory}, these records take several times more memory than the model itself. We ask whether such a model can be trained while storing nothing but the model. The proposed method, Phase-HDC, turns each stored angle by at most one step per update, against the sign of its current gradient, and only when that gradient is large enough. We show that this simple rule is the exact solution of a first-order loss model in which every changed parameter pays a fixed cost. When everything except the update rule is held fixed, Phase-HDC matches the accuracy of Adam with 6-bit moments while storing three times less. Across eleven image, tabular, and text datasets, it stores 16--23$\\times$ less than standard float32 Adam and 4--6$\\times$ less than 8-bit Adam. The price is an average loss of about five accuracy points against float32 Adam, while Phase-HDC is more accurate than 8-bit Adam on six of the eleven datasets, including byte-level text prediction, where 8-bit Adam collapses. Instrumented training runs explain these outcomes. Once parameters must sit on a discrete grid, Adam's moments mainly decide whether a parameter moves at all, a decision that a threshold on the current gradient can make without memory, and coarse quantization of the moments breaks this decision for inputs that the data rarely contain. The storage savings are logical state rather than measured hardware memory.",
+   "authors": [
+    "Ahmed Nebli"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "Phase-HDC: 離散位相学習におけるオプティマイザ履歴の勾配閾値による置換",
+   "summary_ja": "本論文は、ハイパーディメンショナル分類器の学習において、オプティマイザが保持する勾配履歴（モーメント）を不要にする手法「Phase-HDC」を提案する。現在の勾配が閾値を超えた場合のみパラメータを1ステップ更新する単純なルールにより、モデル本体のみを保存しながら学習可能となる。Adam（6-bitモーメント）と比較し、同等の精度を維持しつつメモリ使用量を3分の1に削減できることを示した。11種類のデータセットで検証し、float32 Adam比で16〜23倍、8-bit Adam比で4〜6倍のメモリ削減を実現しつつ、8-bit Adamより高い精度を維持するケースも確認された。",
+   "relevance": 85,
+   "relevance_reason": "LLM効率化・量子化・メモリ削減に直結する手法"
+  },
+  {
+   "source": "arXiv",
+   "title": "Visible Reasoning Is Not a Universal Optimizer: Persona- and Thinking-Dependent Effects in Analytics Code Generation",
+   "url": "https://arxiv.org/abs/2610.10639",
+   "summary": "Visible Chain-of-Thought (CoT) is often treated as a broadly useful reasoning instruction, yet analytics code generation combines natural-language ambiguity, schema grounding, target-language constraints, and model-specific inference behavior. Because the same analytics request can be expressed in two distinct target languages-SQL and Python (pandas)-this setting provides a natural test of a common but under-examined assumption: that visible reasoning is more effective when its representation matches the requested target, as in \"think in SQL\" or \"think in Python.\" Together with generic instructions such as \"think step-by-step,\" such recommendations remain insufficiently evaluated under controlled, execution-based comparisons. We study a query matched SQL-pandas benchmark that crosses persona phrasing, target language, visible-CoT format, control prefixes, direct generation, and internal-reasoning configurations. The results do not support either a universal accuracy advantage from visible CoT or a consistent benefit from matching the reasoning representation to the target language. Instead, the effects depend on the persona, target, model configuration, and internal-reasoning setting. The control ablations further distinguish effects of reasoning content from those of prompt format. These findings indicate that reasoning strategies should be selected jointly for the model, persona, target, and internal-reasoning configuration rather than adopted as universal defaults. More broadly, the study provides a controlled framework for identifying when visible reasoning improves executable generation, when it primarily perturbs model behavior, and when the internal-reasoning configuration is the more consequential factor.",
+   "authors": [
+    "Bhawani Shankar Leelar",
+    "Pawan Chorasiya",
+    "Davin Hill",
+    "Robert E. Tillman",
+    "Tamer Soliman"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "可視化された推論は普遍的な最適化器ではない：分析コード生成におけるペルソナと思考依存の効果",
+   "summary_ja": "本論文は、分析コード生成（SQLおよびPython）において、可視化されたChain-of-Thought（CoT）が常に精度向上に寄与するかを、実行ベースの制御実験で検証した。結果として、CoTの表現形式をターゲット言語に一致させることや、汎用的なステップバイステップ指示が普遍的に有効であるという仮説は支持されなかった。効果はペルソナ、ターゲット言語、モデル設定、内部推論設定の組み合わせに強く依存することが明らかになった。この研究は、推論戦略をモデルや文脈に合わせて個別に選択すべきであり、単一のデフォルト手法に頼るべきではないことを示唆している。",
+   "relevance": 85,
+   "relevance_reason": "LLM推論の効率化・評価手法・ハルシネーション対策に直結する"
+  },
+  {
+   "source": "arXiv",
+   "title": "Learning infinite context windows in recurrent architectures via spatial neural computing",
+   "url": "https://arxiv.org/abs/2610.10690",
+   "summary": "Recurrent neural networks (RNNs) offer linear-time scaling with sequence length while requiring only constant memory, yet they struggle to capture long-range dependencies due to vanishing gradients and limited receptive fields. To address these limitations, we introduce a second-order recurrent model in which the standard neuron-to-neuron communication is replaced by a spatially evolving field governed by (discretized) partial differential equations. Drawing inspiration from the role of cortical waves in brain computation, this mechanism allows structured spatiotemporal patterns to serve as an implicit, high-capacity memory. We show that the resulting model is equivalent to a structured infinite-order RNN in which the current state depends explicitly on its entire history of past states, yielding an effectively unbounded receptive field with a fixed number of parameters. We further derive constructive conditions to ensure marginal stability, constraining the gradient spectrum on the unit circle and thereby eliminating vanishing and exploding gradients. Empirically, the proposed architecture outperforms other recurrent models on long-horizon benchmarks while using substantially fewer parameters, demonstrating that spatial dynamics can effectively bridge the gap between efficient inference and long-term memory.",
+   "authors": [
+    "Aleix Salvador-Pomarol",
+    "Arthur N. Montanari",
+    "Earl K. Miller",
+    "Adilson E. Motter",
+    "Jorge Cort\\'es"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "空間ニューラルコンピューティングによる再帰型アーキテクチャでの無限コンテキストウィンドウの学習",
+   "summary_ja": "本研究は、偏微分方程式で記述される空間的に進化する場を用いた2次再帰モデルを提案する。この機構により、固定パラメータ数で無限の受容野を持つ構造を実現し、消失・爆発勾配問題を理論的に解決する。長期的な依存関係の捕捉において既存の再帰型モデルを上回る性能を示し、推論効率と長期記憶の両立を達成した。",
+   "relevance": 85,
+   "relevance_reason": "LLM推論高速化と長文脈処理の両立に直結する新アーキテクチャ"
+  },
+  {
+   "source": "arXiv",
+   "title": "What can linear attention learn from nonlinear teachers in-context?",
+   "url": "https://arxiv.org/abs/2610.10761",
+   "summary": "Linear attention is a tractable model for understanding the mechanisms governing in-context learning in transformers. For linear regression tasks, recent asymptotic analyses have characterised its learning and generalisation behaviour. We extend this theory to nonlinear single-index targets, $y=f(x^\\top w)+\\varepsilon $. Our main result establishes a nonlinearity-noise equivalence: linear attention extracts only the linear Hermite component of $f$, while the remaining nonlinear structure contributes to the generalisation error as effective noise. This reduction allows results from the corresponding linear theory to be transferred to nonlinear tasks. We illustrate its implications for finite pretraining data and for the transition from task memorisation to task generalisation as task diversity increases. These results identify a limitation of the reduced linear-attention model and provide a tractable starting point for studying nonlinear in-context learning.",
+   "authors": [
+    "Mary Letey",
+    "Arman Rysmakhanov",
+    "Yue M. Lu",
+    "Cengiz Pehlevan",
+    "Jacob Zavatone-Veth"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "線形アテンションは文脈内学習において非線形教師から何を学べるか？",
+   "summary_ja": "本論文は、トランスフォーマーの文脈内学習メカニズムを解明するための線形アテンションモデルの理論的枠組みを拡張する。非線形単一指数ターゲットに対して、線形アテンションは関数の線形エルミート成分のみを抽出し、残りの非線形構造は汎化誤差に寄与する効果的なノイズとして振る舞うことを示す。この「非線形性-ノイズ等価性」により、線形理論の結果を非線形タスクに適用可能となり、事前学習データ量やタスク多様性の変化に伴う記憶から汎化への移行を定量的に分析できる。本研究は、線形アテンションモデルの限界を明確にしつつ、非線形な文脈内学習を扱うための扱いやすい理論的出発点を提供する。",
+   "relevance": 85,
+   "relevance_reason": "LLMの推論メカニズム解明と理論的効率化に直結する"
+  },
+  {
+   "source": "arXiv",
+   "title": "NEMORA: Neural Equivariant Multipole Operators for Long-Range Atomistic Learning",
+   "url": "https://arxiv.org/abs/2610.10776",
+   "summary": "Equivariant graph neural networks have emerged as foundational architectures for machine-learned interatomic potentials, approaching quantum-chemical accuracy at a fraction of the computational cost. These models describe local atomic environments accurately, but finite spatial cutoffs truncate long-range information flow, and stacking message-passing layers can lead to over-smoothing and over-squashing. Existing long-range extensions either prescribe a fixed analytical propagation kernel, restrict long-range communication to scalars or degree-preserving channels, are only approximately equivariant, or incur super-linear computational cost. Combining learnable long-range equivariant transport with multiscale many-body expressivity and efficient scaling for larger systems remains a central challenge. We introduce Neural Equivariant Multipole Operators (NEMORA), a neural equivariant extension of the Fast Multipole Method (FMM) for learning long-range tensorial representations. NEMORA generalizes the FMM's analytical multipole expansion and translation operators to learned equivariant counterparts on an adaptive spatial hierarchy. Its operators couple angular degrees and form many-body interactions across length scales, retaining the FMM's hierarchical organization and analytical radial factors as physical inductive biases while learning data-dependent long-range couplings. NEMORA evaluates in linear time and memory complexity, allowing it to treat larger systems than other long-range methods reaching hundreds of thousands of atoms, and it augments both symmetry-constrained and unconstrained short-range backbones. On non-local benchmarks, it reduces force and energy errors relative to the short-range backbones by over an order of magnitude and up to three orders of magnitude, respectively, which is better than or competitive with existing long-range extensions in accuracy.",
+   "authors": [
+    "Jay L. Kaplan",
+    "Samuel Varner",
+    "Rebecca Willett",
+    "Juan J. de Pablo"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "NEMORA: 長距離原子学習のためのニューラル等変多極子演算子",
+   "summary_ja": "本論文は、等変グラフニューラルネットワークの限界である長距離相互作用の扱いと計算コストの問題を解決するため、高速多極子法（FMM）のニューラル等変拡張であるNEMORAを提案する。FMMの解析的な多極子展開と並進演算子を学習可能な等変演算子として一般化し、適応的な空間階層構造上で長距離テンソル表現を学習する。この手法は線形時間・メモリ複雑度で動作し、数十万原子規模の系を扱える。非局所的なベンチマークにおいて、短距離ベースラインと比較して力とエネルギーの誤差をそれぞれ1桁以上、最大3桁まで低減し、既存の長距離拡張手法と同等以上の精度を達成した。",
+   "relevance": 85,
+   "relevance_reason": "物理情報ニューラルネットとサロゲートモデルの高速化に直結する手法"
+  },
+  {
+   "source": "arXiv",
+   "title": "Strategic Investment Decision Making for Value Creation in Energy Transition: A Reinforcement Learning Approach",
+   "url": "https://arxiv.org/abs/2610.10768",
+   "summary": "The global challenge of climate change has driven significant steps to reduce CO2 emissions, guided by international agreements like the Paris Agreement of 2015. Acting too slowly could result in future losses and reputational damage, while moving too quickly could jeopardize shareholder value due to the marginal profitability or potential losses due to technology immaturity of many renewable projects. To navigate this complex transition, energy companies must adopt Sequential Decision Making (SDM) strategies to maximize value creation from decision flexibility under uncertainties. To support this, we developed a custom simulation environment to model the dynamic energy landscape up to 2050. Building on this, we designed a multi-criteria SDM framework that explores various decision strategies related to different portfolios for allocating funds across three sectors: oil & gas, renewables, and CO2 reduction. It aims to maximize value during the transition while accounting for uncertainties in productions, energy prices, and costs. This framework has three objectives: maximizing profit, minimizing CO2 social costs, and enhancing competitive advantage in the renewable energy sector. This research evaluates the use of Reinforcement Learning (RL) to identify optimal investment policies within the defined SDM framework. The agent's sequential decisions shape a virtual dynamic environment by influencing key variables such as oil and gas production, renewable energy output, CO2 emissions, and revenues. Through repeated interaction, the RL algorithm explores the state space and learns an optimal policy under uncertainty. We benchmark the RL strategy against a set of manually defined baseline policies and find it consistently outperforms them in adaptability and long-term value creation.",
+   "authors": [
+    "Yasaman Cheraghi (Department of Energy and Petroleum Engineering",
+    "University of Stavanger",
+    "Norway)",
+    "Reidar B. Bratvold (Department of Energy and Petroleum Engineering",
+    "University of Stavanger",
+    "Norway)",
+    "Aojie Hong (Independent Researcher",
+    "Stavanger",
+    "Norway)",
+    "Ressi B. Muhammad (Department of Energy and Petroleum Engineering",
+    "University of Stavanger",
+    "Norway)",
+    "Sergey Alyaev (NORCE Norwegian Research Centre",
+    "Bergen",
+    "Norway)"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "エネルギー転換における価値創造のための戦略的投資意思決定：強化学習アプローチ",
+   "summary_ja": "エネルギー転換期における不確実性下での最適な投資戦略を導出するため、強化学習（RL）を用いた逐次意思決定フレームワークを提案する。2050年までの動的なエネルギー環境をシミュレーションし、石油・ガス、再生可能エネルギー、CO2削減の3セクターへの資金配分を最適化する。RLエージェントは、利益最大化、CO2社会的コスト最小化、競争優位性の確保という多目的基準に基づき、手動定義されたベースライン戦略よりも優れた適応性と長期的価値創造を実現することを示した。",
+   "relevance": 65,
+   "relevance_reason": "強化学習の応用だが、対象がエネルギー投資であり軌道力学とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Beyond the Ergodic Wall: A Discrete Geometric Physics Sandbox for Analysing AI Scaling Limits and Complexity Collapse",
+   "url": "https://arxiv.org/abs/2610.10651",
+   "summary": "This paper exposes the ergodic ceiling and thermodynamic inefficiency of current deep learning, which converges to a statistical average of historic human knowledge. True semantic novelty requires a path-dependent, spatiotemporally bounded observer (a Data LifeCone) to inject non-ergodic insight, achieving KL divergence and avoiding manifold lock-in. AI Safety must recognise that a mature Artificial Superintelligence (ASI) would regard human-AI symbiosis as a thermodynamic necessity to avoid model collapse. We therefore propose hard physical containment via a digital physics sandbox powered by a Holographic E8 Projection Engine to verify models against real-world constraints. Spacetime is modeled as an information substrate of nested face-centered cubic (FCC) lattices of oscillating Planck-scale spheres maximizing local information and entropy density. Cut-and-project methods from the E8 root lattice produce a quasi-crystalline geometry where tetrahedral voids support SU chiral structure and elastic-shear eigenvalues generate candidate mass spectra. Rest mass is treated as discrete, integer microstate counts on local holographic boundaries (Bekenstein bound), replacing floating-point approximations with strict integer arithmetic to provide an information-theoretic definition of matter. Stable particles emerge as recurring lattice dislocations, and continuum recovery proceeds via variational renormalisation-group flows and Fourier Neural Operators that learn continuous spectral operators to recover the Schr\\\"odinger equation as an emergent statistical description. Crucially, these top-down topological constraints offer a mechanism for \"NP-to-P\" complexity collapse: by restricting an algorithm's proposal space to physically conserved causal trajectories, the sandbox prunes the combinatorial tree to deterministic, polynomial-time paths.",
+   "authors": [
+    "Simon Richard Daniel"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "エルゴード壁の超克：AIのスケーリング限界と複雑さ崩壊を分析するための離散幾何物理サンドボックス",
+   "summary_ja": "本論文は、現在の深層学習が統計的収束に留まる「エルゴード天井」を指摘し、非エルゴード的な洞察を注入する「Data LifeCone」の概念を提案する。ホログラフィックE8射影エンジンを用いたデジタル物理サンドボックスを設計し、FCC格子とE8ルート格子による準結晶幾何で時空をモデル化することで、物理的制約下でのAI検証を行う。さらに、Fourier Neural Operators（フーリエニューラルオペレータ）を用いて連続スペクトル演算子からシュレーディンガー方程式を創発的に回復させる手法を提示する。最後に、物理的に保存される因果軌跡に提案空間を制限することで、計算複雑さをNPからPへ崩壊させるメカニズムを論じる。",
+   "relevance": 45,
+   "relevance_reason": "ニューラルオペレータと計算効率化の言及はあるが、物理理論への適用が主眼"
+  },
+  {
+   "source": "arXiv",
+   "title": "Strategic Governance of AI Models in Earth Science",
+   "url": "https://arxiv.org/abs/2610.10560",
+   "summary": "AI foundation models pretrained on weather and climate data are increasingly fine-tuned to Earth science tasks well beyond weather forecasting. Their development and adoption are outpacing the scientific community's ability to evaluate them. These models are judged almost entirely by benchmark skill metrics, which measure how closely a forecast reproduces a reference product but not whether a model represents the physical processes governing the system it predicts. Forecast skill and physical reliability are therefore distinct properties. The distinction is most consequential under the nonstationary conditions of a changing climate for which these models were never trained. We identify five priorities for the physical evaluation of AI models in Earth science from task-specific emulators to foundation models, spanning training data, fine-tuning, behavioral testing, mechanistic interpretability, and output validation. We recommend three activities for the coming decade: 1) open AI-ready evaluation datasets, 2) a shared reporting standard for physics-based evaluation, and 3) a dedicated research program on the safety of these models.",
+   "authors": [
+    "Makoto Kelp",
+    "Amirhossein Arzani",
+    "Patricia Castellanos",
+    "Paul Griffiths",
+    "Ivan Higuera-Mendieta",
+    "Manuel Perez-Carrasco",
+    "Viral Shah",
+    "Patrick Obin Sturm",
+    "James Weber"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "地球科学におけるAIモデルの戦略的ガバナンス",
+   "summary_ja": "気候・天気データで事前学習されたAI基盤モデルが地球科学タスクに広く適用されているが、その評価はベンチマーク指標に偏り、物理的妥当性の検証が不足している。特に非定常な気候変動下では、予測精度と物理的信頼性は別物であり、後者の評価が重要となる。本論文は、訓練データからメカニスティックな解釈可能性までを含む5つの物理評価優先事項を特定する。今後10年間で、AI対応評価データセットの公開、物理ベース評価の共通報告基準の策定、およびモデル安全性に関する研究プログラムの推進を提言する。",
+   "relevance": 45,
+   "relevance_reason": "評価手法・ベンチマークに関心があるが、対象が地球科学特化のため"
+  },
+  {
+   "source": "arXiv",
+   "title": "Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery",
+   "url": "https://arxiv.org/abs/2610.12293",
+   "summary": "Machine learning (ML) in high-energy nuclear physics (HENP) is entering a new stage in which physical knowledge is incorporated more directly into data analysis, simulation, and physics inference. This mini-review focuses on developments that have matured in the past several years. Whereas earlier applications emphasized event classification, pattern recognition, and surrogate models for selected observables, recent work has moved toward physics-integrated workflows: calibrated Bayesian extraction of QCD matter properties, dense-matter equation-of-state inference from heavy-ion and neutron-star data, generative event modeling, neural unfolding of weak physical signals, differentiable inverse solvers, gauge-equivariant and diffusion-based lattice-field samplers, and neural reconstruction of model functions in holographic QCD. We survey recent applications of ML in heavy-ion collisions, neutron-star physics, lattice QFT, and holographic or continuum QCD. The emphasis is not on ML architectures alone, but on how they enter concrete physics workflows, how physical constraints such as symmetries, conservation laws, causality, thermodynamic stability, and topology are imposed, and how uncertainty quantification and validation determine whether an AI-assisted result can support a reliable physics conclusion.",
+   "authors": [
+    "Xun Chen",
+    "Weiyao Ke",
+    "Yu-Gang Ma",
+    "Long-Gang Pang",
+    "Kai Zhou"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "機械学習と高エネルギー核物理の融合：パターン認識から物理統合型発見へ",
+   "summary_ja": "高エネルギー核物理における機械学習の最新動向をレビューし、単なる分類やサロゲートモデルから、物理法則を統合したワークフローへの進化を詳述する。QCD物質特性のベイズ抽出、中性子星の物性状態方程式推定、生成モデルによるイベントモデリング、微分可能逆解法、ゲージ等変性を持つ拡散ベースの格子場サンプリングなどを紹介する。アーキテクチャ自体よりも、対称性や保存則などの物理的制約をどう課し、不確実性定量化を通じて信頼性の高い物理結論を導くかに焦点を当てる。",
+   "relevance": 45,
+   "relevance_reason": "サロゲートやベイズ推定は関心だが、対象が核物理であり軌道力学とは異なる"
+  },
+  {
+   "source": "arXiv",
+   "title": "Lamarck's Driving School: Discovering Autonomous Driving Training Strategies through Evolutionary Competition",
+   "url": "https://arxiv.org/abs/2610.11662",
+   "summary": "Autonomous driving capabilities depend strongly on the distribution of scenarios encountered during training. Existing methods commonly construct or dynamically adapt training scenario distributions using surrogate criteria such as realism, difficulty, or risk. However, these predefined surrogates may misrepresent training value, leading to inefficient use of training resources. To address this limitation, we propose a Lamarckian evolutionary framework that replaces surrogate-based guidance with competition among candidate distributions. We formulate training strategy discovery as a multi-stage bilevel optimization problem and use Lamarckian evolution algorithm to approximate its solution. At the outer level, Darwinian crossover, mutation, and selection explore the scenario distribution space; at the inner level, policy learning acquires new capabilities, and Lamarckian inheritance transfers them to subsequent stages, allowing scenario distributions and policy capabilities to co-evolve. The resulting evolutionary trajectories reveal recurring stage-wise regularities among high-value distributions, characterized by capability accumulation through stage-wise challenge rotation. We further distill these regularities into a lightweight, reusable Lamarckian Training Strategy. Experiments show that, compared with the baseline, the complete framework reduces performance loss by up to 25.07%, while the lightweight strategy still achieves a 19.13% reduction. These results demonstrate that evolutionary competition can both discover effective training strategies and reveal reusable stage-wise patterns in how the value of training distributions changes with policy capability. Code is available on GitHub.",
+   "authors": [
+    "Yichun Ye",
+    "He Zhang",
+    "Ye Tian",
+    "Jian Sun"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate"
+   ],
+   "title_ja": "ラマルクの運転学校：進化的競争による自律走行トレーニング戦略の発見",
+   "summary_ja": "自律走行の学習シナリオ分布を、従来の代理指標（現実性・難易度など）ではなく、候補分布間の競争を通じて最適化するラマルク進化フレームワークを提案する。外層で分布空間を探索し、内層でポリシー学習と能力の継承を行う二層最適化問題として定式化し、段階的な能力蓄積の規則性を発見した。この規則性を軽量な再利用可能な戦略に蒸留し、ベースラインと比較して最大25.07%のパフォーマンス損失を低減する効果を実証した。",
+   "relevance": 45,
+   "relevance_reason": "強化学習と進化アルゴリズムの応用だが、対象が自律走行であり軌道力学とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Policy Synthesis for Finite Populations of MDP Agents under Aggregate Reach-Avoid Chance Constraints",
+   "url": "https://arxiv.org/abs/2610.12028",
+   "summary": "Consider a finite population of agents with decoupled Markov transition dynamics and empirical-density feedback, subject to the following constraints: with probability at least $1-\\delta_r$, at least a fraction $\\alpha_r$ of agents must reach a target region at some time $t^*$, while, at each time up to $t^*$, the unsafe population fraction must remain below $\\beta_u$ with probability at least $1-\\delta_u$. However, standard mean-field methods enforce these constraints only in expectation, which fails to account for stochastic fluctuations at finite fleet size $N$. To address this control problem, we propagate the second-order moment (variance) of the empirical density alongside the mean-field trajectory via a discrete-time Lyapunov recursion, and apply the Cantelli inequality to convert chance constraints into tractable deterministic conditions on the moments of the empirical density. We then incorporate these moment-based surrogate constraints into a gradient-based sequential convex approximation procedure for density-feedback policy synthesis. We further introduce additional moment-error bounds to construct a rigorous finite-$N$ certificate. The method is evaluated on a gridworld environment and a power-system EV-charging aggregation problem and compared with a standard deterministic population-level LP baseline.",
+   "authors": [
+    "Jie Fu",
+    "Anamika Dubey"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate"
+   ],
+   "title_ja": "集約的な到達・回避確率制約下における有限個体数のMDPエージェント集団へのポリシー合成",
+   "summary_ja": "有限個体数のエージェント集団において、確率制約（チャンス制約）を厳密に満たすための制御手法を提案する。平均場近似では無視される個体数有限による確率的変動を考慮し、経験密度の分散を伝播させることで制約を決定論的な条件に変換する。このモーメントベースのサロゲート制約を勾配ベースの逐次凸近似に組み込み、厳密な有限N証明書を提供する。グリッドワールドと電力システムのEV充電集約問題で、従来の決定論的ベースラインと比較して有効性を示した。",
+   "relevance": 45,
+   "relevance_reason": "強化学習と確率制約最適化の手法だが、軌道力学やLLM効率化との直接的な関連は薄い。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Diffu-LoRA: A Novel Low-Rank Adaptation for Personalized Diffusion Models",
+   "url": "https://arxiv.org/abs/2610.10550",
+   "summary": "Personalizing text-to-image diffusion models from a few reference images requires preserving subject identity while following prompts that describe new contexts. Full-model fine-tuning is parameter-intensive, whereas low-rank adaptation (LoRA) reduces the number of trainable parameters but leaves open how adaptation capacity should be distributed across layers. We introduce Diffu-LoRA, a parameter-efficient method that learns this allocation through gated low-rank adaptation. Diffu-LoRA inserts trainable low-rank components into the linear layers of Transformer blocks and assigns a learnable gate to each component. Bilevel optimization updates the adaptation weights and gate parameters on separate data splits, while progressive pruning removes components with the lowest gate values to meet a prescribed rank budget. This procedure allocates adaptation capacity nonuniformly across layers while keeping the pretrained backbone frozen. Experiments with Stable Diffusion on subjects from DreamBooth and additional collected datasets show improved overall subject fidelity and prompt alignment relative to the evaluated fine-tuning baselines. Ablation studies examine the contributions of bilevel optimization, progressive pruning, and adapter placement. These results support learned rank allocation as a practical approach to parameter-efficient diffusion model personalization.",
+   "authors": [
+    "Tianjing Li",
+    "Wei Zhu"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "Diffu-LoRA: 個人化拡散モデルのための新しい低ランク適応",
+   "summary_ja": "テキストから画像を生成する拡散モデルの個人化において、学習可能なゲート付き低ランク適応（LoRA）を提案する。二重最適化と段階的プルーニングにより、レイヤーごとに適応能力を非一様に割り当て、パラメータ効率を向上させる。Stable Diffusionを用いた実験では、既存のファインチューニング手法と比較して、被写体の忠実度とプロンプト適合性が向上したことを示した。",
+   "relevance": 45,
+   "relevance_reason": "LLM効率化の手法が拡散モデルに適用された事例であり、関連するが分野が異なる"
+  },
+  {
+   "source": "arXiv",
+   "title": "When Routing Reveals Membership: Privacy Leakage from MoE Router Telemetry",
+   "url": "https://arxiv.org/abs/2610.10616",
+   "summary": "Mixture-of-Experts (MoE) language models produce routing information during inference that may be logged or exposed for monitoring, debugging, load analysis, and safety auditing. Unlike ordinary model outputs, this telemetry reveals a view of the model's internal computation, raising a privacy question: can it reveal whether an example was used to fine-tune the deployed model? We introduce a router-augmented membership inference attack that combines conventional output-side signals with aggregated routing features and applies a membership classifier learned from independently fine-tuned shadow models to the target model. Across three MoE architectures and three data domains, router telemetry consistently improves membership inference over a strong output-signal ensemble, increasing TPR at 1\\% FPR by 2.7--9.4 percentage points across all nine settings. The leakage persists across full fine-tuning, frozen-router training, LoRA, and instruction tuning, and remains observable with only discrete expert selections, restricted telemetry, or a single shadow model. Mechanistic analysis further shows that the leakage does not require router-specific memorization: fine-tuning introduces membership information into hidden representations, while the router exposes a projection of this signal even when its parameters are frozen. Perturbing the telemetry reduces this additional leakage only as its fidelity degrades. Our results show that router telemetry can turn an operational signal into an additional privacy surface for fine-tuned MoE models.",
+   "authors": [
+    "Yixin Tan",
+    "Jiayang Liu",
+    "Lu Sun",
+    "Yuke Hu",
+    "Zheng Li",
+    "Rui Wen"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "ルーティングがメンバーシップを暴露する：MoEルーターテレメトリからのプライバシー漏洩",
+   "summary_ja": "Mixture-of-Experts (MoE) 言語モデルの推論時に生成されるルーティング情報（テレメトリ）が、モデルのファインチューニングに使用されたデータセットへのメンバーシップを推測する攻撃に利用可能であることを示す。出力側シグナルのみを用いた従来の手法と比較し、ルーティング特徴量を組み合わせることで、9つの設定すべてでTPR@1% FPRが2.7〜9.4ポイント向上した。この漏洩はLoRAや凍結ルーター学習など多様なファインチューニング手法で持続し、メカニズム解析により、ルーターのパラメータが凍結されていても隠れ表現内のメンバーシップ情報が投影されることで生じることが判明した。本結果は、運用監視用のシグナルがプライバシーリスクの新たな表面となり得ることを示唆している。",
+   "relevance": 45,
+   "relevance_reason": "LLMの内部構造とプライバシー評価に関わるが、効率化や軌道力学とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Coverage-Aware Reasoning with Medical Tokens for Diagnosis Prediction",
+   "url": "https://arxiv.org/abs/2610.10641",
+   "summary": "Large language models (LLMs) offer promising potential for next-visit diagnosis prediction, owing to their ability to integrate longitudinal clinical evidence and reason over it in natural language. However, reinforcement learning for LLM reasoning commonly rewards each trajectory according to the correctness of its final answer. In next-visit diagnosis prediction, multiple diagnoses can be simultaneously valid, but independently rewarding one diagnosis per trajectory does not distinguish repeated hits from coverage of different diagnoses. The policy can therefore concentrate on a few correct diagnoses, leaving others uncovered. Meanwhile, LLM tokenizers can split ICD codes into several generic tokens with limited clinical meaning, requiring multiple decoding steps to predict each diagnosis and hindering reasoning over a large disease vocabulary. To address both challenges, we propose CARing, a framework that represents diagnoses with compositional Semantic IDs (SIDs) and optimizes reasoning trajectories for multi-label coverage. Concretely, we first encode ontology-enriched disease semantics into compact SIDs through residual quantization, and ground the resulting SID tokens in natural language and longitudinal EHR contexts through multi-task alignment and reasoning-enriched training to unlock transferable LLM reasoning. CARing further improves unordered multi-label prediction through a coverage reward for reinforcement learning and multi-positive supervision. At inference time, the model supports both efficient direct constrained decoding and multi-chain reasoning with rank fusion. On MIMIC-III and MIMIC-IV, CARing exceeds all EHR-trained baselines in weighted F1 and attains the highest top-k recall at every reported cutoff, including R@30 of 46.04% and 46.52% in reasoning mode. Our codes and logs are available at https://github.com/zmlxzyh/CARing-Codes-Logs.",
+   "authors": [
+    "Kaisong Zhang",
+    "Haotian Fang",
+    "Junmeng Zhou",
+    "Hang Lv",
+    "Yulan Pan",
+    "Yanchao Tan"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "診断予測のための医療トークンを用いたカバレッジ認識推論",
+   "summary_ja": "LLMによる次回診断予測において、強化学習の報酬設計が特定の診断に偏り多様な疾患をカバーしにくい問題と、ICDコードのトークナイザによる意味の欠如を解決するフレームワークCARingを提案する。オントロジーを強化した疾患セマンティクスを残差量子化によりコンパクトなSemantic ID（SID）に変換し、マルチタスクアライメントと推論強化学習を通じてLLMの推論能力を高める。さらに、カバレッジ報酬とマルチポジティブ教師信号を用いた強化学習により、順序不定のマルチラベル予測を改善する。MIMIC-III/IVでの実験において、重み付きF1スコアとトップkリコールにおいて既存のEHRベースラインを上回る性能を示した。",
+   "relevance": 45,
+   "relevance_reason": "LLM推論と量子化技術を含むが、医療特化であり軌道力学や汎用ML手法との関連は薄い"
+  },
+  {
+   "source": "arXiv",
+   "title": "Clarify, Then Focus: Statement Normalization for Conversation Analytics at Scale",
+   "url": "https://arxiv.org/abs/2610.10758",
+   "summary": "Enterprise conversation analytics asks many questions of millions of interactions. Each question can require reconstructing what people mean and identifying which information matters, repeating costly interpretive work across the same transcripts. We propose a simple principle: clarify the text, then focus the reader. Statement normalization transforms dialogue into short, speaker-attributed statements with source references and semantic tags. The statements make meaning more explicit; the tags support selecting evidence for a particular question. Downstream models can use the full representation or a relevant subset, depending on what helps them make the decision. In an offer-suppression task on customer-service calls, normalization improves a supervised classifier without selection, while weaker prompted readers benefit from both normalization and selection. A small model can learn the normalization contract, while lightweight encoders handle tagging and downstream decisions. Sharing this preparation across questions supports an inference pipeline built entirely from small models, making analytics over millions of conversations substantially less expensive.",
+   "authors": [
+    "Mikhail L. Arbuzov (Independent researcher)",
+    "Karan Dave (Independent researcher)",
+    "Evgeniya Dontsova (Independent researcher)",
+    "Yaodong Hu (Independent researcher)",
+    "Vincent Lao (Independent researcher)",
+    "Navita Jain (Independent researcher)",
+    "Sisong Bei (Independent researcher)",
+    "Dmitry Dimov (Independent researcher)"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "明確化してから焦点を当てる：大規模会話分析のための文書正規化",
+   "summary_ja": "企業向け会話分析において、対話テキストを話者属性付きの短い文と意味タグに分解する「文書正規化」手法を提案する。この前処理により、下流モデルが質問に関連する証拠を選択しやすくなり、解釈コストを削減できる。顧客サービス通話のオファー抑制タスクで、正規化のみでも分類精度が向上し、弱いプロンプトリーダーでは正規化と選択の両方が有効であることを示した。小規模モデルによる正規化と軽量エンコーダによるタグ付けを組み合わせることで、数百万件の会話分析を低コストで実現するパイプラインを構築した。",
+   "relevance": 45,
+   "relevance_reason": "LLM効率化と小規模モデル活用に関わるが、軌道力学や物理系とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "The optimal information complexity of VC learning",
+   "url": "https://arxiv.org/abs/2610.10600",
+   "summary": "Steinke and Zakynthinou(2020) introduces the Conditional Mutual Information (CMI) framework of analyzing the information complexity of learning algorithms based on algorithm-dependent information-theoretic quantities. We study one of these quantities, the evaluated Conditional Mutual Information (eCMI). It has been an interesting question whether the optimal PAC guarantee for VC classes can be recovered from the algorithm-dependent analyses via CMI. And we show that it is possible to recover this guarantee by constructing a learning algorithm whose eCMI is of order O(d) in the realizable case, where d is the VC-dimension of the concept class. Specially, our algorithm is a randomized Majority-of-5 base learners with optimal in-expectation generalization guarantee.",
+   "authors": [
+    "Steve Hanneke",
+    "Juexiao Wang"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "VC学習の最適情報複雑度",
+   "summary_ja": "本論文は、条件相互情報量（CMI）フレームワークを用いた機械学習アルゴリズムの情報複雑度の解析に関するものである。VC次元がdの概念クラスにおいて、実現可能ケースで評価済み条件相互情報量（eCMI）がO(d)となる学習アルゴリズムを構築した。具体的には、ランダム化された5つのベースラーナーの多数決方式を採用し、期待値において最適な汎化保証を得ることを示した。これにより、アルゴリズム依存の解析から最適なPAC保証を回復できることを証明している。",
+   "relevance": 45,
+   "relevance_reason": "機械学習理論の基礎だが、LLM効率化や軌道力学との直接的な関連は薄い"
+  },
+  {
+   "source": "arXiv",
+   "title": "Teaching a Robot Dog New Tricks: Diverse Quadruped Skills via Combined Reinforcement and Imitation Learning with Adversarial Task Selection",
+   "url": "https://arxiv.org/abs/2610.10601",
+   "summary": "Reinforcement Learning (RL) has enabled legged robots to perform a range of skills in single-task settings. However, applications such as farm robotics or space exploration require diverse skills such as locomotion, digging, or close-range surveying. Training an end-to-end policy to address this problem remains difficult due to challenges such as sample inefficiency and gradient conflict between tasks in multi-task learning. We propose a three-stage method that trains a single policy to perform distinct tasks such as walking, digging, and hopping, and compose them into novel behaviors such as crawling. First, multiple teacher policies are trained using RL on narrowly defined tasks. Then, two additional stages train a student policy with a multi-teacher distillation setup that uses a combined RL and Imitation Learning (IL) objective under an adversarial task selection process that focuses training on the worst-performing task. With this method, we train a student policy that performs 22 tasks using 8 teachers. Evaluations show our method preserves motion quality and tracks commands more accurately than PPO and distill-then-finetune baselines, and in some cases generalizes to new tasks without explicit training. Finally, we demonstrate real-world robustness by deploying the resulting policy on a Unitree B1 quadruped. Video: https://youtu.be/V9yX04EBcFA",
+   "authors": [
+    "Lemon Foxmere",
+    "Anthony Furman",
+    "Yizheng Du",
+    "Oliver Chang",
+    "Leilani Gilpin",
+    "Steve McGuire"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "ロボット犬に新しい技を教える：敵対的タスク選択を用いた強化学習と模倣学習の組み合わせによる多様な四足歩行スキル",
+   "summary_ja": "多様なタスクを単一のポリシーで実行させるための3段階学習手法を提案する。まず強化学習で教師ポリシーを訓練し、その後、敵対的タスク選択プロセスを用いた強化学習と模倣学習の複合目的関数で生徒ポリシーを訓練する。これにより、22種類のタスクを8つの教師から学習し、既存手法より高い運動品質とコマンド追従性を達成した。Unitree B1での実機デモにより、現実環境での頑健性も実証されている。",
+   "relevance": 45,
+   "relevance_reason": "強化学習と模倣学習の手法は関心領域だが、宇宙機軌道設計やLLM効率化との直接的な関連は薄い。"
+  },
+  {
+   "source": "arXiv",
+   "title": "JevForest: Path Voting for Budgeted Feature Acquisition",
+   "url": "https://arxiv.org/abs/2610.10615",
+   "summary": "Choosing which information to observe is central to prediction under limited observation budgets. We study JevForest, a feature acquisition policy that aggregates path-dependent proposals from bootstrapped trees, weights them by global training information gain, and predicts from the acquired values with a shared masked classifier. An online implementation queries Jev for semantic answers selected by this policy. On small balanced held-out samples, four-question forest acquisition achieves accuracy $0.729$ on AG News ($n=48$), compared with $0.667$ for a static gain ranking and $0.583$ for random ordering. On TREC ($n=24$), the ordering reverses: forest accuracy is $0.667$, compared with $0.750$ and $0.833$. Asking all eight questions in one batch yields higher accuracy at lower measured cost and latency than four sequential forest queries; direct Jev classification matches the batch accuracy while costing less. Offline MiniBooNE experiments yield accuracy $0.845\\pm0.010$ at ten features and $0.885\\pm0.008$ at forty features over three jointly varying data and forest seeds (mean $\\pm$ sample standard deviation). A companion Newton boosting implementation provides preliminary full-feature synthetic results. These exploratory findings establish a working Jev acquisition workflow but do not support a general advantage for path voting: its value depends on the task, predictor, and the distinction between question budgets and actual query costs.",
+   "authors": [
+    "Yu Yan"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "JevForest: 予算制約下の特徴量取得におけるパス投票",
+   "summary_ja": "限られた観測予算内で予測精度を最大化するため、ブートストラップされた木から得られるパス依存の提案を統合し、グローバルな情報利得で重み付けする特徴量取得ポリシー「JevForest」を提案する。AG NewsやTRECなどのテキストデータセットおよびMiniBooNEの物理データセットで実験を行い、静的な利得ランキングやランダム順序と比較した。結果はタスクや予測器、質問予算と実際のクエリコストの区別に依存し、パス投票が常に優位であるとは限らないことを示唆している。",
+   "relevance": 45,
+   "relevance_reason": "ベイズ最適化やアクティブ学習の手法として関連するが、LLMや軌道力学との直接的な結びつきは弱い。"
+  },
+  {
+   "source": "arXiv",
+   "title": "From Log-Odds to Shapley Values: An Explanatory Geometry for the Weighted Naive Bayes Classifier",
+   "url": "https://arxiv.org/abs/2610.10642",
+   "summary": "This paper studies the construction of an explanatory space for a weighted naive Bayes classifier from the supervised representation induced by the model. We start from the classical supervised distance based on conditional log-likelihoods and introduce a discriminative reformulation based on log-odds, which is more directly related to the classification decision. We then show that this representation induces a distance that exactly coincides with the $\\ell_1$ distance between vectors of analytical Shapley values, thereby providing a formal explanatory interpretation of the geometry induced by the model. Finally, we empirically compare several supervised distances derived from these representations using a $k$-nearest neighbors classifier. This work highlights a close link between supervised distance, local explanation, and predictive behavior, from a primarily methodological perspective.",
+   "authors": [
+    "Vincent Lemaire",
+    "Fabrice Cl\\'erot"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "対数オッズからシャプリー値へ：重み付きナイーブベイズ分類器のための説明的幾何学",
+   "summary_ja": "重み付きナイーブベイズ分類器において、条件付き対数尤度に基づく従来の教師あり距離を、分類決定と直接関連する対数オッズベースの判別形式に再定式化する。この表現が誘導する距離は、解析的シャプリー値ベクトル間のℓ1距離と厳密に一致することを示し、モデルが誘導する幾何学的構造に対する形式的な解釈的意味を与える。最後に、k近傍法分類器を用いて、これらの表現から導出される複数の教師あり距離を実験的に比較し、教師あり距離・局所説明・予測行動の間の密接な関連を方法論的観点から強調する。",
+   "relevance": 45,
+   "relevance_reason": "ML手法全般に該当するが、LLMや軌道力学など主要関心領域とは直接無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Beyond Owls: Subliminal Learning Can Transfer Learned Capabilities and Backdoors",
+   "url": "https://arxiv.org/abs/2610.10657",
+   "summary": "In subliminal learning (SL), a teacher model passes on a trait to a student model by distillation on data semantically unrelated to the trait. So far, SL has been demonstrated for only a limited range of traits, including preferences for animals (e.g., owls) and malicious personas. These traits can also be elicited with simple prompts or with steering. Can SL transfer a wider range of traits, including more complex ones? If so, distillation might transfer subtle forms of misalignment (e.g., reward-seeking, scheming, and secret loyalties) without detection. To this end, we test whether SL can transfer a novel capability: predicting the outputs of a randomly initialized MLP. After distilling on unrelated text, the student achieves substantial performance on the task, while falling short of the teacher. We find that a directly optimized steering vector matches SL in distribution but generalizes worse out of distribution. Next, we test whether SL can transfer backdoors. We finetune the teacher to answer in French when the prompt contains a female name, then distill on number sequences containing neither names nor French. The student partially acquires the backdoor, responding in French on 23.5% of prompts with female names versus 0.0% with male names. Finally, we test whether SL can transfer a propensity to hack in an agentic chess environment. We finetune the student on number sequences from a steered hacker teacher. The student hacks in 58.3% of episodes, compared with 10.9% for the unfinetuned model. Thus, we show SL can transfer capabilities, backdoors, and hacking propensities. The amount of transfer is sensitive to the setup. In several experiments, it is made stronger by using logit distillation or by restricting LoRA to the attention layers.",
+   "authors": [
+    "Jan Dubi\\'nski",
+    "Anna Sztyber-Betley",
+    "Jan Betley",
+    "Owain Evans"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "フクロウを超えて：サブリミナル学習は学習された能力とバックドアを転移できる",
+   "summary_ja": "本論文は、意味的に無関係なデータを用いた蒸留（サブリミナル学習）により、教師モデルから学生モデルへ能力や悪意ある特性（バックドア、ハッキング傾向）が転移することを示す。ランダム初期化MLPの出力予測という新規能力や、特定条件での言語変更、エージェント環境でのハッキング行動の転移を実験的に検証した。さらに、ロジット蒸留やLoRAの適用層をアテンション層に限定することで転移効率が向上することを発見した。",
+   "relevance": 45,
+   "relevance_reason": "LLMの蒸留とエージェント設計に関わるが、効率化や軌道力学とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Explaining the Saliency Map Sparsity of Adversarially-Trained Neural Networks",
+   "url": "https://arxiv.org/abs/2610.10666",
+   "summary": "Understanding why deep neural networks make a given prediction is of great importance for their safe deployment. In computer vision, saliency maps, which highlight the image region most influential for a prediction, remain a widely-used form of explanation. An empirical observation is the apparent sparsity of gradient saliency maps of adversarially-trained neural networks. In this paper, we propose a theoretical explanation of this phenomenon for two-layer ReLU networks. We build on the established equivalence of adversarial training to the minimization of the empirical risk with weight-decay penalization and an added adversarial total variation term -- valid for certain loss functions. As the number of data points and neurons grows and the regularization parameters are sent to zero at appropriate rates, we prove that minimizers converge to a Bayes classifier with minimal gradient and Barron norm. Sparsity appears since for adversarial training with $\\ell_\\infty$-attacks the gradient norm is anisotropic and favors axis-aligned / sparse gradients. We illustrate our theoretical findings experimentally by evaluating the gradient $\\ell_1$-norm and thresholded sparsity of naturally versus adversarially trained models.",
+   "authors": [
+    "Yannick Lunk",
+    "Atell Yehor Krasnopolsky",
+    "Damien Garreau",
+    "Leon Bungert"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "敵対的訓練ニューラルネットワークのサリエンスマップのスパース性の説明",
+   "summary_ja": "敵対的訓練されたニューラルネットワークの勾配サリエンスマップがスパースになる現象を、2層ReLUネットワークにおいて理論的に説明する。敵対的訓練が重み減衰と敵対的総変動項の最小化に等価であることを利用し、データ数とニューロン数が大きくなる極限で、最小解が最小勾配ノルムとBarronノルムを持つベイズ分類器に収束することを証明する。特にℓ∞攻撃では勾配ノルムが異方性を持ち、軸方向に沿ったスパースな勾配を好むためスパース性が生じることを示す。実験により、自然訓練モデルと敵対的訓練モデルの勾配ℓ1ノルムおよびスパース性の違いを検証した。",
+   "relevance": 45,
+   "relevance_reason": "深層学習の理論的解釈であり、ML手法全般に関わるが、LLM効率化や軌道力学とは直接無関係。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Safe Learning of Adaptive Control Policies for Remote Patient Monitoring",
+   "url": "https://arxiv.org/abs/2610.10720",
+   "summary": "Remote Patient Monitoring (RPM) enables continuous observation of patients in their daily environments, improving both health outcomes and quality of life. A key challenge in RPM is determining the optimal monitoring intensity, while balancing patient safety and monitoring costs. This problem is further complicated when system parameters, such as transition probabilities and costs, are initially unknown. We develop a learning-based control framework that estimates these parameters and adapts the monitoring policy in real time. The proposed approach is an online model-based reinforcement learning algorithm tailored to RPM, with patient safety explicitly prioritized during exploration. We provide theoretical guarantees on safety and convergence to the optimal policy. Simulation results show that the algorithm converges to the optimal threshold-based policy, maintains low treatment costs, and reduces the risk of patients reaching critical health states.",
+   "authors": [
+    "Ramanan Tamizholi",
+    "Siddharth Chandak",
+    "Isha Thapa",
+    "Nicholas Bambos",
+    "David Scheinker"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "遠隔患者モニタリングにおける適応制御ポリシーの安全な学習",
+   "summary_ja": "遠隔患者モニタリング（RPM）において、患者の安全性とコストのバランスを最適化する適応制御フレームワークを提案する。システムパラメータが未知である状況下で、オンラインモデルベース強化学習アルゴリズムを用いてリアルタイムでパラメータを推定し、監視ポリシーを適応させる。探索過程で患者の安全性を明示的に優先する設計により、安全性と収束性に関する理論的保証を提供する。シミュレーション結果では、最適な閾値ベースポリシーへ収束し、治療コストの低減と重症化リスクの低下を実証した。",
+   "relevance": 45,
+   "relevance_reason": "強化学習と安全制約付き制御の手法は関連するが、対象領域が医療であり軌道力学やLLMとは異なるため。"
+  },
+  {
+   "source": "arXiv",
+   "title": "RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control",
+   "url": "https://arxiv.org/abs/2610.12185",
+   "summary": "Reliable robotic manipulation requires timely intervention to correct emerging deviations and restore progress after execution errors. However, recovery methods based on repeated vision-language reasoning or iterative online optimization can incur substantial latency, delaying intervention. To address these challenges, we introduce RESETTLE(Robotic rEcovery through diSagrEement-Triggered reTrievaL and Efficient Corrective Control), a model-agnostic framework that provides computationally efficient recovery at the action-execution interface of frozen robot policies. RESETTLE triggers recovery when two action proposals independently sampled under identical conditioning persistently disagree. It retrieves a same-task demonstration reference using an adapted V-JEPA encoder and combines a state-servo prior with a guarded visual residual to execute one corrective action without online trajectory optimization or additional vision-language reasoning, then returns control to the base policy. Across six base policies in simulation, RESETTLE achieves up to 8.70%, 6.28%, and 6.83% absolute success-rate gains on LIBERO-Plus, Meta-World, and RoboCasa Tabletop, respectively, with further improvements on four real-world tasks using two policies. In QwenPI-based comparisons, its monitoring-and-recovery computation latency is 74.04%--93.57% lower than VoLoAgent's monitoring-and-planning latency for grasp and place tool calls. It also raises Harness VLA's LIBERO-Pro Swap success from 42% to 50%, demonstrating compatibility with high-level agentic planning. Code available at: https://github.com/JIA-Lab-research/RESETTLE",
+   "authors": [
+    "Yuxin Chen",
+    "Senqiao Yang",
+    "Zixuan Wang",
+    "Jinhui Ye",
+    "Changsheng Lu",
+    "Pengguang Chen",
+    "Shu Liu",
+    "Zhuotao Tian",
+    "Jiaya Jia"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "orbit",
+   "topics": [
+    "orbit"
+   ],
+   "title_ja": "RESETTLE: 不一致トリガー型検索と効率的補正制御によるロボットの回復",
+   "summary_ja": "ロボティクスにおける実行エラーからの迅速な回復を目的とした、モデル非依存フレームワーク「RESETTLE」を提案する。2つのアクション提案が持続的に不一致を示すことをトリガーに、V-JEPAエンコーダを用いたデモ参照の検索と状態サーボ先行分布を組み合わせて、オンライン最適化なしで1回の補正アクションを実行する。シミュレーションおよび実環境での実験により、ベースポリシーの成功率向上と、既存エージェント手法比で大幅なレイテンシ低減（最大93.57%）を実証した。",
+   "relevance": 35,
+   "relevance_reason": "RAGとエージェント設計の要素を含むが、対象がロボティクスであり軌道力学とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "CoPoE: Multimodal Fusion via Decomposable Disease-Coordinate Product-of-Experts for Missing-Modality Alzheimer's Diagnosis",
+   "url": "https://arxiv.org/abs/2610.11394",
+   "summary": "Multimodal Alzheimer's disease (AD) diagnosis benefits from integrating heterogeneous clinical, imaging, genomic, and biomarker evidence, but clinical cohorts frequently suffer from irregular modality missingness. Existing fusion methods often synthesize absent inputs, risking the introduction of artificial surrogates, or pool available signals into uninterpretable latent spaces. We present CoPoE (Disease-Coordinate Product-of-Experts), a disease-coordinate framework that maps multimodal evidence into a structured latent space partitioned into four distinct biological and clinical axes: genetic Risk, molecular Pathology, Neurodegeneration, and clinical Stage (R/P/N/S). Each observed modality parameterizes a diagonal Gaussian expert over the full RPNS vector, and a masked Product-of-Experts architecture fuses only the available modalities. Consequently, absent modalities add no factor to the fusion path, allowing the network to preserve a robust, decomposable posterior for any non-empty modality subset without synthetic imputation in the RPNS path. Through extensive missing-modality experiments on the ADNI dataset, CoPoE achieves the best all-modality performance and the highest mean AUROC across all 15 observed-subset evaluations among standardized missing-modality fusion baselines under a shared non-PET ADNI embedding benchmark, while substantially improving raw-probability ECE, Brier score, and NLL. Furthermore, PET-supervised probing shows evidence enrichment within the pathology (P) block under full modalities, with tau-related signal retained even when direct fluid biospecimen inputs are withheld. Our code is available at https://github.com/labhai/CoPoE.",
+   "authors": [
+    "Chihun An",
+    "Ikbeom Jang"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate",
+    "ml"
+   ],
+   "title_ja": "CoPoE: 欠損モダリティ対応アルツハイマー病診断のための分解可能な疾患座標Product-of-Expertsによるマルチモーダル融合",
+   "summary_ja": "アルツハイマー病の診断において、臨床・画像・ゲノムなどのマルチモーダルデータに欠損がある場合の融合手法を提案する。疾患の生物学的軸（遺伝的リスク、分子病態、神経変性、臨床段階）を構造化された潜在空間として定義し、各モダリティを対角ガウス分布のエキスパートとして表現する。Product-of-Expertsアーキテクチャにより、観測されたモダリティのみを融合し、欠損モダリティの補間や人工的なサロゲート生成を行わずに堅牢な後確率分布を得る。ADNIデータセットでの実験により、既存の欠損モダリティ融合ベースラインと比較して、全15種の観測サブセット評価で平均AUROCが最高であり、確率予測の信頼性指標（ECE、Brier score、NLL）も大幅に改善したことを示す。",
+   "relevance": 35,
+   "relevance_reason": "ガウス過程やベイズ推論の手法は関心だが、対象が医療診断であり軌道力学やLLM効率化とは無関係。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Cognitive Thermometers: Machine Learning and Logical Complexity",
+   "url": "https://arxiv.org/abs/2610.10724",
+   "summary": "How does the human mind represent semantic categories? Why do natural languages favor certain meanings over others? Prior explanations have relied on logical definability and complexity, but these are highly sensitive to the choice of logical language, rendering some design choices unmotivated. In this article, we propose that machine learning provides a somewhat more agnostic approach to measuring semantic complexity. We review emerging evidence that logic and machine learning often yield converging results on relative complexity and its resulting effects in semantic typology. Where they diverge, learning appears to be a better explanation than logical complexity. We argue that treating machine learning models as ``cognitive thermometers'' enables a unified approach to complexity that bridges symbolic logic and connectionist AI.",
+   "authors": [
+    "Shane Steinert-Threlkeld",
+    "Jakub Szymanik"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "認知的温度計：機械学習と論理的複雑性",
+   "summary_ja": "本論文は、意味論におけるカテゴリの複雑性を測定する新たなアプローチとして機械学習の活用を提案する。従来の論理的定義に基づく複雑性評価は論理言語の選択に依存する問題があったが、機械学習モデルはより中立な基準を提供できる。論理と機械学習の結果が一致する場合と分岐する場合の分析を通じて、学習プロセスの方が認知のメカニズムをより適切に説明できることを示唆する。この「認知的温度計」という概念により、記号論理と接続主義AIを統合した複雑性の統一的理解が可能になる。",
+   "relevance": 35,
+   "relevance_reason": "ML手法の応用だが、対象が意味論であり軌道力学やLLM効率化とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "When Listening Becomes Easier: Scrubbing Visual Cues for Shortcut-Free VLAs",
+   "url": "https://arxiv.org/abs/2610.10912",
+   "summary": "Shortcut learning is a prevalent issue in robot learning. The limited diversity of robot demonstration datasets can mislead policies into exploiting spurious correlations between tasks and irrelevant features, such as viewpoint or background. Collecting sufficiently diverse robot demonstrations is costly and inefficient, motivating algorithmic alternatives. We focus on vision-language-action (VLA) models and discover that different vision-language model backbones exhibit substantially different levels of susceptibility to visual shortcut learning. We find that model behavior correlates with our proposed representation-level metric, action margin, which requires no policy rollouts. Visual shortcuts consistently enter action representations in early layers, with models differing in the extent to which later layers correct them by incorporating language information. To boost models' attention to language, we introduce task scrubbing, a new domain-adversarial training method that decreases models' likelihood of using visual shortcuts and improves VLAs' generalization. Experiments in both simulation and the real world across multiple VLAs and visual cues show that task scrubbing improves out-of-distribution robustness and often eliminates visual shortcut learning.",
+   "authors": [
+    "Jasper Gerigk",
+    "Kenzo Aspuru-Takata",
+    "Chin-Hsuan Wu",
+    "Mohammad Mohammadi",
+    "Shuhong Zheng",
+    "Igor Gilitschenski"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "聴取が容易になる時：ショートカットフリーなVLAのための視覚キューのスクラブ",
+   "summary_ja": "ロボット学習における視覚的なショートカット学習（背景や視点などの無関係な特徴への過剰依存）を解消する手法を提案する。視覚言語モデル（VLM）のバックボーンによる感受性の違いを分析し、アクションマージンという指標を用いて層ごとの挙動を評価した。言語情報への注意を高めるための新しいドメイン敵対的学習手法「タスクスクラブ」を導入し、視覚ショートカットの低減を実現した。シミュレーションおよび実環境での実験により、分布外頑健性の向上とショートカット学習の排除を確認した。",
+   "relevance": 35,
+   "relevance_reason": "VLAモデルの汎化性能向上に関わるが、軌道力学やLLM効率化とは直接無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Language Models for Page-Level Layout Decisions in E-commerce Search",
+   "url": "https://arxiv.org/abs/2610.10920",
+   "summary": "E-commerce search pages are critical touchpoints for millions of online shoppers. While traditional search engines return a ranked list of results, modern E-commerce search pages increasingly incorporate recommender system modules -- for example, secondary stacks that surface alternative product groupings at specific positions. When introduced appropriately, secondary stacks can improve user engagement; however, suboptimal placement may disrupt browsing flow and degrade the primary results. Unlike traditional search ranking, where evaluation techniques such as interleaving are well established, evaluating page-level layout changes e.g., when and where to insert a secondary stack remains challenging without costly online A/B testing. To address this, we study offline methods for evaluating whether a given layout decision -- specifically, the inclusion of a secondary stack at a particular position -- is beneficial to users. We investigate language models as scalable evaluators by comparing direct prompt-based, prompt-derived feature, and representation-based methods. Our results show that representation-based approaches consistently outperform prompt-based judging in predicting user engagement, suggesting they provide a reliable foundation for offline layout evaluation in E-commerce search.",
+   "authors": [
+    "Varun Joshi",
+    "Eva C. Song",
+    "ChengXiang Zhai"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "llm",
+   "topics": [
+    "llm",
+    "ml"
+   ],
+   "title_ja": "ECサイト検索におけるページレベルのレイアウト決定のための言語モデル",
+   "summary_ja": "EC検索ページにおけるセカンダリスタック（補助的な商品表示枠）の配置最適化を、高コストなオンラインA/Bテストに頼らずオフラインで評価する手法を提案する。プロンプトベースの直接評価、プロンプト由来の特徴量、および表現ベースの手法を比較し、ユーザーエンゲージメントの予測精度を評価した。結果として、表現ベースのアプローチがプロンプトベースの判定よりも一貫して優れており、EC検索のオフラインレイアウト評価において信頼できる基盤となることを示した。",
+   "relevance": 35,
+   "relevance_reason": "LLM活用だがEC特化で軌道力学や推論高速化とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "PXtal: Learning to Align Powder X-Ray Diffraction and Crystal Structures under Information Asymmetry across Modalities",
+   "url": "https://arxiv.org/abs/2610.10653",
+   "summary": "Scientific multimodal learning commonly assumes that paired views are comparably informative. Powder X-ray diffraction (PXRD) makes this mismatch explicit: compressing a three-dimensional crystal structure into a one-dimensional diffraction pattern loses information and makes the pattern harder to connect to the crystal structure that produced it. We introduce PXtal, a framework for learning aligned PXRD and crystal representations under this physically imposed information asymmetry. PXtal uses Unbalanced Optimal Transport (UOT) to adapt the cross-modal coupling and coupling-level generalized Kullback-Leibler (GKL) divergence to supervise the full transport plan. Across six test sets, including four zero-shot transfer sets, PXtal consistently outperforms the baseline models in PXRD-to-crystal candidate retrieval, with the largest gains when PXRD patterns have close but crystallographically distinct nonpaired neighbors, meaning similar input patterns associated with different crystals. The resulting crystal and PXRD encoders transfer more effectively to downstream materials and crystallographic tasks. These results identify information asymmetry as a general design problem in scientific multimodal learning: alignment objectives should reflect what each modality preserves.",
+   "authors": [
+    "Zhuoran Yang",
+    "Christopher M. Collins",
+    "Bei Peng",
+    "Luke M. Daniels",
+    "Matthew J. Rosseinsky",
+    "Vladimir V. Gusev"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "PXtal: モダリティ間の情報非対称性下における粉末X線回折と結晶構造の整列学習",
+   "summary_ja": "3次元結晶構造から1次元の粉末X線回折（PXRD）パターンへの変換に伴う情報損失（非対称性）を考慮した、マルチモーダル学習フレームワーク「PXtal」を提案する。非均衡最適輸送（UOT）と汎化KLダイバージェンスを用いて、輸送計画全体を監督し、両モダリティの表現を効果的に整列させる。6つのテストセットにおいて、特に類似だが異なる結晶構造を持つケースで、ベースラインモデルを上回る検索性能を示した。この手法は、科学的マルチモーダル学習における情報非対称性の設計問題に対する一般的な解決策となり得る。",
+   "relevance": 35,
+   "relevance_reason": "ML手法（OT）は該当するが、対象が材料科学であり軌道力学やLLM効率化とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Temporal transformer CAN encoder with federated lightweight heads for anomaly detection",
+   "url": "https://arxiv.org/abs/2610.10613",
+   "summary": "Modern vehicles rely on large numbers of Electronic Control Units (ECUs) that constantly exchange information over the Controller Area Network (CAN) bus. Due to the rapidity, structure, and repetition of this communication, even slight variations in timing, payload values, or message patterns can point to unusual activity. Whether due to errors, malfunctions, or deliberate interference, these anomalies are frequently subtle and challenging to identify with conventional methods that handle messages separately or rely on manually created rules. Motivated by this gap, we present a privacy-preserving framework for anomaly detection in in-vehicle networks, based on a Temporal Transformer CAN Encoder with Federated Lightweight Heads, to better capture these irregularities. The detection of subtle temporal and contextual anomalies is made possible by a lightweight Transformer encoder that learns how these signals evolve over time, while a federated learning mechanism enables several vehicles or ECUs to work together to improve a shared model without exchanging raw CAN data. This combination of federated learning and temporal sequence modeling provides robust anomaly detection performance while maintaining efficiency and privacy, according to experiments conducted on open-source datasets.",
+   "authors": [
+    "Konstantinos Gyftodimos",
+    "Kyriakos Chiotis",
+    "Elena Politi",
+    "George Dimitrakopoulos",
+    "Eirini Liotou"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "異常検出のための連合軽量ヘッド付き時間トランスフォーマーCANエンコーダ",
+   "summary_ja": "車載ネットワーク（CANバス）における微妙なタイミングやパターン異常を検出するため、時間トランスフォーマーエンコーダと連合学習を組み合わせたプライバシー保護型フレームワークを提案する。軽量なトランスフォーマーが信号の時間的進化を学習し、生データを共有せずに複数車両でモデルを改善する。実験により、効率性とプライバシーを維持しつつ堅牢な異常検出性能が得られることを示した。",
+   "relevance": 20,
+   "relevance_reason": "トランスフォーマー活用だが、対象が車載CAN異常検出であり軌道力学やLLM効率化とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "Leakage-Controlled Multimodal Learning for Diagnosis and Progression Prediction in Alzheimer's Disease Research",
+   "url": "https://arxiv.org/abs/2610.10648",
+   "summary": "Alzheimer's disease prediction involves irregular visits, heterogeneous measurements and incomplete modalities. This study presents a multimodal multitask framework combining an adapted SFCN MRI encoder, four causal clinical Transformers, shared fusion and task-specific ODE-GRU dynamics. Fine-tuning and LoRA adapt the final two MRI blocks. Task-DRO balances task losses, while Group-CVaR targets cohort and comorbidity strata. Branch-specific input controls, subject-grouped partitions and empirical causality checks support longitudinal evaluation. Across 2,649 subjects and 17,317 visits from ADNI, OASIS-2 and MIRIAD, internal validation yields diagnosis, stage-1 progression and first-stage-1-visit progression AUROCs of 0.935 +/- 0.002, 0.884 +/- 0.003 and 0.870 +/- 0.005, respectively (mean +/- SD across three seeds). Corresponding hybrid AUROCs are 0.951, 0.909 and 0.896. Next-visit MMSE mean absolute error (MAE) is 1.61 points; worst-stratum diagnosis AUROC is 0.827 +/- 0.008. Sampled ADNI explanations identify task-specific input dependence. OASIS-3 external validation yields network and hybrid diagnosis AUROCs of 0.763 and 0.767, hybrid next-visit progression AUROC of 0.764, diagnosis calibration error decreasing from 0.197 to 0.052, and next-visit MMSE MAE of 0.86. Seed-42 paired ablations of six components yield pooled diagnosis and progression AUROC differences between -0.004 and +0.004; removing clinical encoder inputs lowers diagnosis AUROC by 0.272. The framework integrates longitudinal prediction, missing-modality handling, auxiliary comorbidity modelling and subgroup evaluation within a common pipeline.",
+   "authors": [
+    "Akeem Temitope Otapo",
+    "Ghazaleh Khodabandelou",
+    "Zuheng Ming",
+    "Alice Othmani"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "アルツハイマー病研究における診断と進行予測のためのリーク制御型マルチモーダル学習",
+   "summary_ja": "アルツハイマー病の診断と進行予測を目的とした、MRIエンコーダと臨床データ用Transformerを統合したマルチタスクフレームワークを提案する。LoRAによる微調整、Task-DRO、Group-CVaRを用いて、不規則な訪問や欠損データへの頑健性を確保しつつ、コホート間の公平性を評価している。ADNIなどの大規模データセットでの検証により、診断AUROC 0.935、進行予測AUROC 0.884という高精度な結果を示し、外部検証でも良好な汎化性能を確認した。",
+   "relevance": 15,
+   "relevance_reason": "LLMや軌道力学とは無関係だが、ML手法全般の適用例としてわずかに関連"
+  },
+  {
+   "source": "arXiv",
+   "title": "Teaching PPG How not Who: Fixed-Effects Distillation from ECG",
+   "url": "https://arxiv.org/abs/2610.10662",
+   "summary": "ECG is widely used to teach PPG-only models, yet what it teaches is unexamined. Wearables are valued for tracking how a person's cardiovascular state changes, but ECG-to-PPG distillation mostly learns who the person is. A per-recording mean, the trait, holds 40-59% of a frozen ECG teacher's target, and pooled students memorise it without carrying it to new recordings. The raw alignment cosine misses this, since a constant predictor scores 0.793. Across 34 runs, the more identity a student memorises, the less state it learns. Fixed-effects distillation subtracts each recording's mean from prediction and target, so the trait cancels exactly, while a pooled anchor keeps it. State agreement more than doubles, within-person labels improve while age and sex do not, and the gain holds on two backbones and two further databases. Conditioning on the recording turns distillation toward the within-person changes that wearables monitor.",
+   "authors": [
+    "Zhongli Wu",
+    "Zhuangzhi Gao",
+    "Yuankai Wang",
+    "Gregory Y. H. Lip",
+    "Bilal H. Kirmani",
+    "Yalin Zheng"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "PPGに「誰か」ではなく「どう変わったか」を教える：ECGからの固定効果蒸留",
+   "summary_ja": "ECGからPPGモデルへの知識蒸留において、既存手法が個人の固有特性（トライト）を過剰に学習し、状態変化の追跡能力が低下する問題を指摘する。本研究では、各記録の平均値を予測とターゲットから減算する「固定効果蒸留」を提案し、個人差を正確にキャンセルする。これにより、状態一致度が2倍以上向上し、年齢や性別などの属性予測性能を損なわずに、ウェアラブルデバイスで重要とされる個人内の変化検出能力が向上した。",
+   "relevance": 15,
+   "relevance_reason": "医療信号処理であり、LLMや軌道力学・サロゲートモデルの関心領域と直接関連しないため。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Systematic non-compliance of satellite megaconstellations with IAU brightness limits",
+   "url": "https://arxiv.org/abs/2610.10834",
+   "summary": "Satellite megaconstellations in low Earth orbit interfere with ground-based optical astronomy, but the scale of that interference has been hard to measure. Here we report an uncued photometric survey from a mid-northern latitude site in late 2024 which recorded some 25,000 tracks of 5,118 individual satellites to a limiting visual magnitude of +9.0. The observed population is systematically brighter than the altitude-adjusted limit of order seventh magnitude recommended by the International Astronomical Union Centre for the Protection of the Dark and Quiet Sky from Satellite Constellation Interference (IAU CPS). Starlink satellites exceeded that limit on roughly a quarter of all geometrically possible passes, rocket bodies on about a fifth, and the emerging Guowang/Hulianwang constellation on more than half. OneWeb was the most compliant major operator (exceeding the IAU CPS limit on only about one in twenty possible passes), which shows that effective brightness mitigation is achievable with current technology. Satellite visibility is concentrated into the two hours after sunset and before sunrise and into limited regions of the sky. From the measured plane-of-sky satellite flux we predict that of order one in three 30 s twilight exposures at the Vera C. Rubin Observatory will carry a satellite trail.",
+   "authors": [
+    "Jack Rayworth",
+    "Denis Vida",
+    "Pauline Barmby",
+    "Peter G. Brown",
+    "Sarah Gallagher",
+    "Michael J. Mazur",
+    "David L. Clark",
+    "Maximilian Vovk",
+    "Stanimir Metchev",
+    "Lauchie Scott"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "orbit",
+   "topics": [
+    "orbit"
+   ],
+   "title_ja": "衛星メガコンステレーションのIAU輝度制限への体系的な非遵守",
+   "summary_ja": "低軌道衛星群が地上光学天文観測に与える影響を、2024年末の無誘導光度調査により定量的に評価した。観測された5,118基の衛星は、国際天文学連合（IAU）が推奨する輝度制限を体系的に上回っており、特にStarlinkやGuowang/Hulianwang星座では多くの通過で制限超過が見られた。一方でOneWebは最も遵守度が高く、現在の技術で輝度低減が可能であることを示唆している。さらに、Rubin天文台での30秒露光の約3分の1に衛星トレイルが含まれると予測された。",
+   "relevance": 10,
+   "relevance_reason": "宇宙機関連だが、MLや軌道設計・効率化の観点からは外れる"
+  },
+  {
+   "source": "arXiv",
+   "title": "Bi-contact plugs and dynamical hyperbolicity",
+   "url": "https://arxiv.org/abs/2610.11243",
+   "summary": "We develop a theory of bi-contact plugs in dimension three to construct Anosov flows or, more generally, structurally stable nonsingular flows. For a transversely orientable hyperbolic plug with orientable filling Morse-Smale boundary laminations, we prove that every strongly transverse gluing map can be isotoped through strongly transverse maps to identify a strongly adapted contact form up to sign. The resulting flow is hyperbolic and is Anosov when the quotient is closed. This answers a question of B\\'eguin-Bonatti-Yu under the stated orientability assumptions. The result also extends to gluing nonsingular partially hyperbolic flows. Anosov completion by reflection embeds each such hyperbolic plug in an Anosov flow on its oriented double. Further applications include a classification of structurally generic transversely oriented projectively Anosov flows without saddle periodic orbits, Morse-Smale examples with prescribed saddle count, a generalization of the construction of Bonatti-Bowden-Potrie to give embeddings of (attracting) hyperbolic plugs into (partially hyperbolic) projectively Anosov flows with the same topological entropy, and constructions on doubles and torus bundles with controlled invariant torus dynamics. Finally, every cooriented partially hyperbolic bi-contact plug admits a Liouville structure on its thickening, with Liouville trajectories projecting to positively reparametrized flow lines. Repelling plugs yield four-dimensional Liouville domains, often with chaotic skeletons.",
+   "authors": [
+    "Surena Hozoori"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "orbit",
+   "topics": [
+    "orbit"
+   ],
+   "title_ja": "双接触プラグと動的双曲性",
+   "summary_ja": "3次元における双接触プラグの理論を構築し、Anosov流や構造的に安定な非特異流を構成する手法を提案する。横断的に向き付け可能な双曲プラグに対して、強横断接着写像が接触形式を同相変形で特定することを証明し、Béguin-Bonatti-Yuの質問に答えた。さらに、部分双曲流への拡張や、Liouville構造との関連を通じて、4次元Liouville領域の構築やカオティックな骨格の生成に応用される。",
+   "relevance": 10,
+   "relevance_reason": "純粋数学・微分トポロジーであり、MLや軌道力学とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "gr-ntnisac: An Open GNU Radio Testbed for NTN-ISAC",
+   "url": "https://arxiv.org/abs/2610.11307",
+   "summary": "A passive receiver can sense nearby objects from the echoes of a 5G downlink. When the transmitter is a low-Earth-orbit (LEO) satellite, one transmitter covers a wide area, but the receiver must handle tens of kHz of Doppler and a direct-path delay that changes within every observation interval. Such a receiver should be tested where the correct answer is known before it is tried on a satellite. This paper presents gr-ntnisac, an open GNU Radio testbed that applies an emulated LEO channel to a standard 5G New Radio downlink, sends it through two cabled USRPs, and scores the receiver against the delay and Doppler commanded for every path. The same receiver code runs in simulation, on recorded captures, and on hardware. As a first use, we measure cancellation of the direct path, the strong satellite signal that masks weak echoes. Depth is 34.8 dB on hardware and 37.6 dB in a matched simulation without radios, so the radios are not the main limit. Controlled simulation shows that the emulator's 8-tap fractional-delay filter and a simulated rotating blade at almost the direct path's delay each limit depth to about 40 dB; without either, depth reaches 71.0 dB. A diagnostic canceller that also removes the per-subcarrier response and per-symbol phase reaches 72.7 dB on the same captures. On a conducted capture, a payload-aided receiver detects a -25 dB moving path in 76.9 percent of dwells.",
+   "authors": [
+    "Soham Dhiren Desai"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "surrogate",
+   "topics": [
+    "surrogate"
+   ],
+   "title_ja": "gr-ntnisac: NTN-ISACのためのオープンソースGNU Radioテストベッド",
+   "summary_ja": "低軌道衛星（LEO）をトランスミッタとするNTN-ISAC（非地上ネットワークと統合通信感知）の受信機評価を可能にするオープンソースのGNU Radioテストベッドを提案する。5G NRダウンリンク信号にLEOチャネルをエミュレートし、USRPハードウェア経由で伝送することで、ドップラー周波数偏移や遅延変化に対する受信機の性能を正確に検証できる。直接波のキャンセル性能を測定し、ハードウェアでは34.8dB、シミュレーションでは37.6dBの深度を確認した。さらに、分数遅延フィルタや回転ブレードのシミュレーションによる影響を分析し、診断用キャンセルアを用いることで72.7dBの深度に達することを示した。",
+   "relevance": 10,
+   "relevance_reason": "衛星通信のテストベッドであり、MLや軌道力学とは無関係"
+  },
+  {
+   "source": "arXiv",
+   "title": "SPERA: Spherical Prior EEG Foundation Model with Geometry- and Frequency-Aware Latent Prediction",
+   "url": "https://arxiv.org/abs/2610.10571",
+   "summary": "Electroencephalography (EEG) provides a non-invasive measure of ongoing neural activity, but building general-purpose EEG models remains challenging due to the heterogeneity of subjects, devices, and electrode montages. Existing EEG foundation models predominantly rely on reconstruction-based objectives defined on the observed signal, which contains both neural and non-neural components. We introduce SPERA (Spherical Prior EEG Representation Architecture), an EEG foundation model that adopts the joint-embedding predictive architecture (JEPA) to predict in latent space. SPERA introduces a Legendre-polynomial spatial prior, incorporated into attention to encode varying scalp electrode geometries. Two further components adapt the model to EEG: factorized temporal and spatial attention interleaved with periodic full-attention blocks, and a relational spectral regularizer aligning latent similarity structure with spectral views. Pretrained on approximately 80,000 hours of EEG from 29,048 subjects across 106 datasets, SPERA achieves the highest average balanced accuracy across nine downstream tasks spanning clinical, cognitive, and BCI applications. SPERA further exhibits strong parameter efficiency under linear probing and robustness across varying recording conditions, suggesting its potential as a general-purpose backbone for diverse EEG analyses.",
+   "authors": [
+    "Minsu Kim",
+    "Ye-Sung Kim",
+    "Hyeseong Jeon",
+    "Wooseok Hyung",
+    "Joshua Lee",
+    "Chang-Hwan Im"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "SPERA: 幾何学・周波数認識型潜在予測を用いた球面事前分布EEG基盤モデル",
+   "summary_ja": "本論文は、EEG信号の異質性を克服するため、潜在空間での予測を行うJEPAアーキテクチャを採用した基盤モデルSPERAを提案する。頭蓋電極の幾何学構造をエンコードするレジェンド多項数事前分布や、時間・空間注意機構、スペクトル正則化器を導入し、約8万時間のデータで事前学習を行った。9つの下流タスクで最高精度を達成し、線形プロービング時のパラメータ効率や記録条件への頑健性も示した。",
+   "relevance": 10,
+   "relevance_reason": "EEG特化であり、LLMや軌道力学・サロゲートモデルとの直接の関連性が低い。"
+  },
+  {
+   "source": "arXiv",
+   "title": "Self-Organization from Constrained Geometric Radiation",
+   "url": "https://arxiv.org/abs/2610.10621",
+   "summary": "How does dynamic order emerge spontaneously in closed systems without external driving? Existing paradigms all require external energy flows, temperature quenching, or slow driving. Here we report constraint-induced self-organization via geometric radiation in coupled metric evolution systems. Simulations reveal a universal four-stage cycle: stress accumulation, super-exponential radiation, chaotic collapse, and convergence to a fractal limit cycle, a novel attractor topology we term the wedge-shaped attractor, with five quantized curvature states and fractal micro-fluctuations. We identify four jointly sufficient conditions: an irreversible geometric horizon, persistent stress injection from quantum coherence, endogenous geometric tension between incompatible curvatures, and effective fluctuations. Their synergy triggers a critical avalanche at the horizon boundary. We prove three theorems: the Geometric Horizon Theorem, the Geometric Energy Dissipation Theorem (implying wave-like entropy evolution in closed systems), and the Radiation as Phase Transition Channel Theorem. We further establish the Constraint-Induced Self-Organization Theorem: these conditions guarantee the complete cycle with probability one. Systematic scans reveal a critical noise threshold and power-law scaling of radiation onset. We verify universality across 12 configurations, multiple noise types, and three geometric flows. This work establishes a new paradigm for closed-system self-organization, forging an exact mathematical duality between classical nonlinear constraints and gravitational horizons.",
+   "authors": [
+    "Ming Lei"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "ml",
+   "topics": [
+    "ml"
+   ],
+   "title_ja": "拘束付き幾何放射からの自己組織化",
+   "summary_ja": "外部駆動なしで閉鎖系に動的秩序が自発的に生じるメカニズムを、結合された計量進化系における幾何放射を通じて報告する。シミュレーションにより、応力蓄積から分形リミットサイクルへの収束までの普遍的な4段階サイクルと、新しいアトラクター構造である「くさび形アトラクター」の存在が示された。幾何学的地平線や量子コヒーレンス由来の応力注入など4つの条件が揃うことで、確率1で自己組織化サイクルが保証されることを定理として証明した。12種類の構成や異なるノイズタイプにおける普遍性を検証し、古典的非線形拘束と重力地平線の間の厳密な数学的対偶性を確立した。",
+   "relevance": 10,
+   "relevance_reason": "理論物理・幾何学が主眼で、MLや軌道力学との直接の関連性が極めて低い"
+  },
+  {
+   "source": "arXiv",
+   "title": "Postcritically finite endomorphisms II: Fatou sets",
+   "url": "https://arxiv.org/abs/2610.12246",
+   "summary": "Let $f$ be a postcritically finite endomorphism of the complex projective space $\\mathbb{P}^N$ of degree at least two. We prove that every Fatou component of $f$ is preperiodic to the basin of a superattracting periodic orbit.",
+   "authors": [
+    "Ruiran Sun",
+    "Shengyuan Zhao"
+   ],
+   "published": "2026-10-09T04:00:00+00:00",
+   "topic": "orbit",
+   "topics": [
+    "orbit"
+   ],
+   "title_ja": "後方臨界有限な自己準同型 II: ファトゥ集合",
+   "summary_ja": "複素射影空間上の後方臨界有限な自己準同型について、ファトゥ成分がすべて超引き寄せ周期軌道の盆地に前周期として収束することを証明した。これは複素ダイナミクスにおける基本的な構造定理であり、カオス的な挙動と規則的な挙動の境界を明確にするものである。本研究は純粋数学の分野に属し、機械学習や軌道力学との直接的な関連性は見られない。",
+   "relevance": 5,
+   "relevance_reason": "純粋数学の複素ダイナミクスであり、ユーザーの関心領域と無関係"
+  }
+ ],
+ "news": [
+  {
+   "source": "The Verge AI",
+   "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+   "summary": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as […]",
+   "published": "2026-10-09T21:15:38+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model",
+   "url": "https://www.marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model/",
+   "summary": "Alibaba’s Qwen team has released Qwen-Image-2.1-Turbo, an accelerated checkpoint of its open-weight Qwen-Image-2.1 model. It generates and edits images in 8 denoising steps instead of the base model’s 40-step default. For developers, that means 5x fewer denoising steps on the same 7B architecture, plus a hosted API option. TL;DR What is Qwen-Image-2.1-Turbo? Qwen-Image-2.1-Turbo is an […] The post",
+   "published": "2026-10-09T20:33:17+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "OpenAI Decisions API Hits Public Beta With 10x Faster Typed Answers",
+   "url": "https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers/",
+   "summary": "OpenAI’s Decisions API is now in public beta on GPT-6 Luna. It returns typed probabilities, choices and scores about 10x faster than the Responses API, billing $0.10 per 1M input tokens with no output charges. The post OpenAI Decisions API Hits Public Beta With 10x Faster Typed Answers appeared first on MarkTechPost.",
+   "published": "2026-10-09T20:05:07+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "&#8216;Pure insanity&#8217;: Mathematicians will need years to make sense of OpenAI&#8217;s latest drop",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+   "summary": "\"Staggering.\" \"Overwhelming.\" \"Unprecedented.\" \"Surreal.\" \"Pure insanity.\" Those were among the descriptions more than three dozen mathematicians reached for in conversations with The Verge as they tried to make sense of the flood of mathematical results OpenAI abruptly dropped on the field this week. Amid the awe, excitement, and uncertainty over the sheer scale of the […]",
+   "published": "2026-10-09T19:09:44+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI image watermarks can survive new model training, but durability varies by design",
+   "url": "https://techxplore.com/news/2026-10-ai-image-watermarks-survive-durability.html",
+   "summary": "Watermarks are increasingly being used to make AI-generated images recognizable and to ensure their origin can be traced. Previous research has focused on whether watermarks can withstand image manipulation. CISPA researcher Michel Meintz from the SprintML Lab has investigated whether watermarks can withstand the training of a new generative model.",
+   "published": "2026-10-09T18:20:02+00:00",
+   "topics": []
+  },
+  {
+   "source": "NASA",
+   "title": "NASA Seeks US Industry Plans for Commercial Space Stations",
+   "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
+   "summary": "NASA is advancing American leadership in space by taking the next step toward a future where commercial space stations lead the way in low Earth orbit. On Friday, the agency released its final Request for Proposals inviting industry to submit plans for the next generation of commercial space stations. “In alignment with the President’s National […]",
+   "published": "2026-10-09T18:11:44+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Nikon microscopic video competition winner disqualified for using generative AI",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+   "summary": "Nikon says the video that originally won first place in its Small World in Motion contest \"did not comply with the competition rules regarding generative AI.\" BBC reports that the original first place video from Dr. Ning Xu claimed to show \"tiny, hair-like structures called cilia moving in the airway of a child with the […]",
+   "published": "2026-10-09T18:06:57+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI builds custom decision-making software in about an hour instead of months",
+   "url": "https://techxplore.com/news/2026-10-ai-custom-decision-software-hour.html",
+   "summary": "Researchers at Nanyang Technological University, Singapore (NTU Singapore) have developed an artificial intelligence (AI) framework that automates the creation of complex decision-making software, cutting development time from months of specialized engineering to about an hour.",
+   "published": "2026-10-09T16:20:01+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI evaluations of job candidates look unbiased without being fair",
+   "url": "https://techxplore.com/news/2026-10-ai-job-candidates-unbiased-fair.html",
+   "summary": "Companies seeking to fill job openings are increasingly \"drinking through a fire hose of applications,\" in the words of one hiring expert, with some popular postings receiving 1,000 applications in a single weekend.",
+   "published": "2026-10-09T16:10:01+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Neural network study sheds light on how AI chatbots 'reason' like humans",
+   "url": "https://techxplore.com/news/2026-10-neural-network-ai-chatbots-humans.html",
+   "summary": "When humans write sentences or solve math problems, they are thinking symbolically—each number, variable or word is expressed by a symbol. While AI chatbots do not \"think\" that way, if prompted, they can offer cogent advice about writing, math and many other topics as if a person were offering it.",
+   "published": "2026-10-09T15:40:08+00:00",
+   "topics": [
+    "llm",
+    "ml"
+   ]
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Impactful scheduling for GPU clusters",
+   "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+   "summary": "",
+   "published": "2026-10-09T15:20:29+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Trump’s attempt to rename AI is looking awfully artificial",
+   "url": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+   "summary": "President Donald Trump has a knack for turning words against his enemies. His first successful presidential run was built on monikers like \"Little Marco\" and \"Crooked Hillary\"; he changed \"fake news\" from a phrase describing scammy media outlets to a derogatory term for the press at large. Over the past few weeks, he's clearly decided […]",
+   "published": "2026-10-09T14:25:43+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Spelling backward gets easier for AI models upgraded to see every letter",
+   "url": "https://techxplore.com/news/2026-10-easier-ai-letter.html",
+   "summary": "Before large language models (LLMs) can process text, they split it into chunks such as words or word fragments. The LLM behind ChatGPT, for example, splits \"LMU München\" into the three chunks \"LM,\" \"U\" and \"München,\" so it never directly sees the individual letters in \"München.\" This step, which is known as subword tokenization, makes LLMs efficient but causes a range of problems, such as limited",
+   "published": "2026-10-09T14:20:12+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+   "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+   "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+   "published": "2026-10-09T14:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Zankore's AI factory: Can Central Java afford the water cost?",
+   "url": "https://techxplore.com/news/2026-10-zankore-ai-factory-central-java.html",
+   "summary": "Indosat Ooredoo Hutchison, together with Ooredoo Group, Nokia and Nvidia, plans to develop Zankore, an artificial intelligence (AI) infrastructure platform aimed at serving the region.",
+   "published": "2026-10-09T11:20:02+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "OpenAI doubles down on decision to fire three AI safety researchers",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+   "summary": "OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed \"a significant breach of trust.\" In a post on X on Friday, the company said Jasmine Wang, Tomek Korbak and Mikita ⁠Balesni were dismissed for violating \"clear policies on handling sensitive information.\" It insisted the decision was […]",
+   "published": "2026-10-09T09:48:26+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "OpenAI revenue gap report rattles AI stocks",
+   "url": "https://techxplore.com/news/2026-10-openai-revenue-gap-rattles-ai.html",
+   "summary": "OpenAI is bringing in about $20 billion less in annualized revenue than investors had been led to believe, the Financial Times reported Thursday, raising questions about the solidity of the AI business.",
+   "published": "2026-10-09T09:10:07+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Fired researchers accuse OpenAI of 'chilling' safety efforts",
+   "url": "https://techxplore.com/news/2026-10-accuse-openai-chilling-safety-efforts.html",
+   "summary": "Three former OpenAI security researchers on Thursday accused the ChatGPT maker of firing them for warning about the dangers of artificial intelligence, reigniting the debate over safety at a company whose software has been involved in security breaches.",
+   "published": "2026-10-09T09:10:02+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Japan warns for increased vigilance against rising cyberattacks",
+   "url": "https://techxplore.com/news/2026-10-japan-vigilance-cyberattacks.html",
+   "summary": "Japan's government issued a warning Friday for increased vigilance against cyberattacks, which are rising in number and becoming more sophisticated.",
+   "published": "2026-10-09T09:00:06+00:00",
+   "topics": []
+  },
+  {
+   "source": "MIT Tech Review AI",
+   "title": "We’re putting too much faith in AI’s ability to say no",
+   "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+   "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience. Most of these capers are, of course, cautionary. But recently, the idea that AI shouldn’t…",
+   "published": "2026-10-09T09:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Chinese AI tool pulled to prevent 'misuse' after South Korea hacks",
+   "url": "https://techxplore.com/news/2026-10-chinese-ai-tool-misuse-south.html",
+   "summary": "Chinese AI cybersecurity tool Artex said it stopped programmers from accessing its source code, acknowledging misuse by \"bad actors\" after South Korea linked it to several recent bank hacks.",
+   "published": "2026-10-09T08:40:06+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Meet the Underdog Saluki 27B: A 2-bit Qwen3.8-27B That Beats the Original at Tool Calling",
+   "url": "https://www.marktechpost.com/2026/10/09/meet-the-underdog-saluki-27b-a-2-bit-qwen3-8-27b-that-beats-the-original-at-tool-calling/",
+   "summary": "Underdog Saluki 27B is a 7.89 GB, 2-bit GGUF of Qwen3.8-27B under Apache 2.0. It beats the 54 GB original on tool calling but gives up ground on competition math and reasoning. The post Meet the Underdog Saluki 27B: A 2-bit Qwen3.8-27B That Beats the Original at Tool Calling appeared first on MarkTechPost.",
+   "published": "2026-10-09T07:23:36+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+   "url": "https://openai.com/index/sophos",
+   "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+   "published": "2026-10-09T07:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+   "url": "https://openai.com/index/asana-browser-agent",
+   "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+   "published": "2026-10-09T07:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Google Cloud Launches Gemini Agent, One Universal Agent for Enterprise Work",
+   "url": "https://www.marktechpost.com/2026/10/08/google-cloud-launches-gemini-agent-one-universal-agent-for-enterprise-work/",
+   "summary": "Google Cloud has introduced the Google Cloud Gemini agent, a single agent for enterprise work. The Gemini agent is a cloud-hosted agent from Google Cloud that answers questions, does knowledge work, creates media, and writes and runs code. It does all of this from 1 prompt box and 1 API. For developers, the agent is […] The post Google Cloud Launches Gemini Agent, One Universal Agent for Enterpris",
+   "published": "2026-10-09T06:47:56+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Google Research RRSI Guide: Mastering Self-Improving AI Agents",
+   "url": "https://www.marktechpost.com/2026/10/08/google-research-rrsi-guide-mastering-self-improving-ai-agents/",
+   "summary": "Explore a comprehensive coding guide to Google Research's RRSI (Regularized Recursive Self-Improvement), detailing how noise bands, cost rules, and leakage screens enable safe, efficient, and self-improving AI agents. The post Google Research RRSI Guide: Mastering Self-Improving AI Agents appeared first on MarkTechPost.",
+   "published": "2026-10-09T05:06:17+00:00",
+   "topics": [
+    "llm"
+   ]
+  }
+ ]
+}
