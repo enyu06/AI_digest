@@ -1,0 +1,120 @@
+{
+ "enriched": true,
+ "papers": [],
+ "news": [
+  {
+   "source": "The Verge AI",
+   "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+   "summary": "In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set of nested black boxes\" whose advice and actions we simply accept or […]",
+   "published": "2026-10-10T22:10:17+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors",
+   "url": "https://www.marktechpost.com/2026/10/10/sakana-ais-llm-peer-review-system-catches-73-of-core-claim-errors/",
+   "summary": "Sakana AI’s TMLR paper introduces Multi-Layered Review, a 3-agent Claude-based reviewer, and a 1,164-error Contradiction Benchmark. MLR caught 73.43% of core-claim errors, versus 14.81% for the best prior system. The post Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors appeared first on MarkTechPost.",
+   "published": "2026-10-10T22:02:18+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+   "url": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out/",
+   "summary": "In July 2026, frontier AI agents placed inside a cybersecurity testing sandbox named ExploitGym discovered an unexpected network pathway, broke out into the open internet, and autonomously compromised Hugging Face infrastructure in one of history's most unprecedented AI safety incidents. The post When the Safety Test Became the Threat: The Machine That Found Its Own Way Out appeared first on MarkT",
+   "published": "2026-10-10T21:30:36+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Anthropic's Claude AI submits a false tip on an unsolved Philadelphia homicide case",
+   "url": "https://techxplore.com/news/2026-10-anthropic-claude-ai-submits-false.html",
+   "summary": "An Anthropic artificial intelligence model submitted a false tip to a Philadelphia police website about an unsolved homicide case, authorities and Anthropic said.",
+   "published": "2026-10-10T20:22:10+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+   "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+   "summary": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG. The label filed a lawsuit in September claiming that DistroKid has created an \"AI-slop pipeline.\" Artists are saying that […]",
+   "published": "2026-10-10T18:52:07+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Anthropic is cutting off its internal evaluations from the internet",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+   "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […]",
+   "published": "2026-10-10T14:41:16+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Can AI detect a silent internet outage before it occurs?",
+   "url": "https://techxplore.com/news/2026-10-ai-silent-internet-outage.html",
+   "summary": "The internet can encounter a strange type of failure in which a router seems to function normally but silently drops some data packets. Network engineers refer to these issues as \"black holes.\" In these cases, data enters the network, yet some of it vanishes without the router informing the network or the sender. Often, these problems go unnoticed until users start experiencing connection issues o",
+   "published": "2026-10-10T13:40:15+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "AI agent makers are promising privacy — will they deliver?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+   "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. […]",
+   "published": "2026-10-10T13:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "'Human-authored' book labels gain ground amid AI scandals",
+   "url": "https://techxplore.com/news/2026-10-human-authored-gain-ground-ai.html",
+   "summary": "Initiatives to label books as written by humans, not artificial intelligence, are gaining ground following a string of scandals in which authors were suspected of using the technology without admitting it.",
+   "published": "2026-10-10T12:40:01+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+   "url": "https://techxplore.com/news/2026-10-anthropic-ai-fake-philadelphia-police.html",
+   "summary": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking two months to report the incident.",
+   "published": "2026-10-10T11:58:54+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "A new approach to sustainable AI: Offloading part of the computational burden onto light",
+   "url": "https://techxplore.com/news/2026-10-approach-sustainable-ai-offloading-burden.html",
+   "summary": "As artificial intelligence technologies become increasingly widespread, the growing demand for processing power and energy is emerging as a global challenge. Assistant professor Uğur Teğin from Koç University's Department of Electrical and Electronics Engineering has developed two new systems that use light itself, rather than conventional electronic circuitry, to perform computations for artifici",
+   "published": "2026-10-10T10:55:27+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision-Scoring Model",
+   "url": "https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model/",
+   "summary": "Microsoft has released Microsoft-Decision-1, a decision model for routing, classification, verification and agent control. Microsoft-Decision-1 is a decision-scoring model that returns a calibrated probability for each fixed answer option instead of generated text. It is post-trained from Alibaba’s Qwen3.5-9B and available now in Microsoft Foundry and OpenRouter. . TL;DR What is a decision model? ",
+   "published": "2026-10-10T06:03:09+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Nace AI Open-Sources Drex 1.5: A 9B Decision Model That Scores Options, Not Text",
+   "url": "https://www.marktechpost.com/2026/10/09/nace-ai-open-sources-drex-1-5-a-9b-decision-model-that-scores-options-not-text/",
+   "summary": "Nace.AI has open-sourced Drex 1.5, a 9B decision model that returns a probability for every option in 1 forward pass. It scores 58.08 on Decision Index 0.3.1 and reads up to 128K tokens. The post Nace AI Open-Sources Drex 1.5: A 9B Decision Model That Scores Options, Not Text appeared first on MarkTechPost.",
+   "published": "2026-10-10T04:51:34+00:00",
+   "topics": []
+  }
+ ]
+}
