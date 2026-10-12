@@ -1,0 +1,70 @@
+{
+ "enriched": true,
+ "papers": [],
+ "news": [
+  {
+   "source": "MarkTechPost",
+   "title": "Meet Cloudflare Clef-omni: A 30B-A3B Multimodal Decision Model for Audio, Video, Image and Text",
+   "url": "https://www.marktechpost.com/2026/10/11/cloudflare-clef-omni-multimodal-decision-model/",
+   "summary": "Cloudflare released Clef-omni, an Apache-2.0 multimodal decision model built on Qwen3-Omni-30B-A3B. It scores text, images, audio and video in one call for $0.15 per million input tokens, while Clef-flash drops to $0.038. The post Meet Cloudflare Clef-omni: A 30B-A3B Multimodal Decision Model for Audio, Video, Image and Text appeared first on MarkTechPost.",
+   "published": "2026-10-11T23:15:52+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "What is Decision 3.0? vLLM Semantic Router’s New Open Decision Models",
+   "url": "https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/",
+   "summary": "vLLM Semantic Router released Decision 3.0, 5 Apache-2.0 multimodal decision models from 0.8B to 27B. They answer choice, yes/no and score questions about text and images in one call, without generating text. The post What is Decision 3.0? vLLM Semantic Router’s New Open Decision Models appeared first on MarkTechPost.",
+   "published": "2026-10-11T21:43:41+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+   "summary": "When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would catch on. While most of the broader population is sticking with AI, some of Silicon Valley's most powerful are falling in line and trying to give Trump the great AI rebrand he […]",
+   "published": "2026-10-11T18:33:56+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Bill Gates warns cyberattacks most imminent AI threat",
+   "url": "https://techxplore.com/news/2026-10-bill-gates-cyberattacks-imminent-ai.html",
+   "summary": "Bill Gates on Sunday warned that unregulated artificial intelligence poses a growing threat and predicted an escalation in AI-powered cyberattacks in the coming year.",
+   "published": "2026-10-11T17:32:28+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Power, water, jobs: Google on India data center concerns",
+   "url": "https://techxplore.com/news/2026-10-power-jobs-google-india-center.html",
+   "summary": "Construction of a massive Google data center in the Indian city of Visakhapatnam has been met with resistance from residents who fear the impact on the environment and their lives.",
+   "published": "2026-10-11T15:40:06+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Google faces backlash against India data center",
+   "url": "https://techxplore.com/news/2026-10-google-backlash-india-center.html",
+   "summary": "Handcuffs encircle Google's logo on one campaign poster, while another warns that people \"cannot drink data\", as opposition mounts to the tech giant's planned AI mega-facility in India.",
+   "published": "2026-10-11T15:29:03+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+   "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful […]",
+   "published": "2026-10-11T11:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context",
+   "url": "https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/",
+   "summary": "OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window. It reports 100% on Cybench and 95.8% on an evaluable CVE-Bench subset, priced at $3.00 / $7.50 per 1M tokens. The post OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context appeared first on MarkTechPost.",
+   "published": "2026-10-11T06:20:21+00:00",
+   "topics": []
+  }
+ ]
+}
