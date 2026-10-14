@@ -1,0 +1,262 @@
+{
+ "enriched": true,
+ "papers": [],
+ "news": [
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Here's how to find the learning strategy that makes AI work for you",
+   "url": "https://techxplore.com/news/2026-10-strategy-ai.html",
+   "summary": "Generative AI can explain a difficult concept, solve a problem, correct a sentence or produce an answer in seconds. That creates enormous opportunities for learning.",
+   "published": "2026-10-14T01:00:01+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Meta Launches Muse Wonder and Muse Wonder Full: Benchmarks, Pricing and How to Use It",
+   "url": "https://www.marktechpost.com/2026/10/13/meta-muse-wonder-muse-wonder-full-release/",
+   "summary": "Meta released Muse Wonder and Muse Wonder Full, 1M-context agent models. Muse Wonder costs $4/$20 per million tokens on Meta Model API. Wonder Full, on Muse Code plans, leads DeepSWE and SWE-Marathon. The post Meta Launches Muse Wonder and Muse Wonder Full: Benchmarks, Pricing and How to Use It appeared first on MarkTechPost.",
+   "published": "2026-10-13T22:53:44+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "How to Use Meta’s Rebalancer for Task Placement & Optimization",
+   "url": "https://www.marktechpost.com/2026/10/13/how-to-use-metas-rebalancer-for-task-placement-optimization/",
+   "summary": "In this comprehensive coding tutorial, we explore Meta's Rebalancer assignment solver using its C++ core and Python bindings. Learn how to build datacenters, manage task placements across racks, handle constraints and goal priorities, and compare local search against the exact HiGHS solver using published benchmarks. The post How to Use Meta’s Rebalancer for Task Placement & Optimization appeared ",
+   "published": "2026-10-13T22:14:20+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+   "summary": "An OpenAI engineer was arrested after the company said it discovered a \"sophisticated recording device\" hidden in one of its offices. The employee was identified as Abdulrahman Alfozan, a 35-year-old Saudi national. Alfozan is charged with using or endeavoring to use a device to intercept oral communications, according to a press release from the Department […]",
+   "published": "2026-10-13T20:45:25+00:00",
+   "topics": []
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Developing Gemini 4 Argon responsibly and safely",
+   "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+   "summary": "",
+   "published": "2026-10-13T19:43:07+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Shopify opens its catalog up to more AI agents",
+   "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+   "summary": "More AI agents will soon be able to browse and purchase from Shopify listings, marking an expansion of the company's agentic commerce ambitions. Shopify announced Tuesday it will let shoppers configure their AI agents to purchase products on their behalf, giving more agents access to over a billion listings in Shopify's catalog. (The catalog consists […]",
+   "published": "2026-10-13T19:42:42+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Microsoft's Brad Smith calls for 'real and effective' AI safety standards",
+   "url": "https://techxplore.com/news/2026-10-microsoft-brad-smith-real-effective.html",
+   "summary": "Microsoft President Brad Smith warned Tuesday that industry and governments must \"act with urgency\" to create \"real and effective safety standards\" to contain the risks linked to artificial intelligence.",
+   "published": "2026-10-13T19:40:01+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Xbox is officially embracing the chaos of AI-powered game ports",
+   "url": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+   "summary": "Retro gaming is going through a wild time at the moment, thanks to decompilations and recompilations that are letting gamers port classic titles to new devices, or merge code from two different games into a single new experience. Microsoft has witnessed skateboarding being modded into Call of Duty and Halo being played in a web […]",
+   "published": "2026-10-13T19:00:48+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "I don’t miss the camera on the Ray-Ban Meta Audio glasses",
+   "url": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables",
+   "summary": "The other day I whizzed past several people while running in the park, my playlist blasting at full volume. The next morning, I smiled at a barista while ordering a caramel apple-flavored matcha latte. Afterward, I sat on a park bench reading a book, called up a pal to chat about her recent trip to […]",
+   "published": "2026-10-13T18:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "NASA",
+   "title": "Transporter-18 SmallSats Encapsulation",
+   "url": "https://www.nasa.gov/image-article/transporter-18-smallsats-encapsulation/",
+   "summary": "Three NASA-supported small spacecraft, along with many commercial payloads, are shown before being encapsulated in a SpaceX Falcon 9 ahead of launch on Oct. 1, 2026. The ASCENT Propulsion Dual Mode CubeSat, the Supernova Remnants and Proxies for ReIonization Testbed Experiment (SPRITE) CubeSat, and the Small Spacecraft Propulsion and Inspection Capability (SSPICY) mission will demonstrate […]",
+   "published": "2026-10-13T17:38:37+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "NASA",
+   "title": "Voyager Technologies’ Griffin-1 Completes Environmental Testing at NASA JPL",
+   "url": "https://science.nasa.gov/photojournal/voyager-technologies-griffin-1-completes-environmental-testing-at-nasa-jpl/",
+   "summary": "Description A lunar lander from Voyager Technologies completed nearly three months of environmental testing at NASA’s Jet Propulsion Laboratory in Southern California in late September 2026. The tests demonstrate that the spacecraft is prepared to face the harsh conditions of launch, its journey to the Moon, and landing on the surface. Its final trial was […]",
+   "published": "2026-10-13T17:11:11+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+   "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+   "summary": "",
+   "published": "2026-10-13T17:05:48+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Facebook will let you customize your feed algorithm using AI",
+   "url": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+   "summary": "Facebook's new \"Your Algorithm\" feature will let you directly add and manage topics you want to see in your feed and Facebook Reels. Meta says your recommendations \"respond right away\" after you make updates using the new feature by hitting \"interested\" or \"not interested\" for different topics. Your Algorithm previously launched on Instagram earlier this […]",
+   "published": "2026-10-13T17:01:31+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Google makes it easier to launch your vibe-coded apps",
+   "url": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+   "summary": "The next time you vibe-code a custom app with Google's AI Studio, you won't have to connect your phone to a computer to install it. On Tuesday, Google announced a new feature in the US that will allow you to launch personal apps directly through the Play Store. Google first launched the ability to vibe-code […]",
+   "published": "2026-10-13T17:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Anthropic warns of AI 'worms' spreading across smart gadgets",
+   "url": "https://techxplore.com/news/2026-10-anthropic-ai-worms-smart-gadgets.html",
+   "summary": "Small artificial intelligence models may be only months away from being able to behave like a computer worm, copying themselves from one internet-connected gadget to the next without human help, Anthropic said.",
+   "published": "2026-10-13T16:50:01+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
+   "summary": "Earlier this month, news broke that actress Mia Goth had filed for divorce from actor and filmmaker Shia LaBeouf. An Instagram post from the account miagoth_ - marked with a blue verified checkmark - quickly spread. The post shows Goth in a T-shirt that reads \"MY EX IS MY BIGGEST FAN\" in bold black letters. […]",
+   "published": "2026-10-13T16:42:51+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "In a first, AI helps UK lawmaker find her voice in Parliament",
+   "url": "https://techxplore.com/news/2026-10-ai-uk-lawmaker-voice-parliament.html",
+   "summary": "A British lawmaker made history on Tuesday by becoming the first person to use an AI-generated voice to deliver a speech in the U.K. Parliament.",
+   "published": "2026-10-13T16:34:29+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "New detector spots AI-generated work by examining ideas, not words",
+   "url": "https://techxplore.com/news/2026-10-detector-ai-generated-ideas-words.html",
+   "summary": "It's no secret that an ever-increasing number of scientists use AI to help with their papers. While tasks such as polishing text are generally permissible if declared, using the technology to write papers, or parts of papers, from scratch and passing them off as original work is not. But it's happening.",
+   "published": "2026-10-13T16:23:30+00:00",
+   "topics": []
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Gemini 4 Argon for Robotics",
+   "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+   "summary": "",
+   "published": "2026-10-13T16:01:58+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Gemini 4 Argon: Built to solve your hardest problems",
+   "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+   "summary": "",
+   "published": "2026-10-13T16:01:52+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Google finally releases Gemini 4 Argon",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+   "summary": "After months sitting on the sidelines of the frontier AI race, Google has finally launched its long-awaited Gemini 4 Argon model, claiming it can compete with the best the industry has to offer. Google says Argon delivers \"frontier reasoning and improved performance across complex workflows,\" while cutting down on hedging, repetition, and the cliches that […]",
+   "published": "2026-10-13T16:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Epic shifts to &#8216;AI-accelerated development&#8217; for upcoming Disney game",
+   "url": "https://www.theverge.com/games/1010097/epic-games-disney-project-ai-coding-art",
+   "summary": "Epic Games plans to use AI to generate code and art for an unannounced Disney game, which is now delayed from its original March release window, according to a report from Bloomberg. The project's developers have been given an \"AI-first\" mandate directing them to use tools like Anthropic's Claude more to finish the game. According […]",
+   "published": "2026-10-13T15:12:59+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "DLSS 5 gets toned down for its Hogwarts Legacy debut next month",
+   "url": "https://www.theverge.com/news/1009904/dlss-5-hogwarts-legacy-changes-improvements",
+   "summary": "When Nvidia originally showed off DLSS 5 earlier this year, the technology immediately got branded as gen AI for video games. To gamers, Nvidia had lost the plot. I personally couldn't get over how faces were transformed using DLSS 5. The 15-year-old student from Hogwarts Legacy suddenly looked much older, and Grace from Resident Evil […]",
+   "published": "2026-10-13T13:55:45+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Optical intelligence could help communications systems read complex light patterns",
+   "url": "https://techxplore.com/news/2026-10-optical-intelligence-communications-complex-patterns.html",
+   "summary": "Scientists at the University of the Witwatersrand (Wits) have developed a \"light-powered brain\" that can recognize hidden information in complex patterns of light, potentially paving the way for faster communications systems.",
+   "published": "2026-10-13T13:40:21+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "Higgsfield takes AI video from 1 minute to over 10",
+   "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+   "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+   "published": "2026-10-13T12:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "NASA",
+   "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station",
+   "url": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-on-35th-spacex-resupply-mission-to-station/",
+   "summary": "NASA’s SpaceX 35th commercial resupply mission lifted off at 6:33 a.m. EDT Tuesday aboard a Falcon 9 rocket from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida, carrying more than 6,300 pounds of supplies and hardware, bound for the International Space Station. Following its successful launch, the SpaceX Dragon spacecraft will […]",
+   "published": "2026-10-13T11:12:18+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "MIT Tech Review AI",
+   "title": "Open models have real benefits. Do they outweigh the risks?",
+   "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+   "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk. The report’s core concern is that the…",
+   "published": "2026-10-13T10:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "MIT Tech Review AI",
+   "title": "AI labs are buying data from dead startups to train their models",
+   "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+   "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around…",
+   "published": "2026-10-13T09:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Z.ai GLM-Legal Beats Claude Fable 5 and Kimi K3 on Harvey LAB",
+   "url": "https://www.marktechpost.com/2026/10/13/zai-glm-legal-harvey-lab-legal-ai-model/",
+   "summary": "Z.ai’s GLM-Legal is a legal AI model built on GLM-5.3-Flash. It scores 19.2% all-pass on Harvey’s Legal Agent Benchmark, nearly 3x its base, at $0.15 per test. Access is by application. The post Z.ai GLM-Legal Beats Claude Fable 5 and Kimi K3 on Harvey LAB appeared first on MarkTechPost.",
+   "published": "2026-10-13T08:19:54+00:00",
+   "topics": [
+    "llm"
+   ]
+  }
+ ]
+}
