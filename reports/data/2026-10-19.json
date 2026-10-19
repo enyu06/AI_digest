@@ -1,0 +1,88 @@
+{
+ "enriched": true,
+ "papers": [],
+ "news": [
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Consumer apprehension grows as US retailers adopt AI-assisted pricing tools",
+   "url": "https://techxplore.com/news/2026-10-consumer-apprehension-retailers-ai-pricing.html",
+   "summary": "U.S. consumers aren't just frustrated with high prices. They're angry and confused about the increasingly high-tech ways that restaurant chains and major retailers are setting those prices.",
+   "published": "2026-10-18T19:18:46+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "A woman was arrested in Philly for blocking a delivery robot",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+   "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front […]",
+   "published": "2026-10-18T18:28:10+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
+   "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
+   "summary": "An AI agent that reads the web pays 2 kinds of cost. The first is the retrieval charge: what a search or fetch API bills per request. The second is model processing: content passed from retrieved pages into an AI model consumes tokens, while reasoning and generated responses add further costs. TinyFish, a web infrastructure […] The post TinyFish Makes Search Free: What It Really Costs an AI Agent ",
+   "published": "2026-10-18T18:20:28+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Switching languages can change a chatbot's personality test results",
+   "url": "https://techxplore.com/news/2026-10-languages-chatbot-personality-results.html",
+   "summary": "Ask an AI chatbot to complete a personality questionnaire in English, then give it the Mandarin version, and its answers paint a different picture. In tests of five systems, switching languages changed how strongly the responses expressed qualities such as curiosity, cooperativeness and dependability.",
+   "published": "2026-10-18T14:40:01+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org Space",
+   "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
+   "url": "https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html",
+   "summary": "A Japanese space mission is about to launch towards Mars. But it will not land on the planet itself. Instead, the Martian Moons Exploration (MMX) mission will focus on Phobos, the bigger of Mars's two small moons.",
+   "published": "2026-10-18T14:00:01+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "Phys.org Space",
+   "title": "Japan to launch spacecraft on a mission to get samples from a Martian moon",
+   "url": "https://phys.org/news/2026-10-japan-spacecraft-mission-samples-martian.html",
+   "summary": "Japan is set to launch a spacecraft on the world's first mission to bring back samples from Phobos, one of the two small, potato-shaped moons orbiting Mars.",
+   "published": "2026-10-18T11:38:40+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
+   "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
+   "summary": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight updates. The post Google Open-Sources Harness2, a Recursive Agent Harnessing Framework appeared first on MarkTechPost.",
+   "published": "2026-10-18T08:15:04+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
+   "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
+   "summary": "In this tutorial, we implement Structured Data Models, NVIDIA’s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make predictions without training. The library wraps TabICLv2 and KumoTabular for single tables and KumoRelational for whole relational databases, and each of them answers by in-context learning: we […] The post How to Mak",
+   "published": "2026-10-18T05:56:05+00:00",
+   "topics": [
+    "ml"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
+   "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
+   "summary": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset versioning, and a free self-service tier. The post Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI appeared first on MarkTechPost.",
+   "published": "2026-10-18T04:06:33+00:00",
+   "topics": []
+  }
+ ]
+}
