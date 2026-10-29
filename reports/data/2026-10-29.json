@@ -1,0 +1,256 @@
+{
+ "enriched": false,
+ "papers": [],
+ "news": [
+  {
+   "source": "The Verge AI",
+   "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+   "summary": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young people and creatives. Appearing on the Colin and Samir podcast to talk about the launch of widescreen and […]",
+   "published": "2026-10-28T23:05:39+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Akai is embracing vibe-coded mods with an open-source MPC",
+   "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+   "summary": "The MPC Sample Key isn't even formally announced yet, but Akai is already showing off what the modding community is cooking up through vibe coding. Akai has decided to embrace the explosion of hackers and custom firmware developers by giving them early access to the device, which will have open-source firmware. It will likely run […]",
+   "published": "2026-10-28T21:34:04+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org Space",
+   "title": "Could next-gen artificial intelligence help map out future space outposts?",
+   "url": "https://phys.org/news/2026-10-gen-artificial-intelligence-future-space.html",
+   "summary": "Planning a successful trip can be challenging, especially when your destination is in outer space. Even before liftoff, space missions require extraordinary amounts of scientific preparation and data analysis to succeed, which can take years to complete. However, as space agencies race to establish a permanent presence on the moon, using artificial intelligence to combine such information into a s",
+   "published": "2026-10-28T21:30:01+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "MIT Tech Review AI",
+   "title": "Creating AI value with enterprise context",
+   "url": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
+   "summary": "Across a business, any number of AI platforms, systems, and tools may be at work simultaneously—for example, AI-powered customer platforms, conversational assistants, and workflow and process automation tools. Each one is sophisticated, advanced, and quick to respond. But, when set to work, the outcomes and actions that emerge may be wrong, confused, or lacking a…",
+   "published": "2026-10-28T20:32:02+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+   "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+   "summary": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing behind. The new Gemini 4 Carbon model offers improvements over […]",
+   "published": "2026-10-28T20:03:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Microsoft is ending Copilot support on smart TVs",
+   "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+   "summary": "Nearly two years after LG and Samsung announced at CES 2025 that their latest smart TVs would include access to Microsoft's Copilot, the company is ending support for the AI assistant's functionality on all TVs this year, according to a report by Windows Central. The news comes not from an official announcement from LG, Samsung, […]",
+   "published": "2026-10-28T18:36:26+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Google DeepMind Introduces Gemini 4 Carbon, Its Top Model for Cyber Defense and Coding",
+   "url": "https://www.marktechpost.com/2026/10/28/google-deepmind-gemini-4-carbon-frontier-model/",
+   "summary": "Google DeepMind introduced Gemini 4 Carbon, a frontier model that scores 59 on the Artificial Analysis Intelligence Index and 88.2% on SEC-bench Pro. Access starts with vetted cyber defenders, at $2/$10 per million tokens. The post Google DeepMind Introduces Gemini 4 Carbon, Its Top Model for Cyber Defense and Coding appeared first on MarkTechPost.",
+   "published": "2026-10-28T17:48:38+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "MiniMax Open-Sources MCode Stack: 15 Agent Skills Its Coding Team Uses Daily",
+   "url": "https://www.marktechpost.com/2026/10/28/minimax-open-sources-mcode-stack-agent-skills/",
+   "summary": "MiniMax has open-sourced MCode Stack, an MIT-licensed repo of 17 SKILL.md skills and 5 checklists that its MiniMax Code team uses daily for code review, subagent splits, context budgets and long-running commands. The post MiniMax Open-Sources MCode Stack: 15 Agent Skills Its Coding Team Uses Daily appeared first on MarkTechPost.",
+   "published": "2026-10-28T17:20:29+00:00",
+   "topics": []
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Gemini 4 Carbon: Our next frontier model",
+   "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "summary": "",
+   "published": "2026-10-28T17:00:58+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Chrome’s enhanced autofill can now pull info from Gmail to help you fill out forms",
+   "url": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
+   "summary": "Following improvements made to Chrome's enhanced autofill last year that included your name, passport number, email address, and physical addresses sourced from your Google Accounts and services like Google Wallet, the feature is now expanding. Starting today, Chrome's enhanced autofill will use Gemini with Personal Intelligence to suggest information sourced from your Gmail, potentially saving […",
+   "published": "2026-10-28T17:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Meta says it&#8217;ll probably delay its controversial new business terms again",
+   "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
+   "summary": "Meta says it may push the implementation of its new business terms past November 20th as it faces backlash from publishers over concerns about AI training. In a post on X, Meta communications head Andy Stone said the company does \"not plan to make policy changes without a full consultation with industry groups and leaders.\" […]",
+   "published": "2026-10-28T16:15:30+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "What is artificial general intelligence—and is it already here?",
+   "url": "https://techxplore.com/news/2026-10-artificial-general-intelligence.html",
+   "summary": "OpenAI's president, Greg Brockman, recently suggested that its advanced model, known as GPT-6 Astra, could mark the arrival of something called artificial general intelligence, or AGI.",
+   "published": "2026-10-28T16:00:34+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI may quickly generate ideas, but working with people leads to more creative ones",
+   "url": "https://techxplore.com/news/2026-10-ai-quickly-generate-ideas-people.html",
+   "summary": "The productivity gains of generative AI are often touted as the main reason for its rapid adoption. Much like how a calculator can instantly solve mathematical equations too long for the human brain to compute, generative AI can help someone quickly summarize long articles and draft emails.",
+   "published": "2026-10-28T15:20:17+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Hugging Face",
+   "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+   "summary": "",
+   "published": "2026-10-28T14:58:17+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "xAI is buying out homeowners who promise not to sue over data center noise",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+   "summary": "A subsidiary of Elon Musk's xAI is offering to buy up homes in a Mississippi neighborhood, as long as residents don't join a lawsuit targeting the company's nearby data center and power plant, according to a report from The Guardian. A realtor going door-to-door in the Southaven neighborhood reportedly told one resident that xAI plans […]",
+   "published": "2026-10-28T14:44:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Human in the loop 4.0: Human feedback guides AI approach that automates about 84% of decisions",
+   "url": "https://techxplore.com/news/2026-10-human-loop-feedback-ai-approach.html",
+   "summary": "How can we harness the potential of automation while retaining human oversight? And what does successful automation look like in practice?",
+   "published": "2026-10-28T14:00:08+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "People are using AI to make expensive computer programs free. This could change everything",
+   "url": "https://techxplore.com/news/2026-10-people-ai-expensive-free.html",
+   "summary": "One of the earliest uses of generative artificial intelligence (AI) tools like ChatGPT and Claude was producing source code—computer language instructions that make up software such as word processors, your internet browser and everything else.",
+   "published": "2026-10-28T13:40:04+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+   "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+   "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+   "published": "2026-10-28T13:15:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Experts discuss AI's impact on the future workforce",
+   "url": "https://techxplore.com/news/2026-10-experts-discuss-ai-impact-future.html",
+   "summary": "Worried about your employment prospects now that the next level of artificial intelligence has arrived, accompanied by breakthroughs like ChatGPT? \"Don't be,\" says Barry Smith, Ph.D., SUNY distinguished professor of philosophy at the University at Buffalo. \"There are many things that AI does well, but there are too many areas of human intelligence that involve what you can't emulate through the da",
+   "published": "2026-10-28T12:20:10+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MIT Tech Review AI",
+   "title": "Pairing industrial AI autonomy and human control",
+   "url": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
+   "summary": "",
+   "published": "2026-10-28T12:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Voters in Texas agree: They hate data centers",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
+   "summary": "Ask Texas NAACP president Gary Bledsoe what it's been like to see data center developers descend upon Austin and its surrounding suburbs and he can rattle off project after project facing opposition from locals. There's the fight in Taylor over plans to build a data center at a site that's supposed to be a park. […]",
+   "published": "2026-10-28T12:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Meta quietly launched an &#8216;AI pet journal&#8217; app",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+   "summary": "Meta has launched a \"tamagotchi-style\" pet game called Waddle World, with virtual creatures that chat with users and create doodles to illustrate conversations. According to its Apple and Play Store listings, the \"16-bit pet care game\" is not really a game, but \"a daily journal disguised as a pet.\" Users should talk, not type, with […]",
+   "published": "2026-10-28T11:27:30+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Anthropic's record IPO faces some big questions",
+   "url": "https://techxplore.com/news/2026-10-anthropic-ipo-big.html",
+   "summary": "No startup has ever grown so fast. In five years, Anthropic has become an AI giant valued at $1 trillion, and it is now aiming for a record-breaking stock market debut.",
+   "published": "2026-10-28T10:07:19+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI chip giant SK hynix posts sevenfold surge in quarterly operating profit",
+   "url": "https://techxplore.com/news/2026-10-ai-chip-giant-sk-hynix.html",
+   "summary": "South Korean chip giant SK hynix on Wednesday reported a 632% surge in third-quarter operating profit, fueled by booming demand for AI semiconductors, and unveiled plans to return an additional $45 billion to shareholders.",
+   "published": "2026-10-28T10:04:05+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "The future of the firm",
+   "url": "https://openai.com/index/the-future-of-the-firm",
+   "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+   "published": "2026-10-28T10:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "Legora is building the agentic operating system for legal work",
+   "url": "https://openai.com/index/legora",
+   "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+   "published": "2026-10-28T09:30:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Polymathic AI and Princeton Researchers Release FlashMap, a Flow Map Drafter for 6.14x Faster LLM Decoding",
+   "url": "https://www.marktechpost.com/2026/10/28/flashmap-flow-map-speculative-decoding/",
+   "summary": "FlashMap is a speculative decoding drafter from Polymathic AI, Princeton and USC ISI researchers. It drafts 16 tokens jointly in one pass and reaches up to 6.14x lossless speedup on Qwen3-8B. The post Polymathic AI and Princeton Researchers Release FlashMap, a Flow Map Drafter for 6.14x Faster LLM Decoding appeared first on MarkTechPost.",
+   "published": "2026-10-28T08:18:03+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Meet Google DeepMind’s Genie 4: Real-Time World Model With Native Audio",
+   "url": "https://www.marktechpost.com/2026/10/28/google-deepmind-genie-4-world-model/",
+   "summary": "Google DeepMind released Genie 4 as a research preview. The real-time world model adds native audio, live dialogue and text steering, with Gemini 3.8 Flash planning events inside the simulation loop. The post Meet Google DeepMind’s Genie 4: Real-Time World Model With Native Audio appeared first on MarkTechPost.",
+   "published": "2026-10-28T07:34:58+00:00",
+   "topics": [
+    "llm"
+   ]
+  }
+ ]
+}
