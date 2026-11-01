@@ -1,0 +1,42 @@
+{
+ "enriched": true,
+ "papers": [],
+ "news": [
+  {
+   "source": "The Verge AI",
+   "title": "I built an AI Tamagotchi before Meta could",
+   "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+   "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home. It […]",
+   "published": "2026-10-31T16:05:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI giants promise publishers new way to block some scraping",
+   "url": "https://techxplore.com/news/2026-10-ai-giants-publishers-block.html",
+   "summary": "OpenAI, Google, Microsoft and Anthropic pledged on Friday to give media outlets and other websites a single way to prevent their content from being scraped to train artificial intelligence (AI) models, amid growing criticisms and legal battles from news publishers.",
+   "published": "2026-10-31T11:00:11+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Meet Factory Droid 1.0: A Model-Independent Coding Agent Harness Built on Script Mode",
+   "url": "https://www.marktechpost.com/2026/10/31/factory-droid-1-0-frontier-harness/",
+   "summary": "Factory released Droid 1.0, a model-independent coding agent harness that makes programmatic tool calling the default. On Factory’s own Terminal-Bench 4 runs, Droid scores 65.2% with Claude Opus 5.5 at $4.73 per passed task. The post Meet Factory Droid 1.0: A Model-Independent Coding Agent Harness Built on Script Mode appeared first on MarkTechPost.",
+   "published": "2026-10-31T10:38:14+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Vercel Labs Open-Sources agent-desktop for Agent Computer Use",
+   "url": "https://www.marktechpost.com/2026/10/31/vercel-labs-agent-desktop-computer-use/",
+   "summary": "Vercel Labs released agent-desktop, an Apache-2.0 Rust CLI that gives any AI agent computer use on macOS, Windows and Linux by reading OS accessibility trees and acting on stable refs instead of pixels. The post Vercel Labs Open-Sources agent-desktop for Agent Computer Use appeared first on MarkTechPost.",
+   "published": "2026-10-31T10:10:28+00:00",
+   "topics": [
+    "llm"
+   ]
+  }
+ ]
+}
