@@ -1,0 +1,233 @@
+{
+ "enriched": false,
+ "papers": [],
+ "news": [
+  {
+   "source": "The Verge AI",
+   "title": "Nvidia is reportedly preparing to fire Jensen Huang",
+   "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+   "summary": "Nvidia's board is preparing to dismiss CEO Jensen Huang following a report from the New York Times about a second alleged extramarital affair, just days after he admitted to a separate affair with a woman alleged to be a Chinese spy, The Wall Street Journal reports. The second alleged affair was with an executive who […]",
+   "published": "2026-11-11T22:44:36+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org Space",
+   "title": "Asteroid mining will crash the platinum market, but that's good news for Earth",
+   "url": "https://phys.org/news/2026-11-asteroid-platinum-good-news-earth.html",
+   "summary": "Science fiction authors have been dreaming of robotic spacecraft harvesting fortunes from asteroids for decades. Humanity is slowly getting closer to that reality. But if you ask asteroid mining skeptics, they will usually ask one specific question—what happens to the prices of all those rare materials once someone actually brings them back? A pair of system dynamicists from MIT directly tackled t",
+   "published": "2026-11-11T22:20:13+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "United won’t let your AI agent book your flight",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+   "summary": "United says it won't let personal AI assistants book tickets on the airline, citing both privacy and regulatory concerns. The company says it hasn't yet seen many people try to use AI agents to book their flights, The Wall Street Journal reports, in line with observations from other businesses like Doordash. But United is concerned […]",
+   "published": "2026-11-11T21:54:21+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Google Launches Gemini Decisions API With Gemini Decision 1 at $0.10/M Tokens",
+   "url": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
+   "summary": "Google launched the Gemini Decisions API, powered by Gemini Decision 1. It returns calibrated probabilities for up to 1,000 yes/no, choice and rubric questions over text, images, audio, video and PDFs, at $0.10 per 1M input tokens. The post Google Launches Gemini Decisions API With Gemini Decision 1 at $0.10/M Tokens appeared first on MarkTechPost.",
+   "published": "2026-11-11T21:21:42+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Google DeepMind Releases AlphaGenome 2 for Cell-Type-Specific Variant Effects",
+   "url": "https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-variant-effects/",
+   "summary": "Google DeepMind released AlphaGenome 2, a conditional DNA sequence model that predicts regulatory activity and variant effects per cell type. It is available via the AlphaGenome API for non-commercial research. The post Google DeepMind Releases AlphaGenome 2 for Cell-Type-Specific Variant Effects appeared first on MarkTechPost.",
+   "published": "2026-11-11T20:51:56+00:00",
+   "topics": []
+  },
+  {
+   "source": "Google Research",
+   "title": "Using wearables to enable cardiovascular-kidney-metabolic (CKM) risk profiling for personalized coaching",
+   "url": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/",
+   "summary": "Health & Bioscience",
+   "published": "2026-11-11T19:54:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "New framework examines one-sided human-AI relationships and potential risks for consumers",
+   "url": "https://techxplore.com/news/2026-11-framework-sided-human-ai-relationships.html",
+   "summary": "Practically or theoretically, whether teaching a classroom full of Penn State students or pondering concepts with a smaller group of international colleagues, Heather Shoenberger brings curiosity and optimism as she considers the challenges and opportunities related to artificial intelligence.",
+   "published": "2026-11-11T17:00:07+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "PRISM helps robots move better by learning how forces and motion interact",
+   "url": "https://techxplore.com/news/2026-11-prism-robots-motion-interact.html",
+   "summary": "A new neural network component, developed at University of Michigan Engineering, challenges a common assumption in robot learning: that the same general-purpose neural networks used for image recognition are equally suited to controlling physical movement.",
+   "published": "2026-11-11T17:00:01+00:00",
+   "topics": [
+    "ml"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI toolbox accelerates bioreactor simulations by up to 10,000 times",
+   "url": "https://techxplore.com/news/2026-11-ai-toolbox-bioreactor-simulations.html",
+   "summary": "The control of large-scale industrial bioreactors is one of the most complex tasks in the process industry. In the often huge plants, the smallest differences in temperature, pH value or oxygen content determine the success or failure of a process.",
+   "published": "2026-11-11T16:40:26+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "New methods improve 3D scene reconstruction and robot mapping",
+   "url": "https://techxplore.com/news/2026-11-methods-3d-scene-reconstruction-robot.html",
+   "summary": "A research team led by professor Zhu Hui from the Institute of Intelligent Machines at the Hefei Institutes of Physical Science of the Chinese Academy of Sciences has developed two methods to improve reconstruction fidelity, helping robots build more accurate representations of their surroundings.",
+   "published": "2026-11-11T16:20:05+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Australia will impose mandatory safety rules on AI. Are we focused on the right risks?",
+   "url": "https://techxplore.com/news/2026-11-australia-impose-mandatory-safety-ai.html",
+   "summary": "Prime Minister Anthony Albanese has just announced six mandatory artificial intelligence (AI) safety guardrails.",
+   "published": "2026-11-11T16:00:44+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+   "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+   "summary": "Google has cooked up a new experimental AI tool called Tabletop that generates customized collaborative hubs to help you coordinate with family, and friends. The Tabletop platform shares some visual similarities with workplace management apps like Asana and Monday, but with a built-in AI feature that allows you to vibecode personalized interactive tools by describing […]",
+   "published": "2026-11-11T16:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Marktechpost AI Launches GPU Leaderboard and the Deploy It Chrome Extension",
+   "url": "https://www.marktechpost.com/2026/11/11/marktechpost-gpu-leaderboard-chrome-extension-launch/",
+   "summary": "Marktechpost Launches GPU Leaderboard and the Deploy It Chrome Extension The post Marktechpost AI Launches GPU Leaderboard and the Deploy It Chrome Extension appeared first on MarkTechPost.",
+   "published": "2026-11-11T15:51:14+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Robots gain 'muscle memory' for planning their next moves in milliseconds",
+   "url": "https://techxplore.com/news/2026-11-robots-gain-muscle-memory-milliseconds.html",
+   "summary": "If \"to err is human,\" you could say robots are superhuman. They're more error-prone than we are, even when tasked with things like home and factory chores, which we might consider easy. One reason for these mistakes is that robots struggle to extract relevant details from the past and act on them in real time, even with vision-language models (VLMs), which interpret visual inputs such as videos an",
+   "published": "2026-11-11T15:40:14+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+   "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+   "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+   "published": "2026-11-11T15:00:15+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+   "summary": "Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold important clues to the causes of disease - and point the way to new treatments. AlphaGenome 2 is the successor […]",
+   "published": "2026-11-11T15:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+   "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+   "summary": "Some of the most impressive tech that Adobe showcases at its annual Max conference each year is the experimental features it's developing, and the latest of those tools are being announced today: they can transform images into explorable 3D scenes, design AI characters by talking to them, and turn photo editing into a copy/paste process. […]",
+   "published": "2026-11-11T14:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Many AI companies will adopt advertising: Criteo CEO",
+   "url": "https://techxplore.com/news/2026-11-ai-companies-advertising-ad-chief.html",
+   "summary": "Many AI platforms will end up eventually adopting advertising, the chief executive of the online advertising agency Criteo told AFP Tuesday, as investors are focused on whether the technology will ever be profitable.",
+   "published": "2026-11-11T11:10:01+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "AI sharpens hurricane forecasts, but humans still call the shots",
+   "url": "https://techxplore.com/news/2026-11-ai-sharpens-hurricane-humans-shots.html",
+   "summary": "AI is often criticized for the energy its data centers consume, which is driving more fossil fuel use and contributing to climate change.",
+   "published": "2026-11-11T10:56:32+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "ChatGPT Plus for veterans and servicemembers",
+   "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+   "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+   "published": "2026-11-11T08:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "MBZUAI’s IFM Releases PAN 2, an Open 29B World Model for Physical AI",
+   "url": "https://www.marktechpost.com/2026/11/10/ifm-pan-2-open-world-model/",
+   "summary": "The Institute of Foundation Models at MBZUAI released PAN 2, an Apache 2.0 world model that couples an LLM planner with a 29B diffusion transformer to simulate up to 20 seconds of action outcomes as video. The post MBZUAI’s IFM Releases PAN 2, an Open 29B World Model for Physical AI appeared first on MarkTechPost.",
+   "published": "2026-11-11T07:38:57+00:00",
+   "topics": [
+    "llm",
+    "ml"
+   ]
+  },
+  {
+   "source": "Hugging Face",
+   "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+   "url": "https://huggingface.co/blog/qvac/botpsy",
+   "summary": "",
+   "published": "2026-11-11T05:01:16+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Fish Audio Releases Live 3, a Full-Duplex Voice Model That Reacts in 186 ms",
+   "url": "https://www.marktechpost.com/2026/11/10/fish-audio-live-3-full-duplex-voice-model/",
+   "summary": "Fish Audio released Live 3, a full-duplex voice model for voice agents. It listens while it speaks, separates “mm-hmm” from real interruptions, and can react in as little as 186 ms. English only at launch The post Fish Audio Releases Live 3, a Full-Duplex Voice Model That Reacts in 186 ms appeared first on MarkTechPost.",
+   "published": "2026-11-11T04:43:53+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+   "url": "https://openai.com/index/jiostar-vijay-seshadri",
+   "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+   "published": "2026-11-11T00:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+   "url": "https://huggingface.co/blog/token-pooling",
+   "summary": "",
+   "published": "2026-11-11T00:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+   "url": "https://openai.com/index/singapore-airlines-travel-work",
+   "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+   "published": "2026-11-10T08:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  }
+ ]
+}
