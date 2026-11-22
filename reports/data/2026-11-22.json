@@ -1,0 +1,86 @@
+{
+ "enriched": true,
+ "papers": [],
+ "news": [
+  {
+   "source": "The Verge AI",
+   "title": "The UN fails to agree on rules regulating ‘killer robots’",
+   "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+   "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the […]",
+   "published": "2026-11-21T20:03:37+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Can teams of AI agents recreate the chain reaction of human decisions?",
+   "url": "https://techxplore.com/news/2026-11-teams-ai-agents-recreate-chain.html",
+   "summary": "At the start of the COVID-19 pandemic in 2020, people hoarded toilet paper. Australians alone bought 39.7 million rolls from the Woolworths supermarket chain in a single week, according to the store's 2020 annual report. It's not the only time that fear of a shortage spiraled into one.",
+   "published": "2026-11-21T19:00:06+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Can Anthropic afford to put safety first?",
+   "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+   "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to […]",
+   "published": "2026-11-21T15:00:00+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+   "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+   "summary": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative called word. They're all part of Chess's new Classic Games platform, which is launching […]",
+   "published": "2026-11-21T14:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
+   "url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+   "summary": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters. It runs on a 32GB Mac or one DGX Spark and scores 79.2% on SWE-bench Verified. The post Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac appeared first on MarkTechPost.",
+   "published": "2026-11-21T12:13:50+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
+   "url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+   "summary": "OpenAI has released GPT-Live-1.1 in the API. The full-duplex voice model improves multilingual accents and transcription, and a new standby mode bills idle WebRTC time at $0.02 per minute instead of $0.05. The post OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min appeared first on MarkTechPost.",
+   "published": "2026-11-21T11:46:17+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Has AI's honeymoon ended on Wall Street?",
+   "url": "https://techxplore.com/news/2026-11-ai-honeymoon-wall-street.html",
+   "summary": "Although the AI industry has been the darling of Wall Street for years, the sector now makes investors wince as it reckons with a wave of concerns over dizzying spending and its promise to make the technology profitable.",
+   "published": "2026-11-21T11:00:01+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Anthropic worker claims to have solved a holy grail of math problems with the help of AI",
+   "url": "https://techxplore.com/news/2026-11-anthropic-worker-holy-grail-math.html",
+   "summary": "A mathematician who works for artificial intelligence giant Anthropic claims he has solved a holy grail of math problems with the help of the company's AI tool Claude.",
+   "published": "2026-11-21T10:16:47+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index",
+   "url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
+   "summary": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4. bison-1 scores 76 on the AA Decision Index v2.1, and both models support 128k context and image input. The post Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index appeared first on MarkTechPost.",
+   "published": "2026-11-21T04:01:04+00:00",
+   "topics": []
+  }
+ ]
+}
