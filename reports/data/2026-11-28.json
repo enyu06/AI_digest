@@ -1,0 +1,136 @@
+{
+ "enriched": true,
+ "papers": [],
+ "news": [
+  {
+   "source": "Phys.org Space",
+   "title": "Hera reveals stadium-sized asteroid crater from spacecraft impact",
+   "url": "https://phys.org/news/2026-11-hera-reveals-stadium-sized-asteroid.html",
+   "summary": "Arriving at the site of humankind's first planetary defense experiment, the European Space Agency's Hera mission has found a miniature world of surprises. Dimorphos—the small asteroid whose orbit around a second, larger asteroid was deflected by a spacecraft impact—now has one face flattened with a stadium-sized crater and is tumbling chaotically. Meanwhile, hundreds of previously unknown boulders",
+   "published": "2026-11-27T20:20:06+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Frozen language model helps predict materials properties with roughly 95% less training time",
+   "url": "https://techxplore.com/news/2026-11-frozen-language-materials-properties-roughly.html",
+   "summary": "Discovering new materials often involves predicting their properties before investing time and resources in making and testing them in the laboratory. Machine-learning models are widely used to estimate important properties, such as band gap and formation energy, helping researchers narrow down candidate materials. More recently, large language models (LLMs) have offered a flexible way to represen",
+   "published": "2026-11-27T18:40:02+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "76% of Australians are struggling to tell apart real and AI content",
+   "url": "https://techxplore.com/news/2026-11-australians-struggling-real-ai-content.html",
+   "summary": "Most Australians are using—or at least have tried out—generative artificial intelligence (AI) tools such as ChatGPT, Copilot and Gemini, among many others.",
+   "published": "2026-11-27T17:00:01+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "We built an AI you can dance with. It taught us about developing the technology responsibly",
+   "url": "https://techxplore.com/news/2026-11-built-ai-taught-technology-responsibly.html",
+   "summary": "In recent months, top researchers have quit leading artificial intelligence companies, warning the AI race is moving too quickly, with too little oversight and accountability.",
+   "published": "2026-11-27T16:40:04+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org Space",
+   "title": "Meteor blast scars hint at Venus's gradual volcanic makeover",
+   "url": "https://phys.org/news/2026-11-meteor-blast-scars-hint-venus.html",
+   "summary": "In a radar image from NASA's Magellan spacecraft, a dark spot about 20 kilometers (12 miles) wide sits inside two bright halos on Venus (see images C and D above). The fainter outer halo spans some 180 kilometers (110 miles), yet there is no obvious crater at the center. A space rock may have created the entire pattern by exploding in the planet's thick atmosphere.",
+   "published": "2026-11-27T16:00:07+00:00",
+   "topics": [
+    "orbit"
+   ]
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Q&A: Evolutionary algorithms may automate the search for better energy forecasting model settings",
+   "url": "https://techxplore.com/news/2026-11-qa-evolutionary-algorithms-automate-energy.html",
+   "summary": "A doctoral dissertation of Aleksei Vakhnin in the field of Environmental Science will be examined at the Faculty of Science, Forestry and Technology, Kuopio campus.",
+   "published": "2026-11-27T15:40:06+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "Free will is not an illusion but a control achievement of the brain—and it can be tested in machines",
+   "url": "https://techxplore.com/news/2026-11-free-illusion-brain-machines.html",
+   "summary": "Is free will real, or is it an illusion created by our brains? For neuroscientist Paul Verschure, distinguished university professor at Miguel Hernández University of Elche (UMH), in Spain, free will is real—and measurable. In two papers published in Philosophical Transactions of the Royal Society B, he argues that free will is a product of evolution and introduces the concept of Responsible Auton",
+   "published": "2026-11-27T15:20:12+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "A gadget straight out of a James Bond film: Tiny tooth-mounted sensor recognizes silent speech",
+   "url": "https://techxplore.com/news/2026-11-gadget-straight-james-bond-tiny.html",
+   "summary": "Speaking unobtrusively with artificial intelligence may one day be possible with a small sensor attached to a tooth. The sensor recognizes the wearer's words as they mouth them naturally and silently, remaining completely hidden from outside view.",
+   "published": "2026-11-27T15:00:10+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "It's making your list, and checking your price: Holiday shopping goes AI",
+   "url": "https://techxplore.com/news/2026-11-price-holiday-ai.html",
+   "summary": "From sales that seem to start earlier each year to a dwindling desire by shoppers to camp outside of big-box stores in the early morning to snag the best deals, Black Friday has changed over the years.",
+   "published": "2026-11-27T14:20:06+00:00",
+   "topics": []
+  },
+  {
+   "source": "The Verge AI",
+   "title": "Android’s DIY widgets are a bit of vibe-coding fun",
+   "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+   "summary": "Aside from dealing with my calendar, there's one thing I want AI to do: tell me if I'm about to miss the bus. What I need is a widget. It needs to tell me real-time arrivals for the bus stop near my house. Tapping around on my phone screen to open the right app and […]",
+   "published": "2026-11-27T14:00:00+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "'King is back': Nvidia boss's return sparks fresh AI deepfake deluge",
+   "url": "https://techxplore.com/news/2026-11-king-nvidia-boss-fresh-ai.html",
+   "summary": "Scandal-hit Jensen Huang's return as chief executive of U.S. chip giant Nvidia has triggered a fresh avalanche of AI-generated parody videos, highlighting how the sex-and-espionage saga has become a prime target for hyperrealistic deepfakes.",
+   "published": "2026-11-27T10:40:02+00:00",
+   "topics": []
+  },
+  {
+   "source": "Phys.org ML/AI",
+   "title": "As Google threatens to cut schools' search access, Los Angeles blocks AI features",
+   "url": "https://techxplore.com/news/2026-11-google-threatens-schools-access-los.html",
+   "summary": "School districts are taking steps to block Google's artificial intelligence features and are considering dropping Google products entirely unless the company gives them a permanent AI workaround, pitting them against the tech giant whose Chromebook computers and learning tools are deeply embedded in America's classrooms.",
+   "published": "2026-11-27T10:05:14+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "nexos.ai AI Adoption Platform puts 200+ models behind one AI Gateway, with budget limits and governance built in",
+   "url": "https://www.marktechpost.com/2026/11/26/nexos-ai-ai-gateway-200-models-governance/",
+   "summary": "nexos.ai AI Adoption Platform puts 200+ models behind one AI Gateway, with budget limits and governance built in The post nexos.ai AI Adoption Platform puts 200+ models behind one AI Gateway, with budget limits and governance built in appeared first on MarkTechPost.",
+   "published": "2026-11-27T03:43:35+00:00",
+   "topics": []
+  },
+  {
+   "source": "MarkTechPost",
+   "title": "Tencent Open-Sources DFly2: Speculative Decoding That Reuses the Target’s Sparse KV Cache",
+   "url": "https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models/",
+   "summary": "Tencent open-sourced DFly2, a speculative decoding drafter for sparse-attention LLMs. Each draft layer reuses the target's KV cache and top-k indexer picks, adding no draft KV memory and lifting 64K serving throughput by up to 81%. The post Tencent Open-Sources DFly2: Speculative Decoding That Reuses the Target’s Sparse KV Cache appeared first on MarkTechPost.",
+   "published": "2026-11-27T03:31:30+00:00",
+   "topics": [
+    "llm"
+   ]
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+   "url": "https://huggingface.co/blog/video-trainium3",
+   "summary": "",
+   "published": "2026-11-27T00:00:00+00:00",
+   "topics": []
+  }
+ ]
+}
